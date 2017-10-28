@@ -1,8 +1,8 @@
 import math
 
 
-def distance(x1, y1, x2, y2):
-    return math.sqrt((x2-x1)**2 + (y2-y1)**2)
+def distance(px1, py1, px2, py2):
+    return math.sqrt((px2 - px1) ** 2 + (py2 - py1) ** 2)
 
 
 x1 = int(input('Point 1 x-cord: '))

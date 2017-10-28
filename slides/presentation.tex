@@ -75,9 +75,10 @@
 \AtBeginSubsection[]
 {
   {
-  \setbeamercolor{background canvas}{bg=mLighterGrey}
+  % \setbeamercolor{background canvas}{bg=mLighterGrey}
   \begin{frame}
     \frametitle{\currentname}
+    \tableofcontents[currentsection]
   \end{frame}
   }
 }
@@ -93,7 +94,7 @@
 }
 \date{}
 \subject{Python}
-
+\titlegraphic{\includegraphics[width=0.3\textwidth]{pics/uzh_logo_e_pos}}
 \begin{document}
 \begin{frame}
 \titlepage
@@ -178,10 +179,14 @@ After this course...
     \begin{itemize}
         \item \textbf{Input}: Data input from keyboard, files, internet, etc...
         \item \textbf{Output}: Processed data is displayed or saved to a file
-        \item \textbf{Assignment}: Values are assigned to variables
-        \item \textbf{Conditional execution}: Statements are executed only if certain
-        conditions are fulfilled
-        \item \textbf{Loops}: Repeating statement or group of statements
+        \item \textbf{Algorithms:}
+        \begin{itemize}
+            \item \textbf{Assignment}: Values are assigned to variables
+            \item \textbf{Conditional execution}: Statements are executed only if certain
+            conditions are fulfilled
+            \item \textbf{Loops}: Repeating statement or group of statements
+        \end{itemize}
+        
         \item \textbf{Libraries}: Using existing implementations
     \end{itemize}
 
@@ -249,7 +254,7 @@ After this course...
 
 \begin{itemize}
     \item Integrated Development Environment (IDE)
-    \item Collection of tools that are commonly used for software development
+    \item Collection of tools that are commonly used for software development (they make our life easier!)
     \item Popular IDEs
     \begin{itemize}
         \item Eclipse with pydev - \url{http://pydev.org}
