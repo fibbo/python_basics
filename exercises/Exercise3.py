@@ -1,8 +1,8 @@
 import math
 
 
-def volume_from_radius(radius):
-    return 4*math.pi/3 ** 3
+def volume_from_radius(r):
+    return 4*math.pi/3 * r ** 3
 
 
 radius = int(input('Radius: '))

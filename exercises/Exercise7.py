@@ -4,5 +4,6 @@ def print_reverse(text):
         print(text[counter])
         counter -= 1
 
-string = input('String: ')
+
+string = input('String to reverse: ')
 print_reverse(string)

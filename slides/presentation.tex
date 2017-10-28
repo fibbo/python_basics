@@ -725,10 +725,10 @@ else:
 \end{examples}
 \begin{lstlisting}
 def print_parity(x):
-if x % 2 == 0:
-    print(str(x) + ' is even')
-else:
-    print(str(x) + ' is odd')
+    if x % 2 == 0:
+        print(str(x) + ' is even')
+    else:
+        print(str(x) + ' is odd')
 
 print_parity(2)
 print_parity(3)
@@ -738,9 +738,9 @@ print_parity(3)
 
 \begin{block}{Chained conditionals}
     \begin{itemize}
-        \item lb{elif} is used to combine multiple conditions
-        \item The lb{else} expression is executed when neither lb{if} nor any of the lb{elif}s is true.
-        \item Any number of lb{elif} expressions can be used but only one lb{if} and one lb{else}
+        \item \lb{elif} is used to combine multiple conditions
+        \item The \lb{else} expression is executed when neither \lb{if} nor any of the \lb{elif}s is true.
+        \item Any number of \lb{elif} expressions can be used but only one \lb{if} and one \lb{else}
     \end{itemize}
 \end{block}
 
