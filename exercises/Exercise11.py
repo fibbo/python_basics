@@ -1,8 +1,9 @@
-min = 1
-max = 100
+lower_bound = 1
+upper_bound = 100
 counter = 1
+
 while True:
-    guessed_number = int((min + max) / 2)
+    guessed_number = int((lower_bound + upper_bound) / 2)
     print('Guessed number: ' + str(guessed_number))
     answer = input("Answer: ")
     if answer == '=':
@@ -10,7 +11,7 @@ while True:
         print('It took me ' + str(counter) + ' rounds.')
         break
     elif answer == '<':
-        min = guessed_number + 1
+        lower_bound = guessed_number + 1
     else:
-        max = guessed_number - 1
+        upper_bound = guessed_number - 1
     counter += 1
