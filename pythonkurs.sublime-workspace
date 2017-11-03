@@ -1,0 +1,756 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"check",
+				"m_checkpointDistance"
+			],
+			[
+				"m_",
+				"m_checkpoints"
+			],
+			[
+				"m_c",
+				"m_currentCheckpoint"
+			],
+			[
+				"boo",
+				"boostUsed"
+			],
+			[
+				"nex",
+				"nextCheckpointDist"
+			],
+			[
+				"nextCH",
+				"nextCheckpointDist"
+			],
+			[
+				"di",
+				"distanceToCheckPoint"
+			],
+			[
+				"Vec",
+				"Vector2f"
+			],
+			[
+				"dist",
+				"distToNextCheckpoint"
+			],
+			[
+				"dis",
+				"distToNextCheckpoint"
+			],
+			[
+				"Di",
+				"distToNextCheckpoint"
+			],
+			[
+				"Ve",
+				"Vector2f"
+			],
+			[
+				"curPy",
+				"curCPY"
+			],
+			[
+				"cu",
+				"curCPY"
+			],
+			[
+				"Ve2d",
+				"Vector2D"
+			],
+			[
+				"type",
+				"typename"
+			],
+			[
+				"ve",
+				"velocity"
+			],
+			[
+				"ste",
+				"steering"
+			],
+			[
+				"V",
+				"Vec2DNormalize"
+			],
+			[
+				"steering",
+				"steeringForce"
+			],
+			[
+				"stee",
+				"steeringForce"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"ch",
+				"characterPosition"
+			],
+			[
+				"cha",
+				"characterPosition"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++/C++11 Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++11 Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++/C++17 Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++17 Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++17 Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++/C++11 Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++11 Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++11 Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"Basic Builder - LuaLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"Basic Builder - LuaLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 398.0,
+		"last_filter": "prv",
+		"selected_items":
+		[
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"c",
+				"Set Syntax: C++"
+			],
+			[
+				"insta pa",
+				"Package Control: Install Package"
+			],
+			[
+				"in the",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"insta lpa",
+				"Package Control: Install Package"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Activation"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"syn latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"syn py",
+				"Set Syntax: Python"
+			],
+			[
+				"color the",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"syn c++",
+				"Set Syntax: C++"
+			],
+			[
+				"synta py",
+				"Set Syntax: Python"
+			],
+			[
+				"syntax latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"color sub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal pa",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"color su",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal p",
+				"Package Control: Install Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 364.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/phi/Documents/GitHub/python_kurs/slides"
+	],
+	"file_history":
+	[
+		"/C/Users/phi/AppData/Roaming/Sublime Text 3/Packages/C++/C++17 Single File.sublime-build",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_autoneum.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_mt_german.tex",
+		"/C/Users/phi/AppData/Roaming/Sublime Text 3/Packages/C++/C++ Single File.sublime-build",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_mt.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_mt_german.aux",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/dorota_cv.sublime-project",
+		"/F/Code/pppc1.cpp",
+		"/F/Code/std_lib_facilities.h",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_mt2.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_autoneum.tex",
+		"/C/Program Files/MySQL/MySQL Connector.C 6.1/include/mysql.h",
+		"/C/Users/phi/AppData/Local/Temp/7zO0CE1441C/cluster.h",
+		"/C/Users/phi/AppData/Local/Temp/7zO0CEC427D/main.cpp",
+		"/C/Users/phi/AppData/Local/Temp/7zO0CEA439D/rng.cpp",
+		"/C/Users/phi/AppData/Local/Temp/7zO0CED3DBD/rng.h",
+		"/C/Users/phi/Downloads/Sudoku2.cpp",
+		"/C/Users/phi/Documents/GitHub/python_kurs/exercises/Exercise10.py",
+		"/C/Users/phi/Documents/GitHub/python_kurs/slides/presentation.tex",
+		"/C/Users/phi/Documents/GitHub/python_kurs/.gitignore",
+		"/C/Users/phi/Documents/GitHub/python_kurs/exercises/Exercise7.py",
+		"/C/Users/phi/Documents/GitHub/python_kurs/exercises/Exercise6.py",
+		"/C/Users/phi/Documents/GitHub/LaTeX-Kurs/English/Outline/outline.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_mt.tex",
+		"/C/Users/phi/Documents/Wohnungsbewerbung/Turnerstrasse/turnerstrasse.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/moderncv.cls",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/moderncvstyleclassic.sty",
+		"/C/Users/phi/Documents/GitHub/python_kurs/slides/presentation.vrb",
+		"/C/Users/phi/PycharmProjects/PythonCourse/ex1.py",
+		"/C/Users/phi/Documents/Wohnungsbewerbung/Irchelstrasse/Irchelstrasse.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Philipp CV/cv.tex",
+		"/C/Users/phi/Documents/Visual Studio 2015/Projects/CircleHT/CreateData/DataGenerator/Basic.py",
+		"/C/Users/phi/Documents/Visual Studio 2015/Projects/CircleHT/CreateData/example1.py",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_novonordisk_job2.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_novonordisk.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_robeco.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Philipp CV/moderncvstyleclassic.sty",
+		"/C/Users/phi/Downloads/Tables.tex",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/ganesha/ganesha.pbrt",
+		"/C/Users/phi/Documents/Wohnungsbewerbung/abz/abz.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_robeco.tex",
+		"/C/Users/phi/OneDrive/Öffentlich/latex_wc.sh",
+		"/C/Users/phi/Documents/uzh-python-course-en/Solutions/ex_01.py",
+		"/C/Users/phi/Documents/uzh-python-course-en/Sample applications/movie.py",
+		"/c/texlive/2016/texmf-dist/tex/latex/polyglossia/polyglossia.sty",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_novonordisk.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_dorota_nophd.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_dorota_2.tex",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/killeroos/geometry/killeroo3.pbrt",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/killeroos/geometry/killeroo.pbrt",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/simple/geometry/room-geom.pbrt",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/disk/disk.pbrt",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/figures/f3-18.pbrt",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/scenes/simple/bump-sphere.pbrt",
+		"/C/Users/phi/Documents/GitHub/LaTeX-Kurs/German/20_Beamer/Beamer.tex",
+		"/C/Users/phi/Documents/GitHub/LaTeX-Kurs/English/20_Beamer/Beamer.tex",
+		"/C/Users/phi/OneDrive/Dokumente/hw1-windows_VS2012/hw1-windows/input.txt",
+		"/C/Users/phi/OneDrive/Dokumente/hw1-windows_VS2012/hw1-windows/shaders/light.vert.glsl",
+		"/c/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty",
+		"/C/Users/phi/Documents/GitHub/LaTeX-Kurs/English/02_Titlepage/Titelseite.pdf",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/.gitignore",
+		"/C/Users/phi/OneDrive/Dokumente/permutations.py",
+		"/C/Users/phi/Documents/Wohnungsbewerbung/universitätsstrasse/universitätsstrasse.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_ubs.tex",
+		"/C/Users/phi/Documents/My Games/Path of Exile/default.filter",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_axiom.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_dorota.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/moderncvcolorcustom.sty",
+		"/F/Code/colors.py",
+		"/C/Program Files/CPUID/CPU-Z/cpuz_readme.txt",
+		"/F/Code/Codingame/Coders Strike Back/main.cpp",
+		"/C/Users/phi/Documents/My Games/Path of Exile/minimal.filter",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/moderncvcolorblue.sty",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_edorasware.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_sonova.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_hp.tex",
+		"/C/Users/phi/AppData/Local/Temp/7zOCB77614D/Readme.txt",
+		"/F/GoG/Commandos/goggame-1207662193.info",
+		"/C/Users/phi/AppData/Roaming/Sublime Text 3/Packages/User/C++.sublime-settings",
+		"/C/Users/phi/Desktop/GitHubLog.txt",
+		"/C/Users/phi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/F/temp/isspacetest.c",
+		"/F/Code/gtest.cpp",
+		"/C/Users/phi/Downloads/Neural Networks/steepestdescent/PNVector.hpp",
+		"/C/Users/phi/Downloads/Neural Networks/steepestdescent/matrix.txt",
+		"/C/Users/phi/Downloads/Neural Networks/steepestdescent/b.txt",
+		"/C/Users/phi/Downloads/Neural Networks/steepestdescent/readfile.cpp",
+		"/C/Users/phi/Downloads/Neural Networks/steepestdescent/PNVector.cpp",
+		"/F/Code/REST/src/main/java/hello/GreetingController.java",
+		"/F/Code/REST/src/main/java/hello/Application.java",
+		"/F/Code/REST/src/main/java/hello/Greeting.java",
+		"/F/Code/template_meta.cpp",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_hp.tex",
+		"/C/Gradle/src/launcher/org/gradle/launcher/Main.java",
+		"/F/Code/gs-gradle/initial/gradlew.bat",
+		"/C/Gradle/bin/gradle.bat",
+		"/F/Code/gs-gradle/initial/gradlew",
+		"/F/Code/REST/build.gradle",
+		"/F/Code/gs-gradle/initial/build.gradle",
+		"/F/Code/REST/src/main/java/hello/GreetingController.txt",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_cimbanque.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_monterosa.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_dorota.pdf",
+		"/F/temp/edit2",
+		"/F/temp/edit1",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_dorota2.tex",
+		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_7.tex",
+		"/C/Users/phi/Documents/Taufe/taufe_mami.tex",
+		"/C/Users/phi/Documents/Taufe/ppd.tex",
+		"/C/Users/phi/Documents/Taufe/hildyfritz.tex",
+		"/C/Users/phi/Documents/Taufe/dziadkowie2.tex",
+		"/C/Users/phi/Documents/Taufe/dziadkowie1.tex",
+		"/C/Users/phi/Documents/Taufe/rodzice_dorus.tex",
+		"/F/Code/so43947304.cpp",
+		"/C/Users/phi/Documents/Unreal Projects/TwinStickShooter/Content/Blueprints/EnemyCharacter.uasset",
+		"/C/Users/phi/Documents/Unreal Projects/TwinStickShooter/Source/TwinStickShooter/BaseCharacter.cpp",
+		"/C/Users/phi/Documents/Unreal Projects/TwinStickShooter/Source/TwinStickShooter/TwinStickShooter.cpp",
+		"/F/Code/hackerrank.py",
+		"/C/Users/phi/OneDrive/Dokumente/abzformular",
+		"/C/Users/phi/OneDrive/Dokumente/Neural Networks/main.cpp",
+		"/C/Users/phi/OneDrive/Dokumente/New Text Document.txt",
+		"/F/Code/so43807307.cpp",
+		"/C/Users/phi/Documents/GitHub/pbrt-v3/CMakeLists.txt",
+		"/C/Users/phi/Documents/LaTeX/Dorota CV/cv_dorota2.tex",
+		"/C/Program Files/SumatraPDF/275",
+		"/F/Code/Codingame/ASCII/main.cpp",
+		"/C/Users/phi/Documents/GitHub/CircleHoughTransform/DataGenerator/Basic.py",
+		"/C/Users/phi/Documents/GitHub/CircleHoughTransform/src/CircleDetection3Points.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 190.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 207.0
+	},
+	"pinned_build_system": "",
+	"project": "pythonkurs.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bea",
+				"English\\20_Beamer\\Beamer.tex"
+			],
+			[
+				"beamer",
+				"German\\20_Beamer\\Beamer.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
