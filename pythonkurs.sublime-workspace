@@ -120,44 +120,70 @@
 			}
 		},
 		{
-			"file": "tmp/Test.py",
+			"file": "future_exercises/Exercise7.py",
 			"settings":
 			{
-				"buffer_size": 59,
+				"buffer_size": 250,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "tmp/__init__.py",
+			"file": "future_exercises/Exercise8.py",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 308,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "tmp/Point.py",
+			"file": "future_exercises/Exercise12_1.py",
 			"settings":
 			{
-				"buffer_size": 296,
+				"buffer_size": 364,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "future_exercises/Exercise12_2.py",
+			"settings":
+			{
+				"buffer_size": 1392,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "custom exercises/useclass.py",
+			"settings":
+			{
+				"buffer_size": 98,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "tmp/useclass.py",
+			"file": "/C/Users/siebe/Documents/GitHub/LaTeX-Kurs/English/01_Hello_World/Helloworld.tex",
 			"settings":
 			{
-				"buffer_size": 29,
+				"buffer_size": 217,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 3.14.1 (2017-06-01)\n  \n  Thank you for installing the LaTeXTools plugin!\n  \n  To learn about the features of this plugin, go to the Github page:\n  \n  https://github.com/SublimeText/LaTeXTools\n  \n  and scroll down to the README file. Actually, the Markdown source of that file is in the plugin directory, which you can open using \"Browse Packages...\" in Sublime Text.\n  \n  You can also check out Marciano's blog at\n  \n  tekonomist.wordpress.com\n  \n  Happy TeXing!\n  Ian Bacher, Marciano Siniscalchi, and Richard Stein\n",
+			"settings":
+			{
+				"buffer_size": 619,
 				"line_ending": "Windows",
-				"name": "import Test"
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/LaTeXBox/support/LaTeX.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -258,6 +284,22 @@
 			[
 				"Packages/C++/C++ Single File.sublime-build",
 				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXBox/support/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXBox/support/LaTeX.sublime-build",
+					"Force"
+				]
+			],
+			[
+				"Packages/LaTeXBox/support/LaTeX.sublime-build",
+				""
 			]
 		],
 		[
@@ -396,10 +438,38 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 301.0,
-		"last_filter": "pyt",
+		"height": 398.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta p",
+				"Package Control: Install Package"
+			],
+			[
+				"rmeove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
 			[
 				"pyt",
 				"Set Syntax: Python"
@@ -411,10 +481,6 @@
 			[
 				"c",
 				"Set Syntax: C++"
-			],
-			[
-				"insta pa",
-				"Package Control: Install Package"
 			],
 			[
 				"in the",
@@ -481,14 +547,6 @@
 				"Colorsublime: Install Theme"
 			],
 			[
-				"install pa",
-				"Package Control: Install Package"
-			],
-			[
-				"remove pa",
-				"Package Control: Remove Package"
-			],
-			[
 				"instal pa",
 				"Package Control: Install Package"
 			],
@@ -513,7 +571,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 448.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -534,12 +592,21 @@
 	"expanded_folders":
 	[
 		"/C/Users/siebe/Documents/GitHub/python_kurs",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/custom exercises",
 		"/C/Users/siebe/Documents/GitHub/python_kurs/exercises",
 		"/C/Users/siebe/Documents/GitHub/python_kurs/future_exercises",
 		"/C/Users/siebe/Documents/GitHub/python_kurs/slides"
 	],
 	"file_history":
 	[
+		"/C/Users/siebe/Documents/GitHub/python_kurs/slides/presentation.tex",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/custom exercises/round.py",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/future_exercises/Exercise9_2.py",
+		"/C/Users/siebe/Documents/GitHub/LaTeX-Kurs/English/99_Uebungsdokument/Sample.tex",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/tmp/Point.py",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/tmp/__init__.py",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/tmp/Test.py",
+		"/C/Users/siebe/Documents/GitHub/python_kurs/tmp/useclass.py",
 		"/C/Users/phi/AppData/Roaming/Sublime Text 3/Packages/C++/C++17 Single File.sublime-build",
 		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cl_autoneum.tex",
 		"/C/Users/phi/OneDrive/Dokumente/Dorota CV/cv_mt_german.tex",
@@ -659,19 +726,11 @@
 		"/C/Users/phi/Documents/Unreal Projects/TwinStickShooter/Source/TwinStickShooter/TwinStickShooter.cpp",
 		"/F/Code/hackerrank.py",
 		"/C/Users/phi/OneDrive/Dokumente/abzformular",
-		"/C/Users/phi/OneDrive/Dokumente/Neural Networks/main.cpp",
-		"/C/Users/phi/OneDrive/Dokumente/New Text Document.txt",
-		"/F/Code/so43807307.cpp",
-		"/C/Users/phi/Documents/GitHub/pbrt-v3/CMakeLists.txt",
-		"/C/Users/phi/Documents/LaTeX/Dorota CV/cv_dorota2.tex",
-		"/C/Program Files/SumatraPDF/275",
-		"/F/Code/Codingame/ASCII/main.cpp",
-		"/C/Users/phi/Documents/GitHub/CircleHoughTransform/DataGenerator/Basic.py",
-		"/C/Users/phi/Documents/GitHub/CircleHoughTransform/src/CircleDetection3Points.py"
+		"/C/Users/phi/OneDrive/Dokumente/Neural Networks/main.cpp"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -702,7 +761,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -730,24 +789,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tmp/Test.py",
+					"file": "future_exercises/Exercise7.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 59,
+						"buffer_size": 250,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								249,
+								249
 							]
 						],
 						"settings":
@@ -758,16 +817,44 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "tmp/__init__.py",
+					"file": "future_exercises/Exercise8.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "future_exercises/Exercise12_1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 364,
 						"regions":
 						{
 						},
@@ -790,20 +877,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "tmp/Point.py",
-					"semi_transient": false,
+					"buffer": 4,
+					"file": "future_exercises/Exercise12_2.py",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 296,
+						"buffer_size": 1392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								83,
-								83
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "custom exercises/useclass.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
 							]
 						],
 						"settings":
@@ -818,26 +935,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "tmp/useclass.py",
+					"buffer": 6,
+					"file": "/C/Users/siebe/Documents/GitHub/LaTeX-Kurs/English/01_Hello_World/Helloworld.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29,
+						"buffer_size": 217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								217,
+								217
 							]
 						],
 						"settings":
 						{
-							"auto_name": "import Test",
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -845,13 +961,43 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -896,7 +1042,7 @@
 	"project": "pythonkurs.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
