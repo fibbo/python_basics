@@ -3,13 +3,13 @@ def calculate_mark(points, max_points):
     return round(mark * 2) * 0.5
 
 
+max_points = input('Enter maximum score\n')
 while True:
-    name = input('Name: ')
+    name = input('Enter the name\n')
     if name == 'exit':
         break
-    points = input('Points: ')
-    max_points = input('Max Points: ')
+    points = input('Enter points\n')
+    
     print(calculate_mark(points, max_points))
 
 
-print('Bye bye')
