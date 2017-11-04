@@ -3,7 +3,10 @@ def calculate_mark(points, max_points):
     return round(mark/0.5)*0.5
 
 
+max_points = int(input('Enter maximum score\n'))
+
 grade_dict = {}
+
 while True:
     name = input('Enter the name\n')
     if name == 'exit':

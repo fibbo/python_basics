@@ -14,4 +14,4 @@ while True:
         print("Too high")
     else:
         print("Too low")
-
+    counter += 1

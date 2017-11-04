@@ -5,9 +5,8 @@ while True:
     name = input('Name: ')
     if name == 'exit':
         break
-    else:
-        phone = input('Phone: ')
-        address_book_dict[name] = phone
+    phone = input('Phone: ')
+    address_book_dict[name] = phone
 
 address_book_file = open('address_book.txt', 'w')
 address_book_json = json.dumps(address_book_dict)

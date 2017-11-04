@@ -17,6 +17,6 @@ while True:
 
 for (name, grade) in grade_dict.items():
     if grade >= 4:
-        print(name + ' has passed with ' + str(grade))
+        print('{} has passed with {}'.format(name, grade))
     else:
-        print(name + ' has failed with ' + str(grade))
+        print('{} has failed with {}'.format(name, grade))

@@ -1,17 +1,22 @@
+import random
+
 lower_bound = 1
 upper_bound = 100
 counter = 1
 
+target_number = int(input("Please enter your target number\n"))
+
+guess = random.randrange(1, 100)
 while True:
-    guessed_number = int((lower_bound + upper_bound) / 2)
-    print('Guessed number: ' + str(guessed_number))
-    answer = input("Answer: ")
-    if answer == '=':
-        print('The number is ' + str(guessed_number))
-        print('It took me ' + str(counter) + ' rounds.')
+    print('Guessed number: {}'.format(guess))
+    if guess == target_number:
+        print('The number is {}'.format(guess))
+        print('It took me {} rounds.'.format(counter))
         break
-    elif answer == '<':
-        lower_bound = guessed_number + 1
+    elif target_number < guess:
+        upper_bound = guess
+        guess -= int((guess - lower_bound)/2)
     else:
-        upper_bound = guessed_number - 1
+        lower_bound = guess
+        guess += int((upper_bound - guess)/2)
     counter += 1
