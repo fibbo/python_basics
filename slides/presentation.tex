@@ -267,7 +267,7 @@ After this course...
 
 \begin{block}{Options to run Python code:}
 \begin{itemize}
-    \item Directly in the Python prompt
+    \item Directly in the Python prompt (REPL - Read, Eval, Print, Loop)
     \item Write the code into a file and run python with the file
     \item Use IDE to run Python code
 \end{itemize}
@@ -344,7 +344,7 @@ After this course...
         \begin{lstlisting}
             salutation = "Hello"
             name = "Dennis Reynolds"
-            pi = 3.13159
+            pi = 3.14159
         \end{lstlisting}
         \item Usage
         \begin{lstlisting}
@@ -378,13 +378,13 @@ print(salutation + " " + name)
 \end{frame}
 
 \begin{frame}[t, fragile]\frametitle{Operators}
-\begin{block}{Order of precedence}
+\begin{block}{Order of precedence (kind of like PEMDAS)}
 \begin{itemize}
         \item ()
         \item **
-        \item unary +,-
-        \item *,/,\%
-        \item binary +,-
+        \item unary + -
+        \item *  /  \%
+        \item binary + -
         \item \texttt{<}, \texttt{>}, \texttt{<=}, \texttt{>=}, \texttt{!=}, \texttt{==}
         \item \textbf{\texttt{\color{mDarkBlue}not}}
         \item \textbf{\texttt{\color{mDarkBlue}and}}
@@ -435,7 +435,7 @@ print(name) # Some name is used inside the print function
     \begin{lstlisting}
 text = "Python programming language"
 print(text) # Prints: Python programming language
-text_length = len(text)
+text_length = len(text) # This function returns something
 print(text_length) # Prints length of the string
     \end{lstlisting}
 \end{examples}
@@ -465,10 +465,10 @@ print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
 a = 1.888
 int(a) # = 1
 int(round(a)) # = 2
-int(a+5) # = 2
+int(a+5) # = 6
     \end{lstlisting}
 \end{block}
-\begin{block}{Math functions}
+\begin{block}{Math functions \& First glance at a library}
     \begin{lstlisting}
 import math
 log_res = math.log(17.0)
@@ -488,7 +488,7 @@ x = math.cos(20*math.pi/180))  # cos/sin etc take radians as arguments -> conver
         \item A function encapsulates some functionality
         \item Reduces complexity
         \begin{lstlisting}
-def my_function(param1, param2):
+def print_two_values(param1, param2):
     print(param1)
     print(param2)            
         \end{lstlisting}
@@ -574,7 +574,7 @@ print(concat) # NameError: name 'concat' is not defined
 \begin{block}{Conclusion}
     \begin{itemize}
         \item A function can be called multiple times
-        \item If some code can be reused, put it in a function so you need to write less
+        \item If some code can be reused, put it in a function so you need to write less code
         \begin{itemize}
             \item Higher factorization
             \item Less redundancy
@@ -611,6 +611,10 @@ def say_hello():
 
 \begin{frame}[c,allowframebreaks]\frametitle{Debugging}
 \begin{block}{Finding and resolving "bugs"}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\textwidth]{pics/bugvsfeature.jpg}
+\end{figure}
 \begin{itemize}
 \item Programming is a complex activity
 \item Mistakes happen all the time
