@@ -315,3 +315,6 @@ Slides English.pdf
 *.fdb_latexmk
 *.fls
 pythonkurs.sublime-workspace
+pythonkurs.sublime-workspace
+*.sublime-workspace
+pythonkurs.sublime-workspace
