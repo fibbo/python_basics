@@ -55,7 +55,16 @@
     morekeywords={__init__, and, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, yield}
 }
 %
-
+\makeatletter
+\setbeamertemplate{footline}{%
+\leavevmode
+\vbox{\begin{beamercolorbox}[dp=1.25ex,ht=2.75ex]{fg=black}%
+  \hspace*{1em}\insertsectionhead%
+  \ifx\insertsubsectionhead\@empty\relax\else\hspace*{\fill}\insertsubsectionhead\hspace*{2ex}\fi
+  \end{beamercolorbox}%
+  }%
+}
+\makeatother
 
 \setbeamertemplate{section in toc}{%
   {\color{mDarkTeal}\rule[0.3ex]{3pt}{3pt}}~\inserttocsection\par}
@@ -78,7 +87,7 @@
   % \setbeamercolor{background canvas}{bg=mLighterGrey}
   \begin{frame}
     \frametitle{\currentname}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsubsection]
   \end{frame}
   }
 }
@@ -187,7 +196,7 @@ After this course...
             \item \textbf{Loops}: Repeating statement or group of statements
         \end{itemize}
         
-        \item \textbf{Libraries}: Using existing implementations
+        \item \textbf{Libraries}: Using existing implementations (can do anything of the above)
     \end{itemize}
 
 \end{block}     
@@ -232,10 +241,10 @@ After this course...
     \begin{columns}
         \begin{column}{0.5\textwidth}
            \begin{itemize}
-                \item "Simple" syntax
                 \item High-level programming language
+                \item "Simple" syntax
                 \item Cross-platform
-                \item Interpreted
+                \item Interpreted (no compilation or linking needed)
                 \item Object-oriented
                 \item Many libraries available
             \end{itemize}
@@ -250,20 +259,25 @@ After this course...
 
 \end{frame}
 
-\begin{frame}[c]\frametitle{Development Environment}
+\begin{frame}[fragile]\frametitle{Assembly}
+    Example of a low level language
+\begin{lstlisting}{language=assembly}
+.LC0:
+    .string "Hello world!"
+main:
+    push rbp
+    mov rbp, rsp
+    mov edi, OFFSET FLAT:.LC0
+    mov eax, 0
+    call printf
+    mov eax, 0
+    pop rbp
+    ret
+\end{lstlisting}
 
-\begin{itemize}
-    \item Integrated Development Environment (IDE)
-    \item Collection of tools that are commonly used for software development (they make our life easier!)
-    \item Popular IDEs
-    \begin{itemize}
-        \item Eclipse with pydev - \url{http://pydev.org}
-        \item JetBrains PyCharm - Community Edition available for free \url{http://jetbrains.com/pycharm/download}
-    \end{itemize}
-\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile,c]\frametitle{Demo: Hello World}
+\begin{frame}[fragile,c]\frametitle{How to Run Python Code}
 
 \begin{block}{Options to run Python code:}
 \begin{itemize}
@@ -271,22 +285,34 @@ After this course...
     \item Write the code into a file and run python with the file
     \item Use IDE to run Python code
 \end{itemize}
-
-
-
 \end{block}
     
 \end{frame}
+
+\begin{frame}[c]\frametitle{Development Environment}
+
+\begin{itemize}
+    \item Integrated Development Environment (IDE)
+    \item Collection of tools that are commonly used for software development (they make our life easier!)
+    \item Popular IDEs
+    \begin{itemize}
+        \item Visual Studio Code - \url{https://code.visualstudio.com}
+        \item JetBrains PyCharm - Community Edition available for free \url{http://jetbrains.com/pycharm/download}
+        \item Eclipse with pydev - \url{http://pydev.org}
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
 % section introduction_to_programming (end)
 
 \section{Fundamental Concepts} % (fold)
 \label{sec:fundamental_concepts}
 
-\subsection{Values, Variables, Expressions, Operators, Comments} % (fold)
-\label{sub:values_variables_expressions_operators_comments}
+\subsection{Types, Variables, Expressions, Operators, Comments} % (fold)
+\label{sub:Types_variables_expressions_operators_comments}
 
-\begin{frame}[c]\frametitle{Values, Variables, Expressions, Operators, Comments}
-\begin{block}{Values}
+\begin{frame}[c]\frametitle{Types, Variables, Expressions, Operators, Comments}
+\begin{block}{Types}
     \begin{itemize}
         \item Numbers
         \begin{itemize}
@@ -394,7 +420,7 @@ print(salutation + " " + name)
     
 \end{frame}
 
-\begin{frame}[t, fragile]\frametitle{Comments}
+\begin{frame}[c, fragile]\frametitle{Comments}
 \begin{itemize}
     \item Comments have no impact on the program
     \item Should explain the code
@@ -425,7 +451,7 @@ print(name) # Prints Philipp
 name = "Some name"
 print(name) # Some name is used inside the print function
     \end{lstlisting}
-    \item Functions can also return a result
+    \item Functions can (and often do) also return a result
     \begin{itemize}
         \item \lstinline!return! statement
     \end{itemize}

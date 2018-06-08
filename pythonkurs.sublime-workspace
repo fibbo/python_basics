@@ -135,7 +135,7 @@
 			"file": "slides/presentation.tex",
 			"settings":
 			{
-				"buffer_size": 47321,
+				"buffer_size": 48083,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -877,6 +877,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Values",
+			"values",
+			"Values",
+			"values",
+			"Values",
+			"PEMD",
 			"->",
 			"exercise 1",
 			"exercise",
@@ -912,7 +918,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -921,15 +927,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 47321,
+						"buffer_size": 48083,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35991,
-								36001
+								12588,
+								12588
 							]
 						],
 						"settings":
@@ -939,10 +945,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 18350.0,
+						"translation.y": 5243.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -964,13 +970,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 1646.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -998,7 +1006,7 @@
 						"translation.y": 1204.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
