@@ -7,3 +7,6 @@ def volume_from_radius(r):
 
 radius = int(input('Radius: '))
 print(volume_from_radius(radius))
+
+async def funcname(parameter_list):
+    pass
