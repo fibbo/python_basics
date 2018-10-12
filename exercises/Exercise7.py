@@ -1,7 +1,8 @@
 def print_reverse(text):
     counter = len(text)-1
     while counter >= 0:
-        print(text[counter], end="") # end="" prevents a line break after a print
+        # end="" prevents a line break after a print
+        print(text[counter], end="")
         counter -= 1
 
 

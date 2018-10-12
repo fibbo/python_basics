@@ -10,7 +10,5 @@ while True:
     if name == 'exit':
         break
     points = input('Enter points\n')
-    
+
     print(calculate_mark(points, max_points))
-
-
