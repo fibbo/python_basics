@@ -10,9 +10,8 @@ class Point():
         return "x: " + str(self.x) + " y: " + str(self.y)
 
 
-
-p1 = Point(1,2)
-p2 = Point(2,3)
+p1 = Point(1, 2)
+p2 = Point(2, 3)
 
 p3 = p1 + p2
 
