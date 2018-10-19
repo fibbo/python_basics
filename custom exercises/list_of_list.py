@@ -16,6 +16,7 @@ def volume_from_distance(x1, y1, x2, y2):
     return volume
 
 
+# generating a list containing 20 lists as elements
 parent_list = list()
 for x in range(20):
     sub_list = []

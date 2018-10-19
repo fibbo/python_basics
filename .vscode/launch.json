@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Integrated Terminal/Console",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
@@ -55,7 +62,11 @@
             "request": "launch",
             "module": "flask",
             "env": {
+<<<<<<< HEAD
                 "FLASK_APP": "app.py"
+=======
+                "FLASK_APP": "${workspaceFolder}/app.py"
+>>>>>>> b8b5b8a54481f5a2a4884a83874119d7d26b4fd9
             },
             "args": [
                 "run",

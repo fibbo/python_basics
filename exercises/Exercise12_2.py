@@ -14,7 +14,7 @@ def insert_person():
 def search_person():
     name = input("Please provide the name of the person: ")
     if name in address_book:
-        print("The phone number of " + name + " is: " + address_book[name])
+        print("The phone number of {} is: {} ".format(name, address_book[name]))
     else:
         print("Person not found")
 

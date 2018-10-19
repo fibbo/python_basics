@@ -32,6 +32,4 @@ y1 = int(input('Point 1 y-cord: '))
 x2 = int(input('Point 2 x-cord: '))
 y2 = int(input('Point 2 y-cord: '))
 
-p1 = Point(x1, y1)
-
 print(volume_from_points(x1, y1, x2, y2))

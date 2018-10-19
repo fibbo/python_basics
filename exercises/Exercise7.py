@@ -8,8 +8,13 @@ def print_reverse(text):
 
     return rev_string
 
+<<<<<<< HEAD
 
 # string = input('String to reverse: ')
 print_reverse("asdfasdf")
 
 print(print_reverse("test"))
+=======
+string = input('String to reverse: ')
+print_reverse(string)
+>>>>>>> b8b5b8a54481f5a2a4884a83874119d7d26b4fd9
