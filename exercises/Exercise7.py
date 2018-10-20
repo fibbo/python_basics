@@ -1,10 +1,10 @@
 def print_reverse(text):
-    counter = len(text)-1
+    index = len(text)-1
     rev_string = ""
-    while counter >= 0:
-        rev_string += text[counter]
-        print(text[counter], end="")  # end="" prevents a line break after a print
-        counter -= 1
+    while index >= 0:
+        rev_string += text[index]
+        print(text[index], end="")  # end="" prevents a line break after a print
+        index -= 1
 
     return rev_string
 

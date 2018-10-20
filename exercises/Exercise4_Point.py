@@ -23,7 +23,7 @@ def volume_from_points(p1: Point, p2: Point):
 def distance(p1: Point, p2: Point):
     return math.sqrt((p2.x - p1.x) ** 2 + (p2.y - p1.y) ** 2)
 
-<<<<<<< HEAD
+
 def volume_from_radius(radius):
     return 4.0/3 * math.pi * radius**3
 
@@ -37,13 +37,3 @@ p1 = Point(x1, y1)
 p2 = Point(x2, y2)
 
 print(volume_from_points(p1, p2))
-=======
-
-def volume_from_radius(radius):
-    return 4.0/3 * math.pi * radius**3
-
-point1 = Point(3, 4)
-point2 = Point(3, 5)
-print(point1)
-print(volume_from_points(point1, point2))
->>>>>>> b8b5b8a54481f5a2a4884a83874119d7d26b4fd9

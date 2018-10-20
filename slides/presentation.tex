@@ -1424,6 +1424,22 @@ while index < len(names):
 
 }
 
+{
+\setbeamercolor{background canvas}{bg=mLightBlue}
+\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\bfseries
+\begin{frame}[c, fragile]\frametitle{Exercise 7}
+    
+\begin{itemize}
+    \item Write a function \texttt{print\_reverse(text)} which expects a string as an argument and prints every character of the string in reverse order
+    \item Use a while loop to do this
+\end{itemize}
+\end{frame}
+
+}
+
 \begin{frame}[c, fragile]\frametitle{Iterations}
     
     \bblock{\lb{for}}{
@@ -1446,14 +1462,6 @@ for element in element_list:
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 7}
-    
-\begin{itemize}
-    \item Write a function \texttt{print\_reverse(text)} which expects a string as an argument and prints every character of the string in reverse order
-    \item Use a while loop to do this
-\end{itemize}
-\end{frame}
-
 \begin{frame}[c, fragile]\frametitle{Exercise 8}
 \begin{itemize}
 \item Write a function \texttt{count\_words(words, min\_word\_length)} that counts the number of words in a list that are at least as long as the specified word length
@@ -1747,7 +1755,7 @@ made before it quits
 }
 
 \begin{lstlisting}
-file = open('my_file.txt', 'modus')
+file = open('my_file.txt', 'mode')
 # do some stuff
 file.close()
 \end{lstlisting}
