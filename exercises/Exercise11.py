@@ -1,12 +1,12 @@
 import random
 
 lower_bound = 1
-upper_bound = 100
+upper_bound = 101
 counter = 1
 
 target_number = int(input("Please enter your target number\n"))
 
-guess = random.randrange(1, 100)
+guess = random.randrange(1, 101)
 while True:
     print('Guessed number: {}'.format(guess))
     if guess == target_number:
