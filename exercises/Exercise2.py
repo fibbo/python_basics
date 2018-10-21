@@ -11,4 +11,3 @@ x2 = int(input('Point 2 x-cord\n'))
 y2 = int(input('Point 2 y-cord\n'))
 
 print(distance(x1, y1, x2, y2))
-
