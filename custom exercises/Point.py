@@ -3,9 +3,15 @@ class Point():
         self.x = x
         self.y = y
 
+    # overwrite the + operator so now you can add points
     def __add__(self, p):
         return Point(self.x+p.x, self.y+p.y)
 
+    # overwrite the - operator so you can subtract points
+    def __sub__(self, p):
+        return Point(self.x-p.x, self.y-p.y)
+
+    # implement __str__ function for convenience
     def __str__(self):
         return "x: " + str(self.x) + " y: " + str(self.y)
 
