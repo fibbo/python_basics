@@ -21,10 +21,7 @@
             "name": "Python: Attach",
             "type": "python",
             "request": "attach",
-            "localRoot": "${workspaceFolder}",
-            "remoteRoot": "${workspaceFolder}",
             "port": 3000,
-            "secret": "my_secret",
             "host": "localhost"
         },
         {
@@ -51,10 +48,6 @@
                 "--noreload",
                 "--nothreading"
             ],
-            "debugOptions": [
-                "RedirectOutput",
-                "Django"
-            ]
         },
         {
             "name": "Python: Flask (0.11.x or later)",
@@ -62,11 +55,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-<<<<<<< HEAD
-                "FLASK_APP": "app.py"
-=======
                 "FLASK_APP": "${workspaceFolder}/app.py"
->>>>>>> b8b5b8a54481f5a2a4884a83874119d7d26b4fd9
             },
             "args": [
                 "run",
@@ -87,10 +76,6 @@
             "args": [
                 "${workspaceFolder}/development.ini"
             ],
-            "debugOptions": [
-                "RedirectOutput",
-                "Pyramid"
-            ]
         },
         {
             "name": "Python: Watson",
@@ -119,9 +104,6 @@
                 "arg1",
                 "arg2"
             ],
-            "debugOptions": [
-                "RedirectOutput"
-            ]
         }
     ]
 }
