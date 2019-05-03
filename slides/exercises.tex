@@ -1,0 +1,365 @@
+%! TEX program = lualatex
+\documentclass[10pt, a4paper]{beamer} %handout fuer eine gedruckte version der slides
+\usetheme{metropolis}
+
+\usepackage{url}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+\usepackage{listings,xcolor}
+\usepackage{graphicx}
+\usepackage{nameref}
+\usepackage{mathtools}
+
+\usepackage{booktabs}
+
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\usepackage{fontspec}
+% \setmainfont{UbuntuMono}
+\newfontfamily\Bera{Bitstream Vera Sans Mono}[Scale=0.85]
+
+\definecolor{mDarkTeal}{HTML}{23373b}
+\definecolor{mLightBrown}{HTML}{EB811B}
+\definecolor{mDarkBlue}{HTML}{0F3470}
+\definecolor{mDarkGrey}{HTML}{999999}
+\definecolor{mLighterGrey}{HTML}{CCCCCC}
+\definecolor{mLightGrey}{rgb}{0.95,0.95,0.95}
+\definecolor{mLightBlue}{HTML}{212751}
+
+\newcommand{\lb}[1]{{\color{mLightBrown}#1}}
+
+\newcommand{\bblock}[3]{
+        \begin{block}{#1}
+        #2
+    \end{block}
+}
+
+\setbeamercolor{block title}{fg=mDarkTeal}
+
+\lstset{language=Python,
+    backgroundcolor=\color{mLightGrey},
+    frame=single,
+    rulecolor=\color{mLightGrey}, % make frame "invisible"
+    basicstyle=\Bera\footnotesize,
+    keywordstyle=\bfseries\color{mDarkBlue},
+    commentstyle=\color{mDarkGrey}\itshape,
+    captionpos=t,
+    emphstyle=\ttb\color{mDarkBlue},    % Custom highlighting style
+    stringstyle=\color{mLightBrown},
+    tabsize=2,
+    numberbychapter=false,
+    showstringspaces=false,
+    breaklines=true,
+    morekeywords={__init__, and, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, yield}
+}
+%
+\makeatletter
+\setbeamertemplate{footline}{%
+\leavevmode
+\vbox{\begin{beamercolorbox}[dp=1.25ex,ht=2.75ex]{fg=black}%
+  \hspace*{1em}\insertsectionhead%
+  \ifx\insertsubsectionhead\@empty\relax\else\hspace*{\fill}\insertsubsectionhead\hspace*{2ex}\fi
+  \end{beamercolorbox}%
+  }%
+}
+\makeatother
+
+\setbeamertemplate{section in toc}{%
+  {\color{mDarkTeal}\rule[0.3ex]{3pt}{3pt}}~\inserttocsection\par}
+\setbeamertemplate{subsection in toc}{%
+  \hspace{1.2em}{\color{mLightBrown}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par}
+
+
+% \usecolortheme{spruce}
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{\currentname}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+  {
+  % \setbeamercolor{background canvas}{bg=mLighterGrey}
+  \begin{frame}
+    \frametitle{\currentname}
+    \tableofcontents[currentsubsection]
+  \end{frame}
+  }
+}
+
+\title % (optional, only for long titles)
+{Exercises}
+\author % (optional, for multiple authors)
+{Philipp Gloor\inst{1}}
+\institute
+{
+  \inst{1}%
+  University of Zurich
+}
+\date{}
+\subject{Python}
+\titlegraphic{\includegraphics[width=0.3\textwidth]{pics/uzh_logo_e_pos}}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=mLightBlue}
+\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\bfseries
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 1}
+    
+\begin{itemize}
+    \item Write a function \texttt{compare(x,y)} that
+    \begin{itemize}
+        \item prints 1 if $x > y$
+        \item prints 0 if $x == y$
+        \item prints -1 if $x < y$
+    \end{itemize}
+    \item Use \texttt{input()} to receive user input
+\end{itemize}
+
+\framebreak
+
+\begin{itemize}
+    \item Attention: \texttt{input()} stores the input as a string (not as a number)
+    \item If the input is supposed to be a number (int, float) you need to convert it
+\end{itemize}
+
+{
+\mdseries
+\setbeamercolor{normal text}{fg=black}
+\usebeamercolor[fg]{normal text}
+\begin{lstlisting}
+first_number = input('Please enter a first number ')
+first_number = int(first_number)
+second_number = input('Please enter a first number ')
+second_number = int(second_number)
+result = first_number + second_number
+print(str(result))
+\end{lstlisting}
+}
+
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 2}
+    
+\begin{itemize}
+    \item Write a function called \texttt{distance(x1, y1, z1, x2, y2, z2)} which computes the distance between point 1 $(x1, y1, z1)$ and point 2 $(x2, y2, z2)$
+    \item Note:
+        \begin{itemize}
+            \item \( \text{distance} = \sqrt{\left(x_2 - x_1\right)^2 + \left(y_2 - y_1\right)^2 + \left(z_2 - z_1\right)^2} \)
+            \item $x^2$ is represented by \texttt{x**2} in Python
+            \item The root of x is computed with math.sqrt(x)
+            \item Use the import math statement at the beginning of the file
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 3}
+\begin{itemize}
+    \item Write a function \texttt{volume\_from\_radius(radius)}, which calculates the
+volume of a sphere
+    \item Note:
+    \begin{itemize}
+        \item \( \text{volume} = \frac{4\pi}{3}\cdot r^3\)
+        \item Pi is math.pi
+    \end{itemize}
+\end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}[c, fragile]\frametitle{Exercise 4}
+\begin{itemize}
+    \item Write a function \texttt{volume\_from\_points(x1, y1, z1, x2, y2, z2)}
+    \item This function calculates the volume of a sphere whose radius is the distance between the points $(x1, y1, z1)$ and $(x2, y2, z2)$
+    \item Tip: Use the implemented methods from the previous exercises (you might want to copy and paste them into a new file)
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}[t, fragile]\frametitle{Exercise 5}
+\begin{itemize}
+    \item Write a function \texttt{is\_between(x, y, z)} which returns True if x <= y <=
+z and False otherwise
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 6}
+    
+\begin{itemize}
+    \item Write a function \texttt{calc\_sum(numbers)} which expects a list of numbers as input and returns their sum
+    \item The method should be called as follows \texttt{calc\_sum([4,6,7])}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 7}
+    
+\begin{itemize}
+    \item Write a function \texttt{print\_reverse(text)} which expects a string as an argument and prints every character of the string in reverse order
+    \item Use a while loop to do this
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 8}
+\begin{itemize}
+\item Write a function \texttt{count\_words(words, min\_word\_length)} that counts the number of words in a list that are at least as long as the specified word length
+\item Use a for loop to do this
+\item Example:
+\end{itemize}
+
+{
+\mdseries
+\setbeamercolor{normal text}{fg=black}
+\usebeamercolor[fg]{normal text}
+\begin{lstlisting}
+words = ['Emanuel', 'John', 'Ale']
+count_words(words, 4)
+# 2
+\end{lstlisting}
+}
+
+\end{frame}
+
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 9}
+    
+\begin{itemize}
+    \item Write a function \texttt{calculate\_mark(points, max\_points)} which returns a grade in the Swiss grading scale
+    \[ \text{mark} = \frac{\text{points}\cdot 5}{\text{max points}} + 1 \]
+    \item The function rounds the grade to the nearest 0.5
+    \begin{itemize}
+        \item 5.66666 -> 5.5
+        \item 5.75 -> 6
+    \end{itemize}
+    \item The function should accept strings as arguments
+    \item Arguments should be therefore converted to floats
+\end{itemize}
+
+\framebreak
+
+\begin{itemize}
+    \item Write a function that asks for points and max\_points as long as the user does not enter "exit"
+    \item The grade should be printed after each run
+\end{itemize}
+
+{
+\mdseries
+\setbeamercolor{normal text}{fg=black}
+\usebeamercolor[fg]{normal text}
+\begin{lstlisting}
+# input max_points
+while True:
+    # input points (use input)
+    if points == 'exit':
+        break
+    # call calculate_mark function
+    # print result
+\end{lstlisting}
+}
+\framebreak
+
+\begin{itemize}
+    \item Change your code that it additionally asks for a name
+    \item A dictionary should now store the grade of each name
+    \begin{itemize}
+        \item The name is a key, the grade the value
+    \end{itemize}
+    \item As soon as the user enters "exit" the program should print the grades of all names before it exits
+\end{itemize}
+
+\framebreak
+
+\begin{itemize}
+    \item Change your code in such a way that for each name it additionally outputs if the user has passed or failed
+    \item Mark >= 4 -> passed
+    \item Mark < 4 -> failed
+\end{itemize}
+
+\framebreak
+
+\begin{itemize}
+    \item Change your in such a way that the application outputs the average grade before it exits
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 10}
+    
+\begin{itemize}
+\item  Write an application that generates a random number between 1
+and 100
+\item  import random
+\item  random.randrange(min, max)
+\item  The user makes a guess and enters a number. If the number is incorrect, the program outputs whether the entered number was too small or too large and allows the user to guess again.
+\item  The application quits when the correct number is guessed
+\item  The application should output how many user attempts have been
+made before it quits
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 11}
+    
+    \begin{itemize}
+        \item Implement the opposite of Task 10 so that the user thinks of a number and makes the computer guess
+        \item The user provides feedback on whether the number is too high, too small, or correct
+        \item $<$ (too low)
+        \item $>$ (too high)
+        \item = (correct)
+        \item How many steps does the computer need?
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 12}
+    
+\begin{itemize}
+\item Write an application which repeatedly asks for a name and phone
+number until the user enters ``exit''
+\item Each name/telephone number pair should be stored as an entry in a dictionary
+\begin{itemize}
+    \item The names are the keys of the dictionary
+    \item The telephone numbers are the values of the dictionary
+\end{itemize}
+\item As soon as the user enters ``exit'', create a JSON string of the dictionary using the json.dumps() function and store the string in a file called address\_book.txt
+\end{itemize}
+
+\framebreak
+
+\begin{itemize}
+\item Extend your application so that it reads the address\_book.txt file when it starts
+\item Convert the JSON text into a dictionary again
+\end{itemize}
+
+{
+\mdseries
+\setbeamercolor{normal text}{fg=black}
+\usebeamercolor[fg]{normal text}
+\begin{lstlisting}
+import json
+address_book_file = open('address_book.txt', 'r')
+address_book_dict = json.load(address_book_file)
+\end{lstlisting}
+}
+
+\begin{itemize}
+\item Ask the user if he wants to add more names or not
+\item Let the user search for names in the dictionary and print out the according phone number
+\end{itemize}
+
+\end{frame}
+}
+
+\end{document}
