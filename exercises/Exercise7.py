@@ -3,7 +3,8 @@ def print_reverse(text):
     rev_string = ""
     while index >= 0:
         rev_string += text[index]
-        print(text[index], end="")  # end="" prevents a line break after a print
+        # end="" prevents a line break after a print
+        print(text[index], end="")
         index -= 1
 
     return rev_string
