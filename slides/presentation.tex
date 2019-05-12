@@ -74,24 +74,24 @@
 
 
 % \usecolortheme{spruce}
-% \AtBeginSection[]
-% {
-%   \begin{frame}
-%     \frametitle{\currentname}
-%     \tableofcontents[currentsection]
-%   \end{frame}
-% }
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{\currentname}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
-% \AtBeginSubsection[]
-% {
-%   {
-%   % \setbeamercolor{background canvas}{bg=mLighterGrey}
-%   \begin{frame}
-%     \frametitle{\currentname}
-%     \tableofcontents[currentsubsection]
-%   \end{frame}
-%   }
-% }
+\AtBeginSubsection[]
+{
+  {
+  % \setbeamercolor{background canvas}{bg=mLighterGrey}
+  \begin{frame}
+    \frametitle{\currentname}
+    \tableofcontents[currentsubsection]
+  \end{frame}
+  }
+}
 
 \title % (optional, only for long titles)
 {Foundations of Programming in Python}
@@ -110,6 +110,11 @@
 \titlepage
 \end{frame}
 
+\begin{frame}{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+\section{General Introduction}
 \begin{frame}
 \frametitle{About me}
 
@@ -129,7 +134,7 @@
 
 \begin{block}{Programming experience}
     \begin{itemize}
-        \item[] C++, C\#, Java, JavaScript, Python
+        \item[] C++, C\#, Java, TypeScript, JavaScript, Python
     \end{itemize}
 \end{block}
 
@@ -156,7 +161,7 @@
 % Sample text in green box. "Examples" is fixed as block title.
 % \end{examples}
 \end{frame}
-\begin{frame}[t]\frametitle{Round of introduction}
+\begin{frame}[c]\frametitle{Round of introduction}
     \begin{itemize}
         \item Name
         \item Occupation
@@ -165,7 +170,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[t]\frametitle{Learning targets}
+\begin{frame}[c]\frametitle{Learning targets}
     
 After this course...
 \begin{itemize}
@@ -189,7 +194,7 @@ After this course...
     \begin{itemize}
         \item \textbf{Input}: Data input from keyboard, files, internet, etc...
         \item \textbf{Output}: Processed data is displayed or saved to a file
-        \item \textbf{Algorithms:}
+        \item \textbf{Algorithms}:
         \begin{itemize}
             \item \textbf{Assignment}: Values are assigned to variables
             \item \textbf{Conditional execution}: Statements are executed only if certain
@@ -208,11 +213,11 @@ After this course...
     {
     % \lstset
     \begin{lstlisting}[language=Java]
-        public class HelloWorld {
-            public static void main(String args[]) {
-                System.out.println("Hello World");
-            }
-        }
+public class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Hello World");
+    }
+}
     \end{lstlisting}    
     }
     \end{block}
@@ -221,18 +226,18 @@ After this course...
     {
     % \lstset
     \begin{lstlisting}[language=C++, morekeywords=include]
-        #include <iostream>
-        int main() {
-            std::cout << "Hello World\n";
-            return 0;
-        }
+#include <iostream>
+int main() {
+    std::cout << "Hello World\n";
+    return 0;
+}
     \end{lstlisting}    
     }
     \end{block}
     \framebreak
     \begin{block}{Python}
         \begin{lstlisting}
-            print("Hello World")
+print("Hello World")
         \end{lstlisting}
     \end{block}
     
@@ -312,7 +317,7 @@ main:
 \subsection{Types, Variables, Expressions, Operators, Comments} % (fold)
 \label{sub:Types_variables_expressions_operators_comments}
 
-\begin{frame}[c]\frametitle{Types, Variables, Expressions, Operators, Comments}
+\begin{frame}[c]\frametitle{Data Types, Variables, Expressions, Operators, Comments}
 \begin{block}{Types}
     \begin{itemize}
         \item Numbers
@@ -442,7 +447,7 @@ print(name) # Prints Philipp
 
 % subsection values_variables_expressions_operators_comments (end)
 
-\subsection{Functions} % (fold)
+\subsection{Functions: def} % (fold)
 \label{sub:functions}
 \begin{frame}[c, fragile,allowframebreaks]\frametitle{Functions}
 \begin{itemize}
@@ -546,7 +551,7 @@ print("Fourth Line")
 \end{itemize}
 \begin{lstlisting}
 def line_separator():
-print('------------------------------')
+    print('------------------------------')
 \end{lstlisting}
 
 
@@ -591,7 +596,7 @@ print_sum(10,5)
     \end{itemize}
     \begin{lstlisting}
 def concatenation(param1, param2):
-    concat = part1 + part2
+    concat = param1 + param2
     print(concat)
 
 concatenation("Hello", "World")
@@ -684,7 +689,7 @@ def say_hello():
 \end{frame}
 % subsection naming_conventions_&_debugging (end)
 
-\subsection{Conditionals} % (fold)
+\subsection{Conditionals: if/else/elif} % (fold)
 \label{sub:conditionals}
 
 \begin{frame}[c,fragile, allowframebreaks]\frametitle{Conditionals}
@@ -880,7 +885,7 @@ True& True& True& True
 
 \end{frame}
 % subsection conditionals (end)
-\subsection{Functions with Return Values} % (fold)
+\subsection{Functions with Return Values: return} % (fold)
 \label{sub:functions_with_return_values}
 \begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
 \begin{itemize}
@@ -974,14 +979,14 @@ Solve exercise 3
 Solve exercise 4
 \end{frame}
 
-\begin{frame}[t, fragile]\frametitle{Exercise 5}
+\begin{frame}[c, fragile]\frametitle{Exercise 5}
 Solve exercise 5
 \end{frame}
 }
 
 % subsection functions_with_return_values (end)
 
-\subsection{Lists} % (fold)
+\subsection{Lists: []} % (fold)
 \label{sub:lists}
 
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{Lists}
@@ -1235,7 +1240,7 @@ del(list_b[1:5])
 \end{lstlisting}
 
 \end{frame}
-
+\subsection{Immutables: Tuples () and Strings}
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{Tuples}
 
 \bblock{Tuples is an immutable sequence data type}{
@@ -1281,7 +1286,7 @@ greeting[0] = 'J'
 
 % subsection lists (end)
 
-\subsection{Iteration} % (fold)
+\subsection{Iteration: for/while} % (fold)
 \label{sub:iteration}
 
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{Iterations}
@@ -1358,10 +1363,7 @@ while index < len(names):
 \bfseries
 \begin{frame}[c, fragile]\frametitle{Exercise 6}
     
-\begin{itemize}
-    \item Write a function \texttt{calc\_sum(numbers)} which expects a list of numbers as input and returns their sum
-    \item The method should be called as follows \texttt{calc\_sum([4,6,7])}
-\end{itemize}
+Solve exercise 6
 \end{frame}
 
 }
@@ -1374,10 +1376,7 @@ while index < len(names):
 \bfseries
 \begin{frame}[c, fragile]\frametitle{Exercise 7}
     
-\begin{itemize}
-    \item Write a function \texttt{print\_reverse(text)} which expects a string as an argument and prints every character of the string in reverse order
-    \item Use a while loop to do this
-\end{itemize}
+Solve exercise 7
 \end{frame}
 
 }
@@ -1411,7 +1410,7 @@ Solve exercise 8
 
 % subsection iteration (end)
 
-\subsection{Dictionaries} % (fold)
+\subsection{Dictionaries: \{\}} % (fold)
 \label{sub:dictionaries}
 
 \begin{frame}[c, allowframebreaks, fragile]\frametitle{Dictionaries}
@@ -1699,7 +1698,7 @@ print(my_dict)
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 12}
+\begin{frame}[c, fragile]\frametitle{Exercise 12}
 Solve exercise 12
 \end{frame}
 }
