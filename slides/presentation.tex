@@ -1432,8 +1432,8 @@ Solve exercise 8
 
 \begin{lstlisting}
 eng2sp = {}
-eng2sp['one'] = 'uno'
-eng2sp['two'] = 'dos'
+eng2sp['one'] = 'eins'
+eng2sp['two'] = 'zwei'
 \end{lstlisting}
 
 \begin{itemize}
@@ -1635,8 +1635,9 @@ file = open('my_file.txt', 'r')
 
 \begin{lstlisting}
 file = open('my_file.txt', 'a')
-file.write('Das ist eine Linie\n')
-file.write('Das ist eine neue Linie\n')
+file.write('First line of the write operation')
+file.write('This is a line with a new-line character at the end\n')
+file.write('This is another line, on a new-line below the previous one.\n')
 file.close()
 \end{lstlisting}
 
@@ -1670,7 +1671,7 @@ file.close()
 
 \begin{lstlisting}
 import json
-my_dict = {'one': 'uno', 'two': 'dos'}
+my_dict = {'one': 'eins', 'two': 'zwei'}
 my_dict_as_string = json.dumps(my_dict)
 print(my_dict_as_string)    
 \end{lstlisting}
@@ -1684,8 +1685,8 @@ print(my_dict_as_string)
 }
 
 \begin{lstlisting}
-import json
-my_dict_as_string = '{"two": "dos", "one": "uno"}'
+import son
+my_dict_as_string = '{"two": "zwei", "one": "eins"}'
 my_dict = json.loads(my_dict_as_string)
 print(my_dict)
 \end{lstlisting}
