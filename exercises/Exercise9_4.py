@@ -25,3 +25,5 @@ for (name, grade) in grade_dict.items():
 
 avg /= len(grade_dict)
 print('Average: ' + str(avg))
+
+print('Average: ' + str(sum(list(grade_dict.values()))/len(grade_dict)))
