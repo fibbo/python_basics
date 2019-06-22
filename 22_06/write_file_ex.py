@@ -1,0 +1,5 @@
+file_handle = open('text_file.txt', 'w')
+file_handle.write('First line of the write operation')
+file_handle.write('This is a line with a new-line character at the end\n\n\n\n')
+file_handle.write('This is another line, on a new-line below the previous one.\n')
+file_handle.close()
