@@ -2,7 +2,7 @@ def print_dictionary(some_dict):
     try:
         for key, value in some_dict.items():
             print("Key: {} : Value {}".format(key, value))
-    except AttributeError as e:
+    except AttributeError:
         print("Caught AttributeError: argument is not a dictionary")
 
 

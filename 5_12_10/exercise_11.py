@@ -1,4 +1,5 @@
 import random
+import math
 
 target = int(input("Please enter the number the computer has to guess: "))
 
@@ -15,8 +16,8 @@ while True:
         break
     elif guess > target:
         upper_bound = guess
-        guess -= int((upper_bound - lower_bound) / 2 )
+        guess -= math.ceil((upper_bound - lower_bound) / 2 )
     else:
         lower_bound = guess
-        guess += int((upper_bound - lower_bound) / 2 + 1)
+        guess += math.ceil((upper_bound - lower_bound) / 2 )
     counter += 1

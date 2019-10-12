@@ -2,6 +2,10 @@ import json
 
 address_book = {}
 
+# try/except blocks.
+# When one of the functions inside the try block throws an exception
+# it will be caught in the except block.
+# You can also specifically except errors: Read more here https://docs.python.org/3/tutorial/errors.html
 try:
     file = open('address_book.txt', 'r')
     address_book = json.load(file)
