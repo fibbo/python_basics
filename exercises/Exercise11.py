@@ -1,4 +1,5 @@
 import random
+import math
 
 lower_bound = 1
 upper_bound = 101
@@ -15,8 +16,8 @@ while True:
         break
     elif target_number < guess:
         upper_bound = guess
-        guess -= int((guess - lower_bound)/2)
+        guess -= math.ceil((guess - lower_bound)/2)
     else:
         lower_bound = guess
-        guess += int((upper_bound - guess)/2)
+        guess += math.ceil((upper_bound - guess)/2)
     counter += 1
