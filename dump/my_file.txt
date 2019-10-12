@@ -1,0 +1,6 @@
+First line of the write operationThis is a line with a new line character at the end
+This is another line, on a new line below the previous one.
+First line of the write operation This is a line with a new line character at the end
+This is another line, on a new line below the previous one.
+First line of the write operation This is a line with a new line character at the end
+This is another line, on a new line below the previous one.
