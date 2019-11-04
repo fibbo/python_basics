@@ -375,7 +375,7 @@ main:
         \item Declaration
         \begin{lstlisting}
 salutation = "Hello"
-name = "Dennis Reynolds"
+name = "Monty Python"
 pi = 3.14159
         \end{lstlisting}
         \item Usage
@@ -403,7 +403,7 @@ a = 2
 print(a+2)
 
 salutation = "Hello"
-name = "Dennis Reynolds"
+name = "Monty Python"
 print(salutation + " " + name)
     \end{lstlisting}
 \end{block}
@@ -415,7 +415,7 @@ print(salutation + " " + name)
         \item ()
         \item **
         \item unary + -
-        \item *  /  \%
+        \item *  /  \% //
         \item binary + -
         \item \texttt{<}, \texttt{>}, \texttt{<=}, \texttt{>=}, \texttt{!=}, \texttt{==}
         \item \textbf{\texttt{\color{mDarkBlue}not}}
@@ -460,6 +460,7 @@ print(name) # Some name is used inside the print function
     \item Functions can (and often do) also return a result
     \begin{itemize}
         \item \lstinline!return! statement
+        \item If a function has no explicit return statement it implicitly returns \lstinline!None!
     \end{itemize}
 \end{itemize}
 
@@ -504,9 +505,9 @@ int(a+5) # = 6
     \begin{lstlisting}
 import math
 log_res = math.log(17.0)
-sin_res = math.sin(45)
-angle = 20
-x = math.cos(20*math.pi/180))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary      
+sin_res = math.sin(45) # does this return the correct result?
+
+x = math.cos(math.radians(20))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary      
     \end{lstlisting}
     \begin{itemize}
         \item \tiny \url{http://docs.python.org/library/math.html}
