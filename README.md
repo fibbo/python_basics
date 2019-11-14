@@ -12,7 +12,7 @@ Instead of working with 6 arguments per function we create a class called Point3
 
 #### Excercise 9 ####
 
-Similarly exercise 9 also makes use of a class. This time the class is called student.
+Similarly exercise 9 also makes use of a class. This time the class is called `Student`.
 
 To read more about classes click [here](https://docs.python.org/3/tutorial/classes.html)
 
