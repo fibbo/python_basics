@@ -1,7 +1,7 @@
 import math
 
 
-class Point(object):
+class Point3D(object):
     # when creating a point we can either pass the coordinates
     # or just create a new point without any coordinates and they
     # will be set to 0
@@ -11,7 +11,7 @@ class Point(object):
         self.z = z
 
     # defining a __str__ function we can control the behaviour when
-    # we call print on our Point objects
+    # we call print on our Point3D objects
     def __str__(self):
         return "x: {} \t y: {} \t z: {}".format(self.x, self.y, self.z)
 
@@ -36,7 +36,7 @@ x2 = int(input('Point 2 x-coordinate: '))
 y2 = int(input('Point 2 y-coordinate: '))
 z2 = int(input('Point 2 z-coordinate: '))
 
-p1 = Point(x1, y1, z1)
-p2 = Point(x2, y2, z2)
+p1 = Point3D(x1, y1, z1)
+p2 = Point3D(x2, y2, z2)
 
 print(volume_from_points(p1, p2))
