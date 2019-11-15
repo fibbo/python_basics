@@ -2,6 +2,8 @@
 
 To download the solutions click the green button `Clone or download` where you have the option to either download a zip file with all the contents that you see here or you can also clone the repository.
 
+![where to click](media/download.png)
+
 This is the repository for the programming course offered by the ITC of the University of Zurich. The solutions to the exercises can be found inside the `solutions` folder. The presentation and the exercise itself can be found inside the `slides` folder.
 
 For some of the exercises there are slight variations available:
