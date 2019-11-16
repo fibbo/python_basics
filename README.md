@@ -23,6 +23,7 @@ To read more about classes click [here](https://docs.python.org/3/tutorial/class
 The folder custom exercises contains (yet) undocumented python code. If you are interested in plotting data check out `Simple_Plot.py`. In order to run this example you have to install `numpy` and `matplotlib`. For this open a terminal and type the following:
 
 `python -m pip install numpy`
+
 `python -m pip install matplotlib`
 
 Afterwards you should be able to run this plotting example.
