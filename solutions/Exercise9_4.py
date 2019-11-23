@@ -8,10 +8,10 @@ max_points = int(input('Enter maximum score\n'))
 grade_dict = {}
 
 while True:
-    name = input('Enter the name\n')
+    name = input('Enter the name or type exit to quit: ')
     if name == 'exit':
         break
-    points = input('Enter points\n')
+    points = input('Enter points: ')
     grade_dict[name] = calculate_mark(points, max_points)
 
 avg = 0
@@ -24,6 +24,6 @@ for (name, grade) in grade_dict.items():
         print('{} has failed with {}'.format(name, grade))
 
 avg /= len(grade_dict)
-print('Average: ' + str(avg))
+print('Average: {}'.format(avg))
 
-print('Average: ' + str(sum(list(grade_dict.values()))/len(grade_dict)))
+print('Average: {}'.format(str(sum(list(grade_dict.values()))/len(grade_dict))))
