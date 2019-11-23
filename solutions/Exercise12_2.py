@@ -1,9 +1,12 @@
 import json
 
-address_book_file = open("address_book.txt", "r")
-address_book = json.load(address_book_file)
-address_book_file.close()
+address_book = {}
 
+try:
+    with open('address_book.txt', 'r') as address_book_file:
+        address_book = json.load(address_book_file)
+except FileNotFoundError:
+    print('address_book.txt does not exist')
 
 def insert_person():
     name = input("Pleas enter a name: ")

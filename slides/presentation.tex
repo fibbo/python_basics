@@ -930,7 +930,7 @@ my_circle_area = area(8)
 
 \bblock{\lb{Boolean return values}}{
     \begin{itemize}
-        \item The functions can return a boolean vlaue (True, False)
+        \item The functions can return a boolean value (True, False)
         \item The function name should be formulated as a yes/no question
     \end{itemize}
 }
@@ -1134,8 +1134,8 @@ message
 
 \begin{lstlisting}
 names = ['Anna', 'Tom', 'Ralph', 'Peter']
-nNames = len(names)
-print(names[nNames])
+n_names = len(names)
+print(names[n_names])
 # IndexError: list index out of range
 \end{lstlisting}
 
@@ -1597,14 +1597,13 @@ Solve exercise 11
     \begin{itemize}
         \item Open file
         \item Do something with the file
-        \item Close the file
+        \item Close the file - depending on syntax done automatically.
     \end{itemize}
 }
 
 \begin{lstlisting}
-file = open('my_file.txt', 'mode')
-# do some stuff
-file.close()
+with open('my_file.txt', 'mode') as file:
+    # do some stuff
 \end{lstlisting}
 
 \framebreak
@@ -1622,7 +1621,8 @@ file.close()
 
 \begin{lstlisting}
 # open a file in read/write mode
-file = open('my_file.txt', 'r')
+with open('my_file.txt', 'r') as file:
+    # do some stuff
 \end{lstlisting}
 
 \framebreak
@@ -1635,11 +1635,10 @@ file = open('my_file.txt', 'r')
 }
 
 \begin{lstlisting}
-file = open('my_file.txt', 'a')
-file.write('First line of the write operation')
-file.write('This is a line with a new-line character at the end\n')
-file.write('This is another line, on a new-line below the previous one.\n')
-file.close()
+with open('my_file.txt', 'a') as file:
+    file.write('First line of the write operation')
+    file.write('This is a line with a new-line character at the end\n')
+    file.write('This is another line, on a new-line below the previous one.\n')
 \end{lstlisting}
 
 \framebreak
@@ -1652,11 +1651,10 @@ file.close()
 }
 
 \begin{lstlisting}
-file = open('my_file.txt', 'r')
-for line in file:
-    line = line.strip()
-    print line
-file.close()
+with open('my_file.txt', 'r') as file:
+    for line in file:
+        line = line.strip()
+        print(line)
 \end{lstlisting}
 \end{frame}
 
