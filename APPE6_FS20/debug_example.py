@@ -10,7 +10,7 @@ def add_two(number):
 
 
 def multiply_by_two(number):
-    res = number * 3 # Error in this line
+    res = number * 3  # Error in this line
     return res
 
 

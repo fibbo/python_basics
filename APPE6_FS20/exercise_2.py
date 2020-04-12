@@ -1,5 +1,6 @@
 import math
 
+
 def distance(x1, y1, z1, x2, y2, z2):
     delta_x = x2 - x1
     delta_y = y2 - y1
