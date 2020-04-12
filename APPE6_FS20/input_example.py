@@ -1,12 +1,12 @@
-answer = input('Please enter a number: ')
+answer = None
 
-try:
-    answer = int(answer)
-except:
-    print('error')
+while True:
+    try:
+        answer = int(input('Please enter a number: '))
+        break
+    except ValueError:
+        print('incorrect input')
 
 
-# if answer == 'yes':
-#     print('great')
-# else:
-#     print('too bad')
+# Now we got an input that is an int
+print('{} was an integer'.format(answer))

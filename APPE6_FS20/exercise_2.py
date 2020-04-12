@@ -11,9 +11,10 @@ def distance(x1, y1, z1, x2, y2, z2):
     distance = math.sqrt(sum_of_deltas)
     return distance
 
+
 def distance2(x1, y1, z1, x2, y2, z2):
     # Calculate distance between two 3D points
-    return math.sqrt( (x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2)
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2)
 
 
 # Solution exercise 3

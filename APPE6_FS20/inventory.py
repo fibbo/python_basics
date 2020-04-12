@@ -5,10 +5,7 @@ def add_to_inventory(inventory, product, number):
         inventory[product] = number
 
 
-inventory = {
-'apples': 200,
-'bananas': 120,
-}
+inventory = {'apples': 200, 'bananas': 120}
 
 if 'apples' in inventory:
     inventory['apples'] += 100

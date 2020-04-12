@@ -8,6 +8,3 @@ print(type(my_dict_as_string))
 
 with open('json.txt', 'w') as file:
     file.write(my_dict_as_string)
-
-
-    

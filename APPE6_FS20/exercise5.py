@@ -12,11 +12,10 @@ def is_between2(x, y, z):
 
 
 def is_between3(x, y, z):
-    return x <= y <= z # True -> return True // False -> return False
+    return x <= y <= z  # True -> return True // False -> return False
 
 
+print(is_between3(1, 2, 3))
+print(is_between3(1, 1, 1))
 
-print(is_between3(1,2,3))
-print(is_between3(1,1,1))
-
-print(is_between3(1,0,3))
+print(is_between3(1, 0, 3))

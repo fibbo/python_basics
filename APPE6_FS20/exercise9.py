@@ -8,6 +8,7 @@ def proper_round(number):
         decimal_part = 0.0
     return int(number) + decimal_part
 
+
 def calculate_mark(points, max_points):
     # convert strings to numbers
     mark = float(points) * 5 / float(max_points) + 1
@@ -27,7 +28,7 @@ while True:
     if name == 'exit':
         break
     points = input('Please enter points scored: ')
-    
+
     print(calculate_mark(points, max_points))
 
     # For 9iii: Store the grade with the corresponding name

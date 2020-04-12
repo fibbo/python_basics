@@ -3,7 +3,7 @@
 #     name = names[index]
 #     print(name)
 #     index = index + 1
-#     
+
 
 def print_reverse(string):
     # print string in reverse
@@ -16,5 +16,6 @@ def print_reverse(string):
         index = index - 1
 
     print(reversed_string)
+
 
 print_reverse('Hello World')
