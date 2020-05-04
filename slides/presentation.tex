@@ -19,7 +19,7 @@
 
 \usepackage{fontspec}
 % \setmainfont{UbuntuMono}
-\newfontfamily\Bera{Bitstream Vera Sans Mono}[Scale=0.85]
+\newfontfamily\Bera{PragmataPro Mono Liga}[Scale=0.85]
 
 \definecolor{mDarkTeal}{HTML}{23373b}
 \definecolor{mLightBrown}{HTML}{EB811B}
@@ -235,6 +235,26 @@ int main() {
     }
     \end{block}
     \framebreak
+Or even worse:
+    \begin{block}{Machine Language}
+
+    Example of a low level language
+\begin{lstlisting}{language=assembly}
+.LC0:
+    .string "Hello world!"
+main:
+    push rbp
+    mov rbp, rsp
+    mov edi, OFFSET FLAT:.LC0
+    mov eax, 0
+    call printf
+    mov eax, 0
+    pop rbp
+    ret
+\end{lstlisting}
+
+\end{block}
+
     \begin{block}{Python}
         \begin{lstlisting}
 print("Hello World")
@@ -262,24 +282,6 @@ print("Hello World")
             \tiny Source: https://xkcd.com/353/
         \end{column}
     \end{columns}
-
-\end{frame}
-
-\begin{frame}[fragile]\frametitle{Assembly}
-    Example of a low level language
-\begin{lstlisting}{language=assembly}
-.LC0:
-    .string "Hello world!"
-main:
-    push rbp
-    mov rbp, rsp
-    mov edi, OFFSET FLAT:.LC0
-    mov eax, 0
-    call printf
-    mov eax, 0
-    pop rbp
-    ret
-\end{lstlisting}
 
 \end{frame}
 
@@ -446,6 +448,26 @@ print(name) # Prints Philipp
 \end{frame}
 
 % subsection values_variables_expressions_operators_comments (end)
+% \subsection*{Pretty Print - How to Print to Console in Python}
+
+
+\begin{frame}[c, fragile]\frametitle{How to Print to Console in Python}
+    Printing is useful to provide feedback to the user or sometimes to debug your program. Printing different data types
+    in the same print statement can be cumbersome.
+    \begin{itemize}
+        \item \texttt{print()} is the function to print something to console in python
+    \end{itemize}
+
+\begin{lstlisting}
+print('This prints just a string') 
+print(42)  # Just print a number
+print('Combining a string and a number: ' + str(42))
+print('Much cleaner way to print string and a number: {}'.format(42))
+\end{lstlisting}
+
+
+\end{frame}
+% subsection(pret)
 
 \subsection{Functions: def} % (fold)
 \label{sub:functions}
@@ -473,7 +495,16 @@ print(text_length) # Prints length of the string
     \end{lstlisting}
 \end{examples}
 \framebreak
+Sometimes it is necessary to convert a variable from one data type to another (if possible). If you 
+read data from a file into python, at first all the data is interpreted as strings even if your file only
+contains numbers.
+
+In order to do mathematical analysis on these numbers, they need to be converted to the appropriate nubmer type first.
 \begin{block}{Type conversions}
+
+
+\framebreak
+
 \begin{itemize}
     \item \lstinline!int('32')!: Converts a string that holds a number to an integer
     \item \lstinline!int('Hello')!: This doesn't work and it will throw a ValueError exception
@@ -486,7 +517,7 @@ print(text_length) # Prints length of the string
 a = 20
 b = 10
 res = a + b
-print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
+print("The sum of {} and {} is {}".format(a, b, res))
 \end{lstlisting}
 \end{examples}
 \end{block}
@@ -618,6 +649,82 @@ print(concat) # NameError: name 'concat' is not defined
 \end{block}
 \end{frame}
 % subsection functions (end)
+
+
+\subsection{Functions with Return Values: return} % (fold)
+\label{sub:functions_with_return_values}
+\begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
+\begin{itemize}
+    \item Some functions will return a value
+\end{itemize}
+
+\begin{lstlisting}
+# Python 3
+answer = input('Do you like Python?')
+
+# Python 2.7
+# answer = raw_input('Do you like Python?')
+\end{lstlisting}
+
+\begin{itemize}
+    \item Our previously defined functions have never returned anything, but only
+printed something out
+\end{itemize}
+\framebreak
+\bblock{\lb{return}}{
+    \begin{itemize}
+        \item Functions that return a value use the \lb{return} keyword
+    \end{itemize}
+}
+
+\begin{lstlisting}
+import math
+def area(radius):
+    result = math.pi * radius ** 2
+    return result
+
+print(area(10))
+my_circle_area = area(8)
+\end{lstlisting}
+
+\begin{itemize}
+    \item Functions can return any valid data type
+\end{itemize}
+
+\framebreak
+
+\bblock{\lb{Boolean return values}}{
+    \begin{itemize}
+        \item The functions can return a boolean value (True, False)
+        \item The function name should be formulated as a yes/no question
+    \end{itemize}
+}
+
+\begin{lstlisting}
+def is_divisible(x, y):
+    if x % y == 0:
+        return True
+    else:
+        return False
+\end{lstlisting}
+
+\framebreak
+
+\bblock{\lb{Boolean return values}}{
+    \begin{itemize}
+        \item The return value can be used in a condition
+    \end{itemize}
+}
+
+\begin{lstlisting}
+if is_divisible(x, y):
+    print(str(x) + ' is divisible by ' + str(y))
+else:
+    print(str(x) + ' is not divisible by ' + str(y))  
+\end{lstlisting}
+
+\end{frame}
+
 
 \subsection{Naming Conventions \& Debugging} % (fold)
 \label{sub:naming_conventions_&_debugging}
@@ -886,80 +993,6 @@ True& True& True& True
 
 \end{frame}
 % subsection conditionals (end)
-\subsection{Functions with Return Values: return} % (fold)
-\label{sub:functions_with_return_values}
-\begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
-\begin{itemize}
-    \item Some functions will return a value
-\end{itemize}
-
-\begin{lstlisting}
-# Python 3
-answer = input('Do you like Python?')
-
-# Python 2.7
-# answer = raw_input('Do you like Python?')
-\end{lstlisting}
-
-\begin{itemize}
-    \item Our previously defined functions have never returned anything, but only
-printed something out
-\end{itemize}
-\framebreak
-\bblock{\lb{return}}{
-    \begin{itemize}
-        \item Functions that return a value use the \lb{return} keyword
-    \end{itemize}
-}
-
-\begin{lstlisting}
-import math
-def area(radius):
-    result = math.pi * radius ** 2
-    return result
-
-print(area(10))
-my_circle_area = area(8)
-\end{lstlisting}
-
-\begin{itemize}
-    \item Functions can return any valid data type
-\end{itemize}
-
-\framebreak
-
-\bblock{\lb{Boolean return values}}{
-    \begin{itemize}
-        \item The functions can return a boolean value (True, False)
-        \item The function name should be formulated as a yes/no question
-    \end{itemize}
-}
-
-\begin{lstlisting}
-def is_divisible(x, y):
-    if x % y == 0:
-        return True
-    else:
-        return False
-\end{lstlisting}
-
-\framebreak
-
-\bblock{\lb{Boolean return values}}{
-    \begin{itemize}
-        \item The return value can be used in a condition
-    \end{itemize}
-}
-
-\begin{lstlisting}
-if is_divisible(x, y):
-    print(str(x) + ' is divisible by ' + str(y))
-else:
-    print(str(x) + ' is not divisible by ' + str(y))  
-\end{lstlisting}
-
-\end{frame}
-
 {
 \setbeamercolor{background canvas}{bg=mLightBlue}
 \setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
