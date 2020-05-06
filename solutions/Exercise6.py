@@ -1,10 +1,14 @@
-def calc_sum(numbers):
-    counter = 0
-    total = 0
-    while counter < len(numbers):
-        total += numbers[counter]
-        counter += 1
-    return total
+def print_reverse(text):
+    index = len(text)-1
+    rev_string = ""
+    while index >= 0:
+        rev_string += text[index]
+        # end="" prevents a line break after a print
+        print(text[index], end="")
+        index -= 1
+
+    return rev_string
 
 
-print(calc_sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+string = input('String to reverse: ')
+print_reverse(string)

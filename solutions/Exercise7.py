@@ -1,14 +1,17 @@
-def print_reverse(text):
-    index = len(text)-1
-    rev_string = ""
-    while index >= 0:
-        rev_string += text[index]
-        # end="" prevents a line break after a print
-        print(text[index], end="")
-        index -= 1
+def fizz_buzz(numbers):
+    index = 0
+    while index < len(numbers):
+        output = ''
+        if numbers[index] % 3 == 0:
+            output += 'Fizz'
+        if numbers[index] % 5 == 0:
+            output += 'Buzz'
+        if output != '':
+            print(output)
+        else:
+            print(numbers[index])
+        index += 1
 
-    return rev_string
 
-
-string = input('String to reverse: ')
-print_reverse(string)
+numbers = list(range(101))
+fizz_buzz(numbers)
