@@ -8,6 +8,7 @@ try:
 except FileNotFoundError:
     print('address_book.txt does not exist')
 
+
 def insert_person():
     name = input("Pleas enter a name: ")
     phone_number = input("Please enter a phone number: ")
