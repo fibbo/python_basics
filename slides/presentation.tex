@@ -208,6 +208,28 @@ After this course...
 \end{block}     
 \end{frame}
 
+\begin{frame}[c]\frametitle{Why Python?}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+           \begin{itemize}
+                \item High-level programming language
+                \item "Simple" syntax
+                \item Cross-platform
+                \item Interpreted (no compilation or linking needed)
+                % \item Object-oriented
+                \item Many libraries available
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+            \begin{figure}
+                \includegraphics[width=0.9\linewidth]{pics/python.png}
+            \end{figure}
+            \tiny Source: https://xkcd.com/353/
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
 \begin{frame}[fragile,c,allowframebreaks]\frametitle{Examples: Hello World}
     \begin{block}{Java}
     {
@@ -263,28 +285,6 @@ print("Hello World")
     
 \end{frame}
 
-\begin{frame}[c]\frametitle{Why Python?}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-           \begin{itemize}
-                \item High-level programming language
-                \item "Simple" syntax
-                \item Cross-platform
-                \item Interpreted (no compilation or linking needed)
-                \item Object-oriented
-                \item Many libraries available
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.5\textwidth}  %%<--- here
-            \begin{figure}
-                \includegraphics[width=0.9\linewidth]{pics/python.png}
-            \end{figure}
-            \tiny Source: https://xkcd.com/353/
-        \end{column}
-    \end{columns}
-
-\end{frame}
-
 \begin{frame}[fragile,c]\frametitle{How to Run Python Code}
 
 \begin{block}{Options to run Python code:}
@@ -322,18 +322,13 @@ print("Hello World")
 \begin{frame}[c]\frametitle{Data Types, Variables, Expressions, Operators, Comments}
 \begin{block}{Types}
     \begin{itemize}
-        \item Numbers
+        \item Numbers (Integers, Floats)
         \begin{itemize}
             \item 2
             \item 1000000
             \item -2
             \item 3.2
             \item 1.3333333
-        \end{itemize}
-        \item Strings (Text)
-        \begin{itemize}
-            \item {\color{blue}'Hello World'}
-            \item {\color{red}"Hello World"}
         \end{itemize}
     \end{itemize}
 \end{block}
@@ -343,6 +338,11 @@ print("Hello World")
 \begin{frame}[c]\frametitle{Data Types}
     \begin{block}{Strings}
     \begin{itemize}
+        \item Strings (Text)
+        \begin{itemize}
+            \item {\color{blue}'Hello World'}
+            \item {\color{red}"Hello World"}
+        \end{itemize}
         \item {\color{blue} 'Single quotes'} or {\color{red} "double quotes"} can be used to declare them
         \begin{itemize}
             \item 'Hello World'
@@ -389,6 +389,8 @@ print(name)
     \end{examples}
 \framebreak
 \begin{block}{Keywords - reserved words}
+
+You cannot name a variable with these names as they are protected by the language.
 
 \begin{lstlisting}
 and, assert, break, class, continue, def, del, elif, else, except, exec, 
@@ -651,7 +653,7 @@ print(concat) # NameError: name 'concat' is not defined
 % subsection functions (end)
 
 
-\subsection{Functions with Return Values: return} % (fold)
+\subsection{User Functions with Return Values: return} % (fold)
 \label{sub:functions_with_return_values}
 \begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
 \begin{itemize}
@@ -718,9 +720,9 @@ def is_divisible(x, y):
 
 \begin{lstlisting}
 if is_divisible(x, y):
-    print(str(x) + ' is divisible by ' + str(y))
+    print('{} is divisible by {}'.format(x, y))
 else:
-    print(str(x) + ' is not divisible by ' + str(y))  
+    print('{} is not divisible by {}'.format(x, y))
 \end{lstlisting}
 
 \end{frame}
@@ -835,7 +837,7 @@ def say_hello():
 \begin{lstlisting}
 x = 10
 if x > 0:
-    print(str(x) + ' is positive')
+    print('{} is positive'.format(x))
 if True:
     # This statement will always be executed
     print('Yes')
@@ -855,9 +857,9 @@ if False:
 
 \begin{lstlisting}
 if x == 0:
-    print(str(x) + ' is zero')
+    print('x is zero')
 else:
-    print(str(x) + ' is not zero')
+    print('x is not zero')
 \end{lstlisting}
 
 \framebreak
@@ -870,9 +872,9 @@ else:
 \begin{lstlisting}
 def print_parity(x):
     if x % 2 == 0:
-        print(str(x) + ' is even')
+        print('The number is even')
     else:
-        print(str(x) + ' is odd')
+        print('The number is odd')
 
 print_parity(2)
 print_parity(3)
@@ -894,11 +896,11 @@ print_parity(3)
 \begin{examples}
     \begin{lstlisting}
 if x < y:
-    print(str(x) + ' is less than ' + str(y))
+    print('{} is less than {}'.format(x, y))
 elif x > y:
-    print(str(x) + ' is greater than ' + str(y))
+    print('{} is greater than {}'.format(x, y))
 else:
-    print(str(x) + ' and ' + str(y) + ' are equal')
+    print('{} and {} are equal'.format(x, y))
 \end{lstlisting}
 \begin{lstlisting}
 # Python 3
@@ -1289,7 +1291,7 @@ tuple = ('a', 'b', 'c', 'd', 'e')
 \end{lstlisting}
 
 \begin{itemize}
-    \item Tuples containing only one element must have a comma at the end of the definition
+    \item Tuples containing only one element (singleton) must have a comma at the end of the definition
 \end{itemize}
 \begin{lstlisting}
 tuple = ('a', )

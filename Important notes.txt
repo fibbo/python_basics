@@ -1,0 +1,2 @@
+1.) Create a new file for EACH exercise (unless stated otherwise) or topic
+2.) Always check IDE for red squiggly lines -> There is something wrong with your code (don't forget to save after you changed something)
