@@ -1,0 +1,15 @@
+3: First line in my text file
+3: Second line in my text file
+3: Third line
+0: First line in my text file
+0: Second line in my text file
+0: Third line
+1: First line in my text file
+1: Second line in my text file
+1: Third line
+2: First line in my text file
+2: Second line in my text file
+2: Third line
+3: First line in my text file
+3: Second line in my text file
+3: Third line

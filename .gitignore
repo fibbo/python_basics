@@ -326,3 +326,6 @@ pythonkurs.sublime-workspace
 .vscode/settings.json
 README.html
 settings.json
+
+*.exe
+tasks.json
