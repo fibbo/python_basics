@@ -1,18 +1,13 @@
 import math
 
-def proper_round(number):
-    decimal_part = number - int(number)
-    if decimal_part >= 0.75:
-        decimal_part = 1
-    elif decimal_part >= 0.25:
-        decimal_part = 0.5
-    else:
-        decimal_part = 0.0
-    return int(number) + decimal_part 
+def round_to(n, precision):
+    correction = 0.5 if n >= 0 else -0.5
+    return int(n / precision + correction) * precision
+
 
 def calculate_mark(points, max_points):
     mark = float(points) * 5.0 / float(max_points) + 1
-    return proper_round(mark)
+    return round_to(mark, 0.5)
 
 class Student:
     def __init__(self, id, name):
@@ -24,17 +19,17 @@ class Student:
 
 id = 0
 
-max_points = input('Enter maximum score\n')
+max_points = input('Enter maximum score: ')
 
 grade_dict = {}
 
 while True:
-    name = input('Enter the name\n')
+    name = input('Enter the name: ')
     if name == 'exit':
         break
     student = Student(id, name)
     id += 1
-    points = input('Enter points\n')
+    points = input('Enter points: ')
     grade_dict[student] = calculate_mark(points, max_points)
 
 
