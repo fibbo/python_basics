@@ -1,0 +1,35 @@
+Sample text>
+
+śṛṇudhvamṛṣayaḥ sarve yathāvat parameṣṭhinaḥ  /<BR>
+vakṣyāmīśasya māhātmyaṃ yattadvedavido viduḥ  // KūrmP_2,6.1 //<BR>
+sarvalokaikanirmātā sarvalokaikarakṣitā  /<BR>
+sarvalokaikasaṃhartā sarvātmāhaṃ sanātanaḥ  // KūrmP_2,6.2 //<BR>
+sarveṣāmeva vastūnāmantaryāmī pitā hyaham  /<BR>
+madhye cāntaḥ sthitaṃ sarvaṃ nāhaṃ sarvatra saṃsthitaḥ  // KūrmP_2,6.3 //<BR>
+bhavadbhiradbhutaṃ dṛṣṭaṃ yatsvarūpaṃ tu māmakam  /<BR>
+mamaiṣā hyupamā viprā māyayā darśitā mayā  // KūrmP_2,6.4 //<BR>
+sarveṣāmeva bhāvānāmantarā samavasthitaḥ  /<BR>
+prerayāmi jagat kṛtsnaṃ kriyāśāktiriyaṃ mama  // KūrmP_2,6.5 //<BR>
+yayedaṃ ceṣṭate viśvaṃ tatsvabhāvānuvarti ca  /<BR>
+so 'haṃ kālo jagat kṛtsnaṃ prerayāmi kalātmakam  // KūrmP_2,6.6 //<BR>
+ekāṃśena jagat kṛtsnaṃ karomi munipuṅgavāḥ  /<BR>
+saṃharāmyekarūpeṇa dvidhāvasthā mamaiva tu  // KūrmP_2,6.7 //<BR>
+ādimadhyāntanirmukto māyātattvapravartakaḥ  /<BR>
+kṣobhayāmi ca sargādau pradhānapuruṣāvubhau  // KūrmP_2,6.8 //<BR>
+tābhyāṃ saṃjāyate viśvaṃ saṃyuktābhyāṃ parasparam  /<BR>
+mahadādikrameṇaiva mama tejo vijṛmbhate  // KūrmP_2,6.9 //<BR>
+yo hi sarvajagatsākṣī kālacakrapravartakaḥ  /<BR>
+hiraṇyagarbho mārtaṇḍaḥ so 'pi maddehasaṃbhavaḥ  // KūrmP_2,6.10 //<BR>
+tasmai divyaṃ svamaiśvaryaṃ jñānayogaṃ sanātanam  /<BR>
+dattavānātmajān vedān kalpādau caturo dvijāḥ  // KūrmP_2,6.11 //<BR>
+
+the format I want is>
+
+śṛṇudhvamṛṣayaḥ sarve yathāvat parameṣṭhinaḥ  KP.2.6.1.1
+vakṣyāmīśasya māhātmyaṃ yattadvedavido viduḥ  KP.2.6.1.2
+sarvalokaikanirmātā sarvalokaikarakṣitā  KP.2.6.2.1
+sarvalokaikasaṃhartā sarvātmāhaṃ sanātanaḥ  KP.2.6.2.2
+
+etc
+
+many thanks for any tips!
