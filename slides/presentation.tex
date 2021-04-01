@@ -74,21 +74,12 @@
 
 
 % \usecolortheme{spruce}
-\AtBeginSection[]
-{
-  \begin{frame}
-    \frametitle{\currentname}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
-
 \AtBeginSubsection[]
 {
   {
-  % \setbeamercolor{background canvas}{bg=mLighterGrey}
+%   \setbeamercolor{background canvas}{bg=mLighterGrey}
   \begin{frame}
-    \frametitle{\currentname}
-    \tableofcontents[currentsubsection]
+    \centering\bfseries\Large\currentname
   \end{frame}
   }
 }
@@ -113,7 +104,6 @@
 \begin{frame}{Table of Contents}
     \tableofcontents
 \end{frame}
-
 \section{General Introduction}
 \begin{frame}
 \frametitle{About me}
@@ -140,11 +130,11 @@
 
 \begin{block}{Email}
 \begin{itemize}
-    \item[] philipp.gloor@gmail.com
+    \item[] philipp.gloor@protonmail.com
 \end{itemize}
     
 \end{block}
- 
+
 % In this slide, some important text will be
 % \alert{highlighted} beause it's important.
 % Please, don't abuse it.
@@ -196,13 +186,12 @@ After this course...
         \item \textbf{Output}: Processed data is displayed or saved to a file
         \item \textbf{Algorithms}:
         \begin{itemize}
-            \item \textbf{Assignment}: Values are assigned to variables
-            \item \textbf{Conditional execution}: Statements are executed only if certain
-            conditions are fulfilled
-            \item \textbf{Loops}: Repeating statement or group of statements
+            \item \textbf{Variables}
+            \item \textbf{Conditional execution}
+            \item \textbf{Loops}
         \end{itemize}
         
-        \item \textbf{Libraries}: Using existing implementations (can do anything of the above)
+        \item \textbf{Libraries}: Using existing implementations (can do anything of the above) (e.g. numpy, tensorflow, opencv)
     \end{itemize}
 
 \end{block}     
@@ -231,6 +220,7 @@ After this course...
 \end{frame}
 
 \begin{frame}[fragile,c,allowframebreaks]\frametitle{Examples: Hello World}
+High level languages but not trivial to learn:
     \begin{block}{Java}
     {
     % \lstset
@@ -308,6 +298,7 @@ print("Hello World")
         \item JetBrains PyCharm - Community Edition available for free \url{http://jetbrains.com/pycharm/download}
         \item Eclipse with pydev - \url{http://pydev.org}
     \end{itemize}
+    \item It takes time to get proficient using an IDE
 \end{itemize}
 \end{frame}
 
@@ -402,9 +393,10 @@ print, raise, return, try, while, yield
 \framebreak
 \begin{block}{Variables and values can be combined}
     \begin{lstlisting}
-print(2+2)
-a = 2
-print(a+2)
+a = 3
+b = 8.3
+c = a + b
+print(c)
 
 salutation = "Hello"
 name = "Monty Python"
@@ -462,9 +454,10 @@ print(name) # Prints Philipp
 
 \begin{lstlisting}
 print('This prints just a string') 
-print(42)  # Just print a number
-print('Combining a string and a number: ' + str(42))
-print('Much cleaner way to print string and a number: {}'.format(42))
+answer = 42
+print(answer)  # Just print a number
+print('Combining a string and a number: ' + answer) # -> TypeError
+print(f'Much cleaner way to print string and a number: {answer}')
 \end{lstlisting}
 
 
@@ -474,14 +467,13 @@ print('Much cleaner way to print string and a number: {}'.format(42))
 \subsection{Functions: def} % (fold)
 \label{sub:functions}
 \begin{frame}[c, fragile,allowframebreaks]\frametitle{Functions}
+Function are self contained modules of code that accomplish a specific task. They usually "accept" input data and "return" a result.
 \begin{itemize}
-    \item \lstinline!print()! is a function that you have already used
-    \item A function can take arguments which can be used inside the function
     \begin{lstlisting}
 name = "Some name"
-print(name) # Some name is used inside the print function
+print(name) # Some name is used inside the print function -> the print function accepts the input and prints it to the console
     \end{lstlisting}
-    \item Functions can (and often do) also return a result
+    \item Functions can (and often do) also return a result (but the print function does not)
     \begin{itemize}
         \item \lstinline!return! statement
         \item If a function has no explicit return statement it implicitly returns \lstinline!None!
@@ -519,13 +511,17 @@ In order to do mathematical analysis on these numbers, they need to be converted
 a = 20
 b = 10
 res = a + b
-print("The sum of {} and {} is {}".format(a, b, res))
+print(f"The sum of {a} and {b} is {res}")
 \end{lstlisting}
 \end{examples}
 \end{block}
+\end{frame}
 
-\framebreak
+\begin{frame}[c]\frametitle{Built-In Functions}
+    \url{https://docs.python.org/3/library/functions.html}
+\end{frame}
 
+\begin{frame}[c, fragile]\frametitle{Functions, First Library}
 \begin{block}{Rounding}
     \begin{lstlisting}
 a = 1.888
@@ -546,9 +542,9 @@ x = math.cos(math.radians(20))  # cos/sin etc take radians as arguments -> conve
         \item \tiny \url{http://docs.python.org/library/math.html}
     \end{itemize}
 \end{block}
+\end{frame}
 
-\framebreak
-
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{User Defined Functions}
 \begin{block}{User-defined functions}
     \begin{itemize}
         \item A function encapsulates some functionality
@@ -720,9 +716,9 @@ def is_divisible(x, y):
 
 \begin{lstlisting}
 if is_divisible(x, y):
-    print('{} is divisible by {}'.format(x, y))
+    print(f'{x} is divisible by {y}')
 else:
-    print('{} is not divisible by {}'.format(x, y))
+    print(f'{x} is not divisible by {y}')
 \end{lstlisting}
 
 \end{frame}
@@ -837,7 +833,7 @@ def say_hello():
 \begin{lstlisting}
 x = 10
 if x > 0:
-    print('{} is positive'.format(x))
+    print(f'{x} is positive')
 if True:
     # This statement will always be executed
     print('Yes')
@@ -896,11 +892,11 @@ print_parity(3)
 \begin{examples}
     \begin{lstlisting}
 if x < y:
-    print('{} is less than {}'.format(x, y))
+    print(f'{x} is less than {y}')
 elif x > y:
-    print('{} is greater than {}'.format(x, y))
+    print(f'{x} is greater than {y}')
 else:
-    print('{} and {} are equal'.format(x, y))
+    print(f'{x} and {y} are equal')
 \end{lstlisting}
 \begin{lstlisting}
 # Python 3
