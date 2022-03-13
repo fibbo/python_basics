@@ -345,7 +345,7 @@ print("Hello World")
     \end{itemize}
   \end{block}
   \framebreak
-  \begin{block}{\texttt{None} Type}
+  \begin{block}{None Type}
     \texttt{None} is a special type (in other languages also sometimes called \texttt{null} or \texttt{nullptr}).
     Sometimes it is necessary to indicate that something \textit{is not there} and this can be indicated by using \texttt{None}.
   \end{block}
@@ -474,7 +474,8 @@ print(f'Much cleaner way to print string and a number: {answer}')
 
 \subsection{Functions in Python} % (fold)
 \label{sub:functions}
-\begin{frame}[c, fragile,allowframebreaks]\frametitle{Functions}
+\begin{frame}[c, fragile,allowframebreaks]
+  \frametitle{Functions}
   Function are self contained modules of code that accomplish a specific task. They usually "accept" input data and "return" a result.
   \begin{itemize}
     \begin{lstlisting}
@@ -496,8 +497,10 @@ text_length = len(text) # This function returns the length of the text
 print(text_length) # Prints length of the string
   \end{lstlisting}
   \end{examples}
-  \framebreak
-  \frametitle{The \lstinline!input! function}
+\end{frame}
+
+\begin{frame}[c, fragile,allowframebreaks]
+  \frametitle{Type Conversions}
 
   Assume you want to program a calculator.
   In order to do this the user needs to be able to input his numbers and the program should be able to read this.
@@ -514,7 +517,6 @@ print(a + b) # Something is wrong here
 
 
   \framebreak
-  \frametitle{Type Conversions}
   Sometimes it is necessary to convert a variable from one data type to another (if possible). If you
   read data from a file into python, at first all the data is interpreted as strings even if your file only
   contains numbers.
