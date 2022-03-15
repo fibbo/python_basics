@@ -3,10 +3,10 @@ import json
 address_book = {}
 
 try:
-    with open('address_book.txt', 'r') as address_book_file:
+    with open("address_book.txt", "r") as address_book_file:
         address_book = json.load(address_book_file)
 except FileNotFoundError:
-    print('address_book.txt does not exist')
+    print("address_book.txt does not exist")
 
 
 def insert_person():
@@ -26,7 +26,7 @@ def search_person():
 def remove_person():
     name = input("Please provide the name of the person you want to remove: ")
     if name in address_book:
-        del (address_book[name])
+        del address_book[name]
         print("Successfully removed " + name)
     else:
         print("Person not found")

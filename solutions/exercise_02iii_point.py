@@ -26,15 +26,15 @@ def distance(p1, p2):
 
 
 def volume_from_radius(radius):
-    return 4.0/3 * math.pi * radius**3
+    return 4.0 / 3 * math.pi * radius ** 3
 
 
-x1 = int(input('Point 1 x-coordinate: '))
-y1 = int(input('Point 1 y-coordinate: '))
-z1 = int(input('Point 1 z-coordinate: '))
-x2 = int(input('Point 2 x-coordinate: '))
-y2 = int(input('Point 2 y-coordinate: '))
-z2 = int(input('Point 2 z-coordinate: '))
+x1 = int(input("Point 1 x-coordinate: "))
+y1 = int(input("Point 1 y-coordinate: "))
+z1 = int(input("Point 1 z-coordinate: "))
+x2 = int(input("Point 2 x-coordinate: "))
+y2 = int(input("Point 2 y-coordinate: "))
+z2 = int(input("Point 2 z-coordinate: "))
 
 p1 = Point3D(x1, y1, z1)
 p2 = Point3D(x2, y2, z2)

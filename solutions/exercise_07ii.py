@@ -17,12 +17,12 @@ def calculate_mark(points, max_points):
     return proper_round(mark)
 
 
-max_points = int(input('Enter maximum score\n'))
+max_points = int(input("Enter maximum score\n"))
 
 while True:
-    name = input('Enter the name\n')
-    if name == 'exit':
+    name = input("Enter the name\n")
+    if name == "exit":
         break
-    points = input('Enter points\n')
+    points = input("Enter points\n")
 
     print(calculate_mark(points, max_points))

@@ -1,5 +1,5 @@
 def print_reverse(text):
-    index = len(text)-1
+    index = len(text) - 1
     rev_string = ""
     while index >= 0:
         rev_string += text[index]
@@ -10,5 +10,5 @@ def print_reverse(text):
     return rev_string
 
 
-string = input('String to reverse: ')
+string = input("String to reverse: ")
 print_reverse(string)

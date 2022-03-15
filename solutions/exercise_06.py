@@ -6,4 +6,4 @@ def count_words(words, min_word_length):
     return counter
 
 
-print(count_words(['Emanuel', 'John', 'Ale'], 4))
+print(count_words(["Emanuel", "John", "Ale"], 4))

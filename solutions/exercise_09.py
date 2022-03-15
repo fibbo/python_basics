@@ -9,15 +9,15 @@ target_number = int(input("Please enter your target number\n"))
 
 guess = random.randrange(1, 101)
 while True:
-    print('Guessed number: {}'.format(guess))
+    print("Guessed number: {}".format(guess))
     if guess == target_number:
-        print('The number is {}'.format(guess))
-        print('It took me {} rounds.'.format(counter))
+        print("The number is {}".format(guess))
+        print("It took me {} rounds.".format(counter))
         break
     elif target_number < guess:
         upper_bound = guess
-        guess -= math.ceil((guess - lower_bound)/2)
+        guess -= math.ceil((guess - lower_bound) / 2)
     else:
         lower_bound = guess
-        guess += math.ceil((upper_bound - guess)/2)
+        guess += math.ceil((upper_bound - guess) / 2)
     counter += 1
