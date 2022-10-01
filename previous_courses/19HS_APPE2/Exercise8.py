@@ -8,6 +8,6 @@ def count_words(words, min_word_length):
     print("Found {} words: {}".format(count, matches))
 
 
-cities = ['Hamburg', 'New York', 'Zurich', 'Tokyo']
+cities = ["Hamburg", "New York", "Zurich", "Tokyo"]
 
 count_words(cities, 7)

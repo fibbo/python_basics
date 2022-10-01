@@ -1,13 +1,13 @@
 inventory = {}
 
-item = 'bananas'
+item = "bananas"
 
 
 inventory[item] = 200
-inventory['apples'] = 340
+inventory["apples"] = 340
 
 for product, number in inventory.items():
-    print('There are {} {} in stock'.format(number, product))
+    print("There are {} {} in stock".format(number, product))
 
 for product in inventory.keys():
     print(product)

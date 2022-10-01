@@ -1,13 +1,13 @@
 def SayHello():
-  print("Hello")
+    print("Hello")
+
 
 def sayBye():
-  print("Bye")
+    print("Bye")
 
 
-SayHello() # Pascal Case
-sayBye() # camelCase
+SayHello()  # Pascal Case
+sayBye()  # camelCase
 
 
-
-print(3/0)
+print(3 / 0)

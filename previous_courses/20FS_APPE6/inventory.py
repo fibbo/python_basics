@@ -5,14 +5,14 @@ def add_to_inventory(inventory, product, number):
         inventory[product] = number
 
 
-inventory = {'apples': 200, 'bananas': 120}
+inventory = {"apples": 200, "bananas": 120}
 
-if 'apples' in inventory:
-    inventory['apples'] += 100
+if "apples" in inventory:
+    inventory["apples"] += 100
 else:
-    inventory['apples'] = 100
+    inventory["apples"] = 100
 
-add_to_inventory(inventory, 'cherries', 1200)
+add_to_inventory(inventory, "cherries", 1200)
 
 for fruit, stored_amount in inventory.items():
-    print('{}: {} in store'.format(fruit, stored_amount))
+    print("{}: {} in store".format(fruit, stored_amount))

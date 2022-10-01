@@ -395,8 +395,8 @@ print(c)
 
 salutation = "Hello"
 name = "Monty Python"
-print(salutation + " " + name)
-  \end{lstlisting}
+print(salutation + " " + name) # Keep this printing syntax in mind
+    \end{lstlisting}
   \end{block}
   \framebreak
   \begin{block}{Keywords - reserved words}
@@ -529,12 +529,15 @@ print(a + b) # Something is wrong here
     \item \lstinline!str(32)!: Converts a number to a string
   \end{itemize}
 
+  Thanks to the f-string there is at least one need less to use explicitly converison functions:
   \begin{examples}
     \begin{lstlisting}
 a = 20
 b = 10
 res = a + b
 print(f"The sum of {a} and {b} is {res}")
+# used to look like this:
+print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
 \end{lstlisting}
   \end{examples}
 \end{frame}
@@ -543,32 +546,39 @@ print(f"The sum of {a} and {b} is {res}")
   \url{https://docs.python.org/3/library/functions.html}
 \end{frame}
 
-\begin{frame}[c, fragile]\frametitle{Functions, First Library}
-  \begin{block}{Rounding}
-    \begin{lstlisting}
-a = 1.888
-int(a) # = 1
-int(round(a)) # = 2
-int(a+5) # = 6
-    \end{lstlisting}
-  \end{block}
-  \begin{block}{Math functions \& First glance at a library}
-    \begin{lstlisting}
+\begin{frame}[t, fragile]\frametitle{Functions, First Library}
+  \begin{onlyenv}<1>
+    \begin{block}{Library import}
+      \begin{lstlisting}
 import math
 log_res = math.log(17.0)
-sin_res = math.sin(45) # does this return the correct result?
-
-x = math.cos(math.radians(20))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary
+sin_res = math.sin(45) # ??
   \end{lstlisting}
-    \begin{itemize}
-      \item \tiny \url{http://docs.python.org/library/math.html}
-    \end{itemize}
-  \end{block}
+    \end{block}
+  \end{onlyenv}
+
+  \begin{onlyenv}<2>
+    \begin{block}{Library import}
+      \begin{lstlisting}
+import math
+log_res = math.log(17.0)
+sin_res = math.sin(45) # WRONG (well, not really, but not what we want)
+
+sin_res = math.sin(math.radians(45))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary
+  \end{lstlisting}
+    \end{block}
+  \end{onlyenv}
+
+  \begin{itemize}
+    \item \tiny \url{http://docs.python.org/library/math.html}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{User Defined Functions}
   \begin{block}{User-defined functions}
     \begin{itemize}
+      \item A function encapsulates some functionality
+      \item Reduces complexity
       \item A function encapsulates some functionality
       \item Reduces complexity
             \begin{lstlisting}

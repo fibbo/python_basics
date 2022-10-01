@@ -1,5 +1,5 @@
-a= input("enter a")
-b= input("enter b")
+a = input("enter a")
+b = input("enter b")
 
 print("resultis: ")
-print(a+ b)
+print(a + b)

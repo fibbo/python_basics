@@ -1,4 +1,3 @@
-
 class BusyState:
     def __init__(self):
         self.is_drawing = False
@@ -32,7 +31,7 @@ def set_saving(saving):
 
 
 def isBusy():
-    if (is_saving or is_drawing):
+    if is_saving or is_drawing:
         print("We are busy")
     else:
         print("Not busy")

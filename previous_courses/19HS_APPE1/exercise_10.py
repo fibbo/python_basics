@@ -1,5 +1,6 @@
 import random
 
+
 def RunGame():
     target = random.randrange(1, 101)
 
@@ -21,7 +22,7 @@ RunGame()
 
 while True:
     answer = input("Do you want to play again? ")
-    if answer == 'yes':
+    if answer == "yes":
         RunGame()
     else:
         break

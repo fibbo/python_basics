@@ -15,19 +15,19 @@ def calculate_mark(points, max_points):
     return proper_round(mark)
 
 
-max_points = input('Please enter maximum possible points: ')
+max_points = input("Please enter maximum possible points: ")
 
-# for 9iii: Dictionary for the grades. 
+# for 9iii: Dictionary for the grades.
 # Keys are names, values are the grades
 grades = {}
 
 while True:
     # For 9iii: Also ask for name, do the exit check on the name
     # instead on the points. It makes the program flow better
-    name = input('Please enter the name or type exit to quit: ')
-    if name == 'exit':
+    name = input("Please enter the name or type exit to quit: ")
+    if name == "exit":
         break
-    points = input('Please enter points scored: ')
+    points = input("Please enter points scored: ")
 
     print(calculate_mark(points, max_points))
 
@@ -43,11 +43,11 @@ for student, grade in grades.items():
     sum_of_grades += grade
     # For 9iv:
     if grade >= 4:
-        print('{} has passed with grade {}'.format(student, grade))
+        print("{} has passed with grade {}".format(student, grade))
     else:
-        print('{} has failed with grade {}'.format(student, grade))
+        print("{} has failed with grade {}".format(student, grade))
 
-print('The average grade is {}'.format(sum_of_grades/len(grades)))
+print("The average grade is {}".format(sum_of_grades / len(grades)))
 
-average_grade = sum(grades.values())/len(grades)
-print('The average grade is {}'.format(average_grade))
+average_grade = sum(grades.values()) / len(grades)
+print("The average grade is {}".format(average_grade))

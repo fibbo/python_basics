@@ -7,7 +7,7 @@ def compare(x, y):
         print(0)
 
 
-number_1 = input('Please enter x: ')
-number_2 = input('Please enter y: ')
+number_1 = input("Please enter x: ")
+number_2 = input("Please enter y: ")
 
 compare(number_1, number_2)

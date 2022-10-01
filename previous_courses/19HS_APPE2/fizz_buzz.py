@@ -1,10 +1,10 @@
 def fizz_buzz(number):
     if number % 15 == 0:
-        print('FizzBuzz')
+        print("FizzBuzz")
     elif number % 5 == 0:
-        print('Buzz')
+        print("Buzz")
     elif number % 3 == 0:
-        print('Fizz')
+        print("Fizz")
     else:
         print(number)
 

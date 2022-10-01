@@ -18,4 +18,3 @@ while True:
         print("Your guess is too high")
 
     counter += 1
-    

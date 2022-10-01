@@ -1,7 +1,7 @@
-names = ['Anna','Tom','Ralph','Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
 n_names = len(names)
 # print(names[n_names])
-#IndexError:listindexoutofrange
+# IndexError:listindexoutofrange
 
 numbers = list(range(10))
 

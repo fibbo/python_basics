@@ -1,10 +1,9 @@
-
 value = int(input("Please enter a number: "))
 
 if value > 5:
-  print(f'{value} is greater than 5')
+    print(f"{value} is greater than 5")
 elif value > 10:
-  print(f'{value} is greater than 10')
+    print(f"{value} is greater than 10")
 
 
 # if value > 10:

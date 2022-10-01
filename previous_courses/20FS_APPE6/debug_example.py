@@ -1,7 +1,7 @@
-'''
+"""
 Example to show a simple debug sessions
 
-'''
+"""
 
 
 def add_two(number):

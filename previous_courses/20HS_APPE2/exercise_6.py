@@ -1,6 +1,6 @@
 def reverse_string(text):
     index = len(text) - 1
-    reversed_string = ''
+    reversed_string = ""
     while index >= 0:
         # reversed_string = reversed_string + text[index]
         reversed_string += text[index]
@@ -10,5 +10,4 @@ def reverse_string(text):
     print(reversed_string)
 
 
-
-reverse_string('Hello World')
+reverse_string("Hello World")

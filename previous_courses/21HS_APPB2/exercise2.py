@@ -14,7 +14,7 @@ def distance(x1, y1, z1, x2, y2, z2):
 
 
 def volume_from_radius(radius):
-    volume = 4 * math.pi / 3 * radius ** 3
+    volume = 4 * math.pi / 3 * radius**3
     return volume
 
 

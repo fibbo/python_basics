@@ -12,7 +12,7 @@
 # list_of_numbers = list(range(100))
 # calculate_mean(list_of_numbers)
 
-cities = ['Paris', 'New York']
+cities = ["Paris", "New York"]
 
 word_lengths = [len(city) for city in cities if len(city) > 5]
 

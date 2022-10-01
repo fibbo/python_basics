@@ -11,14 +11,15 @@ def distance(px1, py1, pz1, px2, py2, pz2):
 
 
 def volume_from_radius(radius):
-    return 4.0 / 3 * math.pi * radius ** 3
+    return 4.0 / 3 * math.pi * radius**3
 
 
-x1 = int(input("Point 1 x-cord: "))
-y1 = int(input("Point 1 y-cord: "))
-z1 = int(input("Point 1 z-cord: "))
-x2 = int(input("Point 2 x-cord: "))
-y2 = int(input("Point 2 y-cord: "))
-z2 = int(input("Point 2 z-cord: "))
+x1 = int(input("Center: x-coordinate: "))
+y1 = int(input("Center: y-coordinate: "))
+z1 = int(input("Center: z-coordinate: "))
+
+x2 = int(input("Surface point x-coordinate: "))
+y2 = int(input("Surface Point y-coordinate: "))
+z2 = int(input("Surface Point z-coordinate: "))
 
 print(volume_from_points(x1, y1, z1, x2, y2, z2))

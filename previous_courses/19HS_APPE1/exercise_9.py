@@ -3,11 +3,11 @@ def calculate_mark(points, max_points):
 
     # rounded_mark = round(2 * mark) / 2
     decimal = mark - int(mark)
-    if decimal >= .25:
+    if decimal >= 0.25:
         mark = int(mark) + 0.5
     else:
         mark = int(mark)
-    
+
     return mark
 
 
@@ -17,7 +17,7 @@ grades_dict = {}
 
 while True:
     name = input("Please enter the student's name or type exit to quit: ")
-    if name == 'exit':
+    if name == "exit":
         break
 
     points = input("Please enter the score of the student: ")
@@ -27,8 +27,8 @@ while True:
 
 for name, grade in grades_dict.items():
     if grade >= 4:
-        print('{} has passed with grade {}'.format(name, grade))
+        print("{} has passed with grade {}".format(name, grade))
     else:
-        print('{} has failed with grade {}'.format(name, grade))
+        print("{} has failed with grade {}".format(name, grade))
 
-print(sum(grades_dict.values())/len(grades_dict))
+print(sum(grades_dict.values()) / len(grades_dict))

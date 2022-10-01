@@ -7,19 +7,20 @@ def play_game():
     counter = 1
 
     while True:
-        guess = int(input('Please guess the number: '))
+        guess = int(input("Please guess the number: "))
         if guess == target:
-            print(f'Great job, it took you {counter} tries')
+            print(f"Great job, it took you {counter} tries")
             break
 
         if guess < target:
-            print('Guess higher')
+            print("Guess higher")
         elif guess > target:
-            print('Guess lower')
-        
+            print("Guess lower")
+
         counter += 1
+
 
 while True:
     play_game()
-    if input('Want to play again? ') != 'yes':
+    if input("Want to play again? ") != "yes":
         break

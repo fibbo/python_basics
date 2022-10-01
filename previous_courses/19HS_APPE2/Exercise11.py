@@ -15,7 +15,7 @@ while True:
         break
     if random_guess > target:
         upper_bound = random_guess
-    else: #random_guess < target
+    else:  # random_guess < target
         lower_bound = random_guess + 1
 
     counter += 1

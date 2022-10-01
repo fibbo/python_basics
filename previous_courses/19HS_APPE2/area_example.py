@@ -1,7 +1,9 @@
 import math
+
+
 def area(radius):
-    result = math.pi * radius ** 2
+    result = math.pi * radius**2
     return result
 
-print(area(10) + area(20))
 
+print(area(10) + area(20))

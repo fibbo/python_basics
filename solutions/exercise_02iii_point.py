@@ -26,7 +26,7 @@ def distance(p1, p2):
 
 
 def volume_from_radius(radius):
-    return 4.0 / 3 * math.pi * radius ** 3
+    return 4.0 / 3 * math.pi * radius**3
 
 
 x1 = int(input("Point 1 x-coordinate: "))

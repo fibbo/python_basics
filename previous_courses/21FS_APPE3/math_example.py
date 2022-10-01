@@ -1,6 +1,7 @@
 import math
+
 log_res = math.log(math.e)
-sin_res = math.sin(math.radians(90)) # does this return the correct result?
+sin_res = math.sin(math.radians(90))  # does this return the correct result?
 
 print(math.sin(0))
 

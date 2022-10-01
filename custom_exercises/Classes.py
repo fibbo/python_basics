@@ -1,10 +1,10 @@
-class Rectangle():
-    ''' This is the constructor for a rectangle
-            it takes for arguments where x1/y1 is the
-            lower left corner and x2/y2 is the upper
-            right corner. It also defines width and
-            height
-    '''
+class Rectangle:
+    """This is the constructor for a rectangle
+    it takes for arguments where x1/y1 is the
+    lower left corner and x2/y2 is the upper
+    right corner. It also defines width and
+    height
+    """
 
     def __init__(self, x1=0, y1=0, x2=0, y2=0):
         self.x1 = x1
@@ -15,15 +15,15 @@ class Rectangle():
         self.height = y2 - y1
 
     def Area(self):
-        '''
+        """
         Calculates the area of the rectangle
-        '''
-        return self.width*self.height
+        """
+        return self.width * self.height
 
     def contains_point(self, x1, y1):
-        '''
+        """
         Returns true if point x1/y1 is within the rectangle, false otherwise
-        '''
+        """
         return (self.x1 <= x1 and x1 <= self.x2) and (self.y1 <= y1 and y1 <= self.y2)
 
 

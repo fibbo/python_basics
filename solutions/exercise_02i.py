@@ -12,12 +12,12 @@ def distance(px1, py1, pz1, px2, py2, pz2):
 print("Point 1 is the center of a sphere, point 2 is lies somewhere on the sphere")
 print("Calculate the volume of the sphere")
 
-x1 = int(input("Center: x-coordinate\n"))
-y1 = int(input("Center: y-coordinate\n"))
-z1 = int(input("Center: z-coordinate\n"))
+x1 = int(input("Center: x-coordinate: "))
+y1 = int(input("Center: y-coordinate: "))
+z1 = int(input("Center: z-coordinate: "))
 
-x2 = int(input("Point 2 x-coordinate\n"))
-y2 = int(input("Point 2 y-coordinate\n"))
-z2 = int(input("Point 2 z-coordinate\n"))
+x2 = int(input("Surface point x-coordinate: "))
+y2 = int(input("Surface Point y-coordinate: "))
+z2 = int(input("Surface Point z-coordinate: "))
 
 print(distance(x1, y1, z1, x2, y2, z2))

@@ -7,4 +7,5 @@ def fizz_buzz():
         elif i % 3 == 0:
             print("{} Fizz".format(i))
 
+
 fizz_buzz()

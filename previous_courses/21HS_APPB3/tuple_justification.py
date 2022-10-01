@@ -3,7 +3,7 @@ import math
 
 def get_circle_properties(radius):
     circumference = 2 * math.pi * radius
-    area = math.pi * radius ** 2
+    area = math.pi * radius**2
     return circumference, area, radius
 
 

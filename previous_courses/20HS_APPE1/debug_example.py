@@ -2,9 +2,11 @@ def add_two(value):
     result = value + 2
     return result
 
+
 def multiply_by_two(value):
     result = value * 3
     return result
+
 
 def divide_by_two(value):
     result = value / 2

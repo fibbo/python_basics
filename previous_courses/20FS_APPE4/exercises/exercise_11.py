@@ -1,7 +1,7 @@
 import random
 
 
-target_number = int(input('Enter the target number: '))
+target_number = int(input("Enter the target number: "))
 
 
 counter = 1
@@ -13,7 +13,7 @@ while True:
     guess = random.randrange(lower_bound, upper_bound)
 
     if guess == target_number:
-        print('Computer found the target number in {}'.format(counter))
+        print("Computer found the target number in {}".format(counter))
         break
 
     if guess > target_number:

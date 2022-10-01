@@ -1,7 +1,7 @@
 import random
 
 
-target = random.randrange(1,101)
+target = random.randrange(1, 101)
 
 
 number_of_guesses = 1
@@ -23,15 +23,14 @@ number_of_guesses = 1
 guess = -1
 
 while guess != target:
-    guess = int(input('Please enter your guess: '))
-
+    guess = int(input("Please enter your guess: "))
 
     if guess > target:
-        print('Your guess is too high')
+        print("Your guess is too high")
     elif guess < target:
-        print('Your guess is too low')
+        print("Your guess is too low")
 
     if guess == target:
-        print(f'You got it! It took you {number_of_guesses} tries')
+        print(f"You got it! It took you {number_of_guesses} tries")
 
     number_of_guesses += 1

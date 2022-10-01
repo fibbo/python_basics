@@ -2,7 +2,7 @@ import math
 
 
 def get_circle_data(radius):
-    area = math.pi * radius ** 2
+    area = math.pi * radius**2
     circumference = 2 * math.pi * radius
     return (area, circumference)
 

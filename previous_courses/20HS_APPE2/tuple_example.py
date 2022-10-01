@@ -1,6 +1,7 @@
 import math
 from math import radians
-a_tuple = (1, 2, 3, 'asdf', True)
+
+a_tuple = (1, 2, 3, "asdf", True)
 
 
 print(a_tuple)
@@ -16,8 +17,8 @@ print(a_tuple[-1])
 
 
 def circle_properties(radius):
-    area = math.pi*radius
-    circumeference = 2*math.pi*radius
+    area = math.pi * radius
+    circumeference = 2 * math.pi * radius
     return (area, circumeference)
 
 

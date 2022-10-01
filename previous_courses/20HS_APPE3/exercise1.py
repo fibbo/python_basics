@@ -7,11 +7,10 @@ def compare(x, y):
         return 0
 
 
-value_1 = int(input('Please enter x: '))
-value_2 = int(input('Please enter y: '))
+value_1 = int(input("Please enter x: "))
+value_2 = int(input("Please enter y: "))
 
 # print(compare(value_1, value_2))
-
 
 
 # def compare_number(x):
@@ -23,5 +22,5 @@ value_2 = int(input('Please enter y: '))
 
 # compare_number(7)
 
-value_1 = int(input('Please enter x: '))
-value_2 = int(input('please enter y: '))
+value_1 = int(input("Please enter x: "))
+value_2 = int(input("please enter y: "))

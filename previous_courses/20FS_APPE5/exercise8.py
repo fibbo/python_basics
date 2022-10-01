@@ -9,12 +9,11 @@ def count_words(words, min_word_length):
     return counter, matched_words
 
 
-names = ['Tom', 'Celina', 'Philipp', 'Maria', 'Ale']
+names = ["Tom", "Celina", "Philipp", "Maria", "Ale"]
 
 result = count_words(names, 5)
 
-print('I found {} words that matched the criteria'.format(result[0]))
-print('Words that matched the criteria: ')
+print("I found {} words that matched the criteria".format(result[0]))
+print("Words that matched the criteria: ")
 for word in result[1]:
     print(word)
-

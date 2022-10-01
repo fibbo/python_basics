@@ -1,25 +1,26 @@
 def calculate_mark(points, max_points):
-  mark = float(points) * 5 / float(max_points) + 1
-  return mark
+    mark = float(points) * 5 / float(max_points) + 1
+    return mark
 
-max_points = input('Please enter the maximum score possible: ')
+
+max_points = input("Please enter the maximum score possible: ")
 
 student_grades = {}
 
 while True:
-  name = input('Please enter the student\'s name or type exit to quit: ')
-  if name == 'exit':
-    break
+    name = input("Please enter the student's name or type exit to quit: ")
+    if name == "exit":
+        break
 
-  points = input('Please enter the points scored: ')
-  
-  calculated_mark = calculate_mark(points, max_points)
-  if not name in student_grades:
-    student_grades[name] = []
+    points = input("Please enter the points scored: ")
 
-  student_grades[name].append(calculated_mark)
+    calculated_mark = calculate_mark(points, max_points)
+    if not name in student_grades:
+        student_grades[name] = []
 
-  print(calculated_mark)
+    student_grades[name].append(calculated_mark)
+
+    print(calculated_mark)
 
 print(student_grades)
 # sum_of_grades = 0

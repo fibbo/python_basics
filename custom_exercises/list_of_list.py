@@ -3,11 +3,11 @@ import math
 
 
 def distance(x1, y1, x2, y2):
-    return math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
 
 def volume_from_radius(radius):
-    return 4/3*math.pi*radius**3
+    return 4 / 3 * math.pi * radius**3
 
 
 def volume_from_distance(x1, y1, x2, y2):
@@ -21,7 +21,7 @@ parent_list = list()
 for x in range(20):
     sub_list = []
     for y in range(4):
-        sub_list.append(random.random()*10-5)
+        sub_list.append(random.random() * 10 - 5)
     parent_list.append(sub_list)
 
 # # Example with "list comprehension"

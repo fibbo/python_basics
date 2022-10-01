@@ -16,8 +16,8 @@ while True:
         break
     elif guess > target:
         upper_bound = guess
-        guess -= math.ceil((upper_bound - lower_bound) / 2 )
+        guess -= math.ceil((upper_bound - lower_bound) / 2)
     else:
         lower_bound = guess
-        guess += math.ceil((upper_bound - lower_bound) / 2 )
+        guess += math.ceil((upper_bound - lower_bound) / 2)
     counter += 1

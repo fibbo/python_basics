@@ -6,7 +6,8 @@ def compare(x, y):
     else:
         print(0)
 
-first_number = input('Please enter first number: ')
-second_number = input('Please enter second number: ')
+
+first_number = input("Please enter first number: ")
+second_number = input("Please enter second number: ")
 
 compare(first_number, second_number)

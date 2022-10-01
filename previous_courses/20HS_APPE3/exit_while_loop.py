@@ -6,10 +6,8 @@ for number in numbers:
     print(number)
 
 while True:
-    answer = input('Do you like python? ')
-    if answer == 'yes':
+    answer = input("Do you like python? ")
+    if answer == "yes":
         break
     else:
-        print('wrong answer')
-
-
+        print("wrong answer")

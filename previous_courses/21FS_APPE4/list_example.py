@@ -1,4 +1,4 @@
-numbers = [1, 2 , 5]
+numbers = [1, 2, 5]
 
 
 # range_of_numbers = list(range(1, 101))
@@ -22,10 +22,10 @@ numbers = [1, 2 , 5]
 
 # print(names)
 
-my_list = ['a' , 'b', 'c', 'd', 'e', 'f']
-print(my_list[2 : 3])
+my_list = ["a", "b", "c", "d", "e", "f"]
+print(my_list[2:3])
 
 
 hw_string = "Hello World"
 
-hw_string[0] = 'J'
+hw_string[0] = "J"

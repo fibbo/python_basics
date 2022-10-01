@@ -8,4 +8,4 @@ def count_words(words, min_word_length):
     print(number_of_words)
 
 
-count_words(['test', 'longtest', 'a'], 2)
+count_words(["test", "longtest", "a"], 2)

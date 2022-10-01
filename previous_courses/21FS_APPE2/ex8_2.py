@@ -9,5 +9,5 @@ def count_words(words_, min_word_length):
     print(words_over_length)
 
 
-words_ = ['Tom', 'Anna', 'Christopher']
+words_ = ["Tom", "Anna", "Christopher"]
 count_words(words_, 4)

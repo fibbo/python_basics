@@ -3,7 +3,7 @@ def compare(x, y):
         print(1)
     elif x == y:
         print(0)
-    elif y > x:   # else: is also fine
+    elif y > x:  # else: is also fine
         print(-1)
 
 

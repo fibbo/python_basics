@@ -4,7 +4,8 @@
 
 
 def test_function():
-  print('Test')
-  print('Test 1')
+    print("Test")
+    print("Test 1")
+
 
 test_function()

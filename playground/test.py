@@ -2,7 +2,8 @@ import math
 
 
 def distance(x1, y1, z1, x2, y2, z2):
-    return math.sqrt((x2 - x1)**2 + (y2 - y1)**2 + (z2 - z1)**2)
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2)
+
 
 p1x = int(input("Please enter x1: "))
 p1y = int(input("Please enter y1: "))

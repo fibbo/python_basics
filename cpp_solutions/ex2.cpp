@@ -9,7 +9,7 @@ double distance(double x1, double y1, double z1, double x2, double y2, double z2
 int main() {
     float px1, px2, py1, py2, pz1, pz2;
 
-    std::cout << "Please enter the two points:\n";
+    std::cout << "Please enter the two points: ";
     std::cin >> px1 >> py1 >> pz1 >> px2 >> py2 >> pz2;
 
     std::cout.precision(std::numeric_limits<double>::digits10);

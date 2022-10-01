@@ -2,7 +2,7 @@ import math
 import random
 
 
-target = int(input('Please enter target number (from 1 to 100): '))
+target = int(input("Please enter target number (from 1 to 100): "))
 
 
 number_of_guesses = 1
@@ -14,9 +14,8 @@ guess = random.randrange(1, 101)
 
 while True:
 
-
     if guess == target:
-        print(f'The computer got it in {number_of_guesses} tries')
+        print(f"The computer got it in {number_of_guesses} tries")
         break
 
     if guess > target:

@@ -1,12 +1,13 @@
 import random
 
 
-dna_alphabet = ['T', 'A', 'G', 'C']
+dna_alphabet = ["T", "A", "G", "C"]
+
 
 def generate_random_dna_sequence(length):
-    sequence = ''
+    sequence = ""
     for _ in list(range(length)):
-        sequence += dna_alphabet[random.randint(0,3)]
+        sequence += dna_alphabet[random.randint(0, 3)]
     return sequence
 
 

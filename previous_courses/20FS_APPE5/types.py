@@ -1,2 +1,2 @@
 print(type(42))
-print(type('Test'))
+print(type("Test"))

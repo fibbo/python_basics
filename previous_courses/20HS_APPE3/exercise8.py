@@ -6,6 +6,6 @@ def count_words(words, min_word_length):
     return count
 
 
-names = ['Emanuel', 'Peter', 'Philipp', 'Ana']
+names = ["Emanuel", "Peter", "Philipp", "Ana"]
 
 print(count_words(names, 6))

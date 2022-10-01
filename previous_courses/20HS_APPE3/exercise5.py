@@ -4,6 +4,7 @@ def is_between(x, y, z):
     else:
         return False
 
+
 def is_between2(x, y, z):
     if x <= y <= z:
         return True
@@ -12,6 +13,3 @@ def is_between2(x, y, z):
 
 def is_between3(x, y, z):
     return x <= y <= z
-
-
-
