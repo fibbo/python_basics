@@ -462,11 +462,11 @@ print(name) # Prints Philipp
   \end{itemize}
 
   \begin{lstlisting}
-print('This prints just a string')
+print("This prints just a string")
 answer = 42
 print(answer)  # Just print a number
-print('Combining a string and a number: ' + answer) # -> TypeError
-print(f'Much cleaner way to print string and a number: {answer}')
+print("Combining a string and a number: " + answer) # -> TypeError
+print(f"Much cleaner way to print string and a number: {answer}")
 \end{lstlisting}
 
 
@@ -508,11 +508,11 @@ print(text_length) # Prints length of the string
   Here comes the \lstinline!input! function into play.
 
   \begin{lstlisting}
-print('Add two numbers')
-a = input('Please enter the first number ')
-b = input('Please enter the second number ')
+print("Add two numbers")
+a = input("Please enter the first number ")
+b = input("Please enter the second number ")
 
-print('The result of the two numbers is: ')
+print("The result of the two numbers is: ")
 print(a + b) # Something is wrong here
 \end{lstlisting}
 
@@ -525,9 +525,9 @@ print(a + b) # Something is wrong here
   In order to do mathematical analysis on these numbers, they need to be converted to the appropriate number type first.
 
   \begin{itemize}
-    \item \lstinline!int('32')!: Converts a string that holds a number to an integer
-    \item \lstinline!int('Hello')!: This doesn't work and it will throw a ValueError exception
-    \item \lstinline!float('313.333')!: Converts a string that hold a number to a float
+    \item \lstinline!int("32")!: Converts a string that holds a number to an integer
+    \item \lstinline!int("Hello")!: This doesn't work and it will throw a ValueError exception
+    \item \lstinline!float("313.333")!: Converts a string that hold a number to a float
     \item \lstinline!str(32)!: Converts a number to a string
   \end{itemize}
 
@@ -599,7 +599,7 @@ def print_two_values(param1, param2):
   \begin{examples}
     \begin{lstlisting}
 def line_separator():
-  print('')
+  print("")
 
 print("First Line")
 line_separator()
@@ -615,7 +615,7 @@ print("Fourth Line")
   \end{itemize}
   \begin{lstlisting}
 def line_separator():
-  print('------------------------------')
+  print("------------------------------")
 \end{lstlisting}
 
 
@@ -692,10 +692,10 @@ print(concat) # NameError: name 'concat' is not defined
 
   \begin{lstlisting}
 # Python 3
-answer = input('Do you like Python?')
+answer = input("Do you like Python?")
 
 # Python 2.7
-# answer = raw_input('Do you like Python?')
+# answer = raw_input("Do you like Python?")
 \end{lstlisting}
 
   \begin{itemize}
@@ -734,11 +734,8 @@ my_circle_area = area(8)
 
   \begin{lstlisting}
 def is_divisible(x, y):
-  if x % y == 0:
-    return True
-  else:
-    return False
-\end{lstlisting}
+  return x % y == 0
+  \end{lstlisting}
 
   \framebreak
 
@@ -750,9 +747,9 @@ def is_divisible(x, y):
 
   \begin{lstlisting}
 if is_divisible(x, y):
-    print(f'{x} is divisible by {y}')
+    print(f"{x} is divisible by {y}")
 else:
-    print(f'{x} is not divisible by {y}')
+    print(f"{x} is not divisible by {y}")
 \end{lstlisting}
 
 \end{frame}
@@ -867,13 +864,13 @@ def say_hello():
     \begin{lstlisting}
 x = 10
 if x > 0:
-  print(f'{x} is positive')
+  print(f"{x} is positive")
 if True:
   # This statement will always be executed
-  print('Yes')
+  print("Yes")
 if False:
   # This statement will never be executed
-  print('No')
+  print("No")
 \end{lstlisting}
   }
   \framebreak
@@ -887,9 +884,9 @@ if False:
 
   \begin{lstlisting}
 if x == 0:
-  print('x is zero')
+  print("x is zero")
 else:
-  print('x is not zero')
+  print("x is not zero")
 \end{lstlisting}
 
   \framebreak
@@ -902,9 +899,9 @@ else:
   \begin{lstlisting}
 def print_parity(x):
   if x % 2 == 0:
-    print('The number is even')
+    print("The number is even")
   else:
-    print('The number is odd')
+    print("The number is odd")
 
 print_parity(2)
 print_parity(3)
@@ -926,21 +923,21 @@ print_parity(3)
   \begin{examples}
     \begin{lstlisting}
 if x < y:
-  print(f'{x} is less than {y}')
+  print(f"{x} is less than {y}")
 elif x > y:
-  print(f'{x} is greater than {y}')
+  print(f"{x} is greater than {y}")
 else:
-  print(f'{x} and {y} are equal')
+  print(f"{x} and {y} are equal")
 \end{lstlisting}
     \begin{lstlisting}
 # Python 3
-answer = input('Do you like Python?')
+answer = input("Do you like Python?")
 # Python 2.7
-# answer = raw_input('Do you like Python?')
-if answer == 'yes':
-  print('That is great!')
+# answer = raw_input("Do you like Python?")
+if answer == "yes":
+  print("That is great!")
 else:
-  print('That is disappointing!')
+  print("That is disappointing!")
 \end{lstlisting}
   \end{examples}
 \end{frame}
@@ -964,7 +961,7 @@ else:
     \begin{lstlisting}
 if x > 0:
   if x < 10:
-    print('x is a positive single digit')
+    print("x is a positive single digit")
 \end{lstlisting}
   \end{block}
   \begin{block}{\color{mLightBrown}and}
@@ -976,10 +973,10 @@ if x > 0:
   \begin{lstlisting}
 if x > 0:
   if x < 10:
-    print('x is a positive single digit')
+    print("x is a positive single digit")
 # is the same as
 if x > 0 and x < 10:
-  print('x is a positive single digit')
+  print("x is a positive single digit")
 \end{lstlisting}
 
 
@@ -1056,7 +1053,7 @@ else:
 
   \begin{lstlisting}
 list_a = [1, 2, 4]
-list_b = ['Monty', 'Python']
+list_b = ["Monty", "Python"]
 \end{lstlisting}
 
   \framebreak
@@ -1069,7 +1066,7 @@ list_b = ['Monty', 'Python']
 
   \begin{lstlisting}
 numbers = [10, 12, 14, 19]
-words = ['spam', 'bungee', 'swallow']
+words = ["spam", "bungee", "swallow"]
 \end{lstlisting}
 
   \begin{itemize}
@@ -1077,7 +1074,7 @@ words = ['spam', 'bungee', 'swallow']
   \end{itemize}
 
   \begin{lstlisting}
-my_list = ['music', 2000, 3.5, True]
+my_list = ["music", 2000, 3.5, True]
 \end{lstlisting}
 
   \framebreak
@@ -1136,7 +1133,7 @@ empty_list = []
   }
 
   \begin{lstlisting}
-names = ['Anna', 'Tom', 'Ralph', 'Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
 print(names[1])
 # prints Tom
 \end{lstlisting}
@@ -1162,7 +1159,7 @@ print(names[1])
   }
 
   \begin{lstlisting}
-names = ['Anna', 'Tom', 'Ralph', 'Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
 print(names[-1])
 # prints Peter
 \end{lstlisting}
@@ -1176,7 +1173,7 @@ print(names[-1])
   }
 
   \begin{lstlisting}
-names = ['Anna', 'Tom', 'Ralph', 'Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
 print(len(names))
 # prints 4
 \end{lstlisting}
@@ -1189,7 +1186,7 @@ print(len(names))
   }
 
   \begin{lstlisting}
-names = ['Anna', 'Tom', 'Ralph', 'Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
 n_names = len(names)
 print(names[n_names])
 # IndexError: list index out of range
@@ -1204,9 +1201,9 @@ print(names[n_names])
   }
 
   \begin{lstlisting}
-names = ['Anna', 'Tom', 'Ralph', 'Peter']
-names[0] = 'Alice'
-# ['Alice', 'Tom', 'Ralph', 'Peter']
+names = ["Anna", "Tom", "Ralph", "Peter"]
+names[0] = "Alice"
+# ["Alice", "Tom", "Ralph", "Peter"]
 \end{lstlisting}
 
   \framebreak
@@ -1250,9 +1247,9 @@ c = a + b
   }
 
   \begin{lstlisting}
-my_list = ['a', 'b', 'c', 'd', 'e', 'f']
+my_list = ["a", "b", "c", "d", "e", "f"]
 my_list[1:3]
-# ['b', 'c']
+# ["b", "c"]
 \end{lstlisting}
 
   \framebreak
@@ -1264,9 +1261,9 @@ my_list[1:3]
   }
 
   \begin{lstlisting}
-my_list = ['a', 'b', 'c', 'd', 'e', 'f']
+my_list = ["a", "b", "c", "d", "e", "f"]
 my_list[:4]
-# ['a', 'b', 'c', 'd']
+# ["a", "b", "c", "d"]
 \end{lstlisting}
 
   \begin{itemize}
@@ -1274,9 +1271,9 @@ my_list[:4]
   \end{itemize}
 
   \begin{lstlisting}
-my_list = ['a', 'b', 'c', 'd', 'e', 'f']
+my_list = ["a", "b", "c", "d", "e", "f"]
 my_list[3:]
-# ['d', 'e', 'f']
+# ["d", "e", "f"]
 \end{lstlisting}
 
   \framebreak
@@ -1288,12 +1285,12 @@ my_list[3:]
   }
 
   \begin{lstlisting}
-list_a = ['one', 'two', 'three']
+list_a = ["one", "two", "three"]
 del(list_a[1])
-# ['one', 'three']
-list_b = ['a', 'b', 'c', 'd', 'e', 'f']
+# ["one", "three"]
+list_b = ["a", "b", "c", "d", "e", "f"]
 del(list_b[1:5])
-# ['a', 'f']
+# ["a", "f"]
 \end{lstlisting}
 
 \end{frame}
@@ -1308,14 +1305,14 @@ del(list_b[1:5])
   }
 
   \begin{lstlisting}
-tuple = ('a', 'b', 'c', 'd', 'e')
+tuple = ("a", "b", "c", "d", "e")
 \end{lstlisting}
 
   \begin{itemize}
     \item Tuples containing only one element (singleton) must have a comma at the end of the definition
   \end{itemize}
   \begin{lstlisting}
-tuple = ('a', )
+tuple = ("a", )
 \end{lstlisting}
 
 \end{frame}
@@ -1331,8 +1328,8 @@ tuple = ('a', )
   }
 
   \begin{lstlisting}
-greeting = 'Hello, world!'
-greeting[0] = 'J'
+greeting = "Hello, world!"
+greeting[0] = "J"
 # TypeError: 'str' object does not support item assignment
 \end{lstlisting}
 
@@ -1403,7 +1400,7 @@ def sequence(n):
   }
 
   \begin{lstlisting}
-names = ['Tom', 'Anna', 'Christopher']
+names = ["Tom", "Anna", "Christopher"]
 index = 0
 while index < len(names):
   name = names[index]
@@ -1489,8 +1486,8 @@ for element in element_list:
 
   \begin{lstlisting}
 eng2de = {}
-eng2de['one'] = 'eins'
-eng2de['two'] = 'zwei'
+eng2de["one"] = "eins"
+eng2de["two"] = "zwei"
 \end{lstlisting}
 
   \begin{itemize}
@@ -1499,8 +1496,8 @@ eng2de['two'] = 'zwei'
 
   \begin{lstlisting}
 inventory = {
-'apples': 430,
-'bananas': 312,
+"apples": 430,
+"bananas": 312,
 }
 \end{lstlisting}
 
@@ -1508,16 +1505,16 @@ inventory = {
 
   \bblock{Accessing entries}{
     \begin{itemize}
-      \item Values can be accessed directly using dictionary['key']
+      \item Values can be accessed directly using dictionary["key"]
     \end{itemize}
   }
 
   \begin{lstlisting}
 inventory = {
-'apples': 430,
-'bananas': 312,
+"apples": 430,
+"bananas": 312,
 }
-print(inventory['apples'])
+print(inventory["apples"])
 # 430
 \end{lstlisting}
 
@@ -1532,12 +1529,12 @@ print(inventory['apples'])
 
   \begin{lstlisting}
 inventory = {
-'apples': 430,
-'bananas': 312,
+"apples": 430,
+"bananas": 312,
 }
-inventory['oranges'] = 530
-inventory['bananas'] = 250
-print(inventory['bananas'])
+inventory["oranges"] = 530
+inventory["bananas"] = 250
+print(inventory["bananas"])
 # 250
 \end{lstlisting}
 
@@ -1551,10 +1548,10 @@ print(inventory['bananas'])
 
   \begin{lstlisting}
 inventory = {
-'apples': 430,
-'bananas': 312,
+"apples": 430,
+"bananas": 312,
 }
-del(inventory['bananas'])
+del(inventory["bananas"])
 \end{lstlisting}
 
   \framebreak
@@ -1567,8 +1564,8 @@ del(inventory['bananas'])
 
   \begin{lstlisting}
 inventory = {
-  'apples': 430,
-  'bananas': 312,
+  "apples": 430,
+  "bananas": 312,
 }
 len(inventory)
 # 2
@@ -1584,13 +1581,13 @@ len(inventory)
 
   \begin{lstlisting}
 inventory = {
-  'apples': 430,
-  'bananas': 312,
+  "apples": 430,
+  "bananas": 312,
 }
-if 'apples' in inventory:
-  inventory['apples'] += 100
+if "apples" in inventory:
+  inventory["apples"] += 100
 else:
-  inventory['apples'] = 100
+  inventory["apples"] = 100
 \end{lstlisting}
 
   \framebreak
@@ -1658,7 +1655,7 @@ for (my_key, my_value) in my_dict.items():
   }
 
   \begin{lstlisting}
-with open('my_file.txt', 'mode') as file:
+with open('my_file.txt', "mode") as file:
   # do some stuff
 \end{lstlisting}
 
@@ -1668,16 +1665,16 @@ with open('my_file.txt', 'mode') as file:
     \begin{itemize}
       \item The mode defines how the content of the file should be treated
       \item Modes
-            \item'r': read only
-            \item'w': write only
-            \item'r+': read and write
-            \item'a': append
+            \item"r": read only
+            \item"w": write only
+            \item"r+": read and write
+            \item"a": append
     \end{itemize}
   }
 
   \begin{lstlisting}
 # open a file in read/write mode
-with open('my_file.txt', 'r') as file:
+with open('my_file.txt', "r") as file:
   # do some stuff
 \end{lstlisting}
 
@@ -1691,7 +1688,7 @@ with open('my_file.txt', 'r') as file:
   }
 
   \begin{lstlisting}
-with open('my_file.txt', 'a') as file:
+with open('my_file.txt', "a") as file:
   file.write('First line of the write operation')
   file.write('This is a line with a new-line character at the end\n')
   file.write('This is another line, on a new-line below the previous one.\n')
@@ -1707,7 +1704,7 @@ with open('my_file.txt', 'a') as file:
   }
 
   \begin{lstlisting}
-with open('my_file.txt', 'r') as file:
+with open('my_file.txt', "r") as file:
   for line in file:
     line = line.strip()
     print(line)
@@ -1726,7 +1723,7 @@ with open('my_file.txt', 'r') as file:
 
   \begin{lstlisting}
 import json
-my_dict = {'one': 'eins', 'two': 'zwei'}
+my_dict = {"one": "eins", "two": "zwei"}
 my_dict_as_string = json.dumps(my_dict)
 print(my_dict_as_string)
 \end{lstlisting}
