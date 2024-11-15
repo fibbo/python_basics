@@ -291,7 +291,6 @@ print("Hello World")
           \begin{itemize}
             \item Visual Studio Code - \url{https://code.visualstudio.com}
             \item JetBrains PyCharm - Community Edition available for free \url{http://jetbrains.com/pycharm/download}
-            \item Eclipse with pydev - \url{http://pydev.org}
           \end{itemize}
     \item It takes time to get proficient using an IDE
   \end{itemize}
@@ -723,36 +722,8 @@ my_circle_area = area(8)
     \item Functions can return any valid data type
   \end{itemize}
 
-  \framebreak
+  \end{frame}
 
-  \bblock{\lb{Boolean return values}}{
-    \begin{itemize}
-      \item The functions can return a boolean value (True, False)
-      \item The function name should be formulated as a yes/no question
-    \end{itemize}
-  }
-
-  \begin{lstlisting}
-def is_divisible(x, y):
-  return x % y == 0
-  \end{lstlisting}
-
-  \framebreak
-
-  \bblock{\lb{Boolean return values}}{
-    \begin{itemize}
-      \item The return value can be used in a condition
-    \end{itemize}
-  }
-
-  \begin{lstlisting}
-if is_divisible(x, y):
-    print(f"{x} is divisible by {y}")
-else:
-    print(f"{x} is not divisible by {y}")
-\end{lstlisting}
-
-\end{frame}
 
 
 \subsection{Naming Conventions \& Debugging} % (fold)
@@ -941,6 +912,37 @@ else:
 \end{lstlisting}
   \end{examples}
 \end{frame}
+
+\begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
+  \bblock{\lb{Boolean return values}}{
+    \begin{itemize}
+      \item The functions can return a boolean value (True, False)
+      \item The function name should be formulated as a yes/no question
+    \end{itemize}
+  }
+
+  \begin{lstlisting}
+def is_divisible(x, y):
+  return x % y == 0
+  \end{lstlisting}
+
+  \framebreak
+
+  \bblock{\lb{Boolean return values}}{
+    \begin{itemize}
+      \item The return value can be used in a condition
+    \end{itemize}
+  }
+
+  \begin{lstlisting}
+if is_divisible(x, y):
+    print(f"{x} is divisible by {y}")
+else:
+    print(f"{x} is not divisible by {y}")
+\end{lstlisting}
+
+\end{frame}
+
 
 {
 \setbeamercolor{background canvas}{bg=mLightBlue}
