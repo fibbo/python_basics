@@ -1,7 +1,7 @@
 import random
 
 
-def RunGame():
+def run_game():
     target = random.randrange(1, 101)
 
     counter = 0
@@ -18,11 +18,8 @@ def RunGame():
             break
 
 
-RunGame()
-
 while True:
+    run_game()
     answer = input("Do you want to play again? ")
-    if answer == "yes":
-        RunGame()
-    else:
+    if answer != "yes":
         break

@@ -51,6 +51,5 @@ while True:
 
 print("Bye Bye")
 
-address_book_file = open("address_book.txt", "w")
-address_book_file.write(json.dumps(address_book))
-address_book_file.close()
+with open("address_book.txt", "w") as address_book_file:
+    address_book_file.write(json.dumps(address_book))

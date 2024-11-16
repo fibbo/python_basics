@@ -8,27 +8,30 @@ def calculate_mark(points, max_points):
     return round_to(mark, 0.5)
 
 
-max_points = int(input("Enter maximum score: "))
+def main():
+    max_points = int(input("Enter maximum score: "))
+    grade_dict = {}
 
-grade_dict = {}
+    while True:
+        name = input("Enter the name or type exit to quit: ")
+        if name == "exit":
+            break
+        points = input("Enter points: ")
+        grade_dict[name] = calculate_mark(points, max_points)
 
-while True:
-    name = input("Enter the name or type exit to quit: ")
-    if name == "exit":
-        break
-    points = input("Enter points: ")
-    grade_dict[name] = calculate_mark(points, max_points)
+    avg = 0
 
-avg = 0
+    for name, grade in grade_dict.items():
+        avg += grade
+        if grade >= 4:
+            print("{} has passed with {}".format(name, grade))
+        else:
+            print("{} has failed with {}".format(name, grade))
 
-for (name, grade) in grade_dict.items():
-    avg += grade
-    if grade >= 4:
-        print("{} has passed with {}".format(name, grade))
-    else:
-        print("{} has failed with {}".format(name, grade))
+    avg /= len(grade_dict)
+    print(f"Average: {avg}")
 
-avg /= len(grade_dict)
-print("Average: {}".format(avg))
+    print(f"Average: {str(sum(list(grade_dict.values())) / len(grade_dict))}".format())
 
-print("Average: {}".format(str(sum(list(grade_dict.values())) / len(grade_dict))))
+
+main()

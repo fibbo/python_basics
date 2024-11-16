@@ -1,6 +1,3 @@
-import math
-
-
 def round_to(n, precision):
     correction = 0.5 if n >= 0 else -0.5
     return int(n / precision + correction) * precision
@@ -12,29 +9,28 @@ def calculate_mark(points, max_points):
 
 
 class Student:
-    def __init__(self, id, name):
-        self.id = id
+    def __init__(self, student_id, name):
+        self.id = student_id
         self.name = name
 
     def __str__(self):
         return "id: {} \t name: {}".format(self.id, self.name)
 
 
-id = 0
+def main():
+    student_id = 0
+    max_points = input("Enter maximum score: ")
 
-max_points = input("Enter maximum score: ")
+    grade_dict = {}
 
-grade_dict = {}
+    while True:
+        name = input("Enter the name: ")
+        if name == "exit":
+            break
+        student = Student(student_id, name)
+        student_id += 1
+        points = input("Enter points: ")
+        grade_dict[student] = calculate_mark(points, max_points)
 
-while True:
-    name = input("Enter the name: ")
-    if name == "exit":
-        break
-    student = Student(id, name)
-    id += 1
-    points = input("Enter points: ")
-    grade_dict[student] = calculate_mark(points, max_points)
-
-
-for student, grade in grade_dict.items():
-    print("{} has grade: {}".format(student, grade))
+    for student, grade in grade_dict.items():
+        print("{} has grade: {}".format(student, grade))

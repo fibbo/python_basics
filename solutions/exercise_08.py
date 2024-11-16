@@ -10,7 +10,7 @@ while True:
         print("You found the number!: ")
         print("It tooks you {} tries".format(counter))
         break
-    elif guess > random_number:
+    if guess > random_number:
         print("Too high")
     else:
         print("Too low")

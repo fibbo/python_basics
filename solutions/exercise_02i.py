@@ -2,9 +2,6 @@ import math
 
 
 def distance(px1, py1, pz1, px2, py2, pz2):
-    """
-    Calculates the distance between 2 points
-    """
     return math.sqrt((px2 - px1) ** 2 + (py2 - py1) ** 2 + (pz2 - pz1) ** 2)
 
 

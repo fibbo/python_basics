@@ -1,5 +1,7 @@
-import random
 import math
+import random
+
+# For this to work install matplot lib: `python -m pip install matplotlib`
 import matplotlib.pyplot as plt
 
 
