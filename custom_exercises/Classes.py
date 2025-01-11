@@ -14,7 +14,7 @@ class Rectangle:
         self.width = x2 - x1
         self.height = y2 - y1
 
-    def Area(self):
+    def area(self):
         """
         Calculates the area of the rectangle
         """
@@ -33,7 +33,7 @@ r = Rectangle(0, 0, 2, 3)
 
 
 # Print the area of the rectangle
-print(r.Area())
+print(r.area())
 
 
 # Check if a point is inside the rectangle
