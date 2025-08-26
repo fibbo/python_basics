@@ -185,7 +185,7 @@
 		\begin{itemize}
 			\item \textbf{Input}: Data input from keyboard, files, internet, etc...
 			\item \textbf{Output}: Processed data is displayed or saved to a file
-			\item \textbf{Algorithms}: The computers cooking recipies
+			\item \textbf{Algorithms}: The computer's cooking recipes
 			\item \textbf{Libraries}: Using existing implementations (can do anything of the above)
 		\end{itemize}
 
@@ -246,7 +246,7 @@ int main() {
 	\begin{block}{Machine Language}
 
 		Example of a low level language
-		\begin{lstlisting}{language=assembly}
+		\begin{lstlisting}[language={}]
 .LC0:
   .string "Hello world!"
 main:
@@ -301,57 +301,8 @@ print("Hello World")
 \section{Fundamental Concepts} % (fold)
 \label{sec:fundamental_concepts}
 
-\subsection{Types, Variables, Expressions, Operators, Comments} % (fold)
+\subsection{Variables, Types, Expressions, Operators, Comments} % (fold)
 \label{sub:Types_variables_expressions_operators_comments}
-
-\begin{frame}[c]\frametitle{Data Types, Variables, Expressions, Operators, Comments}
-	\begin{block}{Types}
-		\begin{itemize}
-			\item Numbers (Integers, Floats)
-			      \begin{itemize}
-				      \item 2
-				      \item 1000000
-				      \item -2
-				      \item 3.2
-				      \item 1.3333333
-			      \end{itemize}
-		\end{itemize}
-	\end{block}
-
-\end{frame}
-
-\begin{frame}[c, allowframebreaks]\frametitle{Data Types}
-	\begin{block}{Strings}
-		\begin{itemize}
-			\item Strings (Text)
-			      \begin{itemize}
-				      \item {\color{blue}'Hello World'}
-				      \item {\color{red}"Hello World"}
-			      \end{itemize}
-			\item {\color{blue} 'Single quotes'} or {\color{red} "double quotes"} can be used to declare them
-			      \begin{itemize}
-				      \item 'Hello World'
-				      \item "Hello World"
-				      \item "5"
-			      \end{itemize}
-		\end{itemize}
-	\end{block}
-	\begin{block}{Boolean}
-		Binary data type
-		\begin{itemize}
-			\item True
-			\item False
-		\end{itemize}
-	\end{block}
-	\begin{block}{None Type}
-		\begin{itemize}
-			\item \texttt{None} is a special type (in other languages also sometimes called \texttt{null} or \texttt{nullptr}).
-			      Sometimes it is necessary to indicate that something \textit{is not there} and this can be indicated by using \texttt{None}.
-		\end{itemize}
-	\end{block}
-
-
-\end{frame}
 
 \begin{frame}[c,fragile,allowframebreaks]\frametitle{Variables}
 
@@ -370,6 +321,59 @@ print("Hello World")
 		      \end{itemize}
 		\item Values assigned using the \texttt{=} operator
 	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]\frametitle{Data Types}
+	\begin{block}{Types}
+		\begin{itemize}
+			\item Numbers (Integers, Floats)
+			      \begin{itemize}
+				      \item 2
+				      \item 1000000
+				      \item -2
+				      \item 3.2
+				      \item 1.333333
+			      \end{itemize}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}[c, allowframebreaks]\frametitle{Data Types}
+	\begin{block}{Strings}
+		\begin{itemize}
+			\item Strings (Text)
+			      \begin{itemize}
+				      \item {\color{blue}'Hello World'}
+				      \item {\color{red}"Hello World"}
+			      \end{itemize}
+			\item {\color{blue} 'Single quotes'} or {\color{red} "double quotes"} can be used to create them
+			      \begin{itemize}
+				      \item 'Hello World'
+				      \item "Hello World"
+				      \item "5"
+			      \end{itemize}
+		\end{itemize}
+	\end{block}
+	\begin{block}{Boolean}
+		Binary data type
+		\begin{itemize}
+			\item True
+			\item False
+		\end{itemize}
+	\end{block}
+	\begin{block}{None Type}
+		\begin{itemize}
+			\item \texttt{None} is a special type (in other languages also sometimes called \texttt{null} or \texttt{nullptr})
+
+			      Sometimes it is necessary to indicate that something \textit{is not there} and this can be indicated by using \texttt{None}
+		\end{itemize}
+	\end{block}
+
+
+\end{frame}
+
+\begin{frame}[c,fragile,allowframebreaks]\frametitle{Variables}
 	\begin{examples}
 		Use meaningful names
 		\begin{itemize}
@@ -396,7 +400,7 @@ print(c)
 
 salutation = "Hello"
 name = "Monty Python"
-print(salutation + " " + name) # Keep this printing syntax in mind
+print(salutation + " " + name) # String concatenation with +
     \end{lstlisting}
 	\end{block}
 	\framebreak
@@ -474,128 +478,6 @@ def say_hello():
 	\end{block}
 \end{frame}
 
-
-\subsection{Functions in Python - Built-Ins and imported} % (fold)
-\label{sub:functions}
-\begin{frame}[c, fragile,allowframebreaks]
-	\frametitle{Functions}
-	Function are self contained modules of code that accomplish a specific task. They usually "accept" input data and "return" a result.
-	\begin{itemize}
-		\begin{lstlisting}
-name = "Some name"
-print(name) # Some name is used inside the print function -> the print function accepts the input and prints it to the console
-    \end{lstlisting}
-		\item Functions can (and often do) also return a result (but the print function does not)
-		      % \begin{itemize}
-		      %   \item \lstinline!return! statement
-		      %   \item If a function has no explicit return statement it implicitly returns \lstinline!None!
-		      % \end{itemize}
-	\end{itemize}
-
-	\begin{examples}
-		\begin{lstlisting}
-text = "Python programming language"
-print(text) # Prints: Python programming language
-text_length = len(text) # This function returns the length of the text
-print(text_length) # Prints length of the string
-  \end{lstlisting}
-	\end{examples}
-\end{frame}
-
-\begin{frame}[c, fragile,allowframebreaks]
-	\frametitle{Type Conversions}
-
-	Assume you want to program a calculator.
-	In order to do this the user needs to be able to input his numbers and the program should be able to read this.
-	Here comes the \lstinline!input! function into play.
-
-	\begin{lstlisting}
-print("Add two numbers")
-a = input("Please enter the first number ")
-b = input("Please enter the second number ")
-
-print("The result of the two numbers is: ")
-print(a + b) # Something is wrong here
-\end{lstlisting}
-
-
-	\framebreak
-	Sometimes it is necessary to convert a variable from one data type to another (if possible). If you
-	read data from a file into python, at first all the data is interpreted as strings even if your file only
-	contains numbers.
-
-	In order to do mathematical analysis on these numbers, they need to be converted to the appropriate number type first.
-
-	\begin{itemize}
-		\item \lstinline!int("32")!: Converts a string that holds a number to an integer
-		\item \lstinline!int("Hello")!: This doesn't work and it will throw a ValueError exception
-		\item \lstinline!float("313.333")!: Converts a string that hold a number to a float
-		\item \lstinline!str(32)!: Converts a number to a string
-	\end{itemize}
-
-	Thanks to the f-string there is at least one need less to use explicitly converison functions:
-	\begin{examples}
-		\begin{lstlisting}
-a = 20
-b = 10
-res = a + b
-print(f"The sum of {a} and {b} is {res}")
-# used to look like this:
-print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
-\end{lstlisting}
-	\end{examples}
-\end{frame}
-
-\begin{frame}[c]\frametitle{Built-In Functions}
-	\url{https://docs.python.org/3/library/functions.html}
-\end{frame}
-
-\begin{frame}[c, fragile]\frametitle{How to Print to Console in Python}
-	Printing is useful to provide feedback to the user or sometimes to debug your program. Printing different data types
-	in the same print statement can be cumbersome.
-	\begin{itemize}
-		\item \texttt{print()} is the function to print something to console in python
-	\end{itemize}
-
-	\begin{lstlisting}
-print("This prints just a string")
-answer = 42
-print(answer)  # Just print a number
-print("Combining a string and a number: " + answer) # -> TypeError
-print(f"Much cleaner way to print string and a number: {answer}")
-\end{lstlisting}
-\end{frame}
-
-\begin{frame}[t, fragile]\frametitle{Functions, First Library}
-	\begin{onlyenv}<1>
-		\begin{block}{Library import}
-			\begin{lstlisting}
-import math
-log_res = math.log(17.0)
-sin_res = math.sin(45) # ??
-  \end{lstlisting}
-		\end{block}
-	\end{onlyenv}
-
-	\begin{onlyenv}<2>
-		\begin{block}{Library import}
-			\begin{lstlisting}
-import math
-log_res = math.log(17.0)
-sin_res = math.sin(45) # WRONG (well, not really, but not what we want)
-
-sin_res = math.sin(math.radians(45))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary
-  \end{lstlisting}
-		\end{block}
-	\end{onlyenv}
-
-	\begin{itemize}
-		\item \tiny \url{http://docs.python.org/library/math.html}
-	\end{itemize}
-\end{frame}
-
-
-
 \begin{frame}[c,allowframebreaks]\frametitle{Debugging}
 	\begin{block}{Finding and resolving "bugs"}
 		\begin{figure}
@@ -642,6 +524,129 @@ sin_res = math.sin(math.radians(45))  # cos/sin etc take radians as arguments ->
 
 
 \end{frame}
+
+
+\subsection{Functions in Python - Built-Ins and imported} % (fold)
+\label{sub:functions}
+\begin{frame}[c, fragile,allowframebreaks]
+	\frametitle{Functions}
+	Function are self contained modules of code that accomplish a specific task. They usually "accept" input data and "return" a result.
+	\begin{itemize}
+		\begin{lstlisting}
+name = "Some name"
+print(name) # Some name is used inside the print function -> the print function accepts the input and prints it to the console
+    \end{lstlisting}
+		\item Functions can (and often do) also return a result (but the print function does not)
+		      % \begin{itemize}
+		      %   \item \lstinline!return! statement
+		      %   \item If a function has no explicit return statement it implicitly returns \lstinline!None!
+		      % \end{itemize}
+	\end{itemize}
+
+	\begin{examples}
+		\begin{lstlisting}
+text = "Python programming language"
+print(text) # Prints: Python programming language
+text_length = len(text) # This function returns the length of the text
+print(text_length) # Prints length of the string
+  \end{lstlisting}
+	\end{examples}
+\end{frame}
+
+\begin{frame}[c, fragile,allowframebreaks]
+	\frametitle{Small Exercise - Type Conversions}
+
+	Assume you want to program a calculator.
+	In order to do this the user needs to be able to input his numbers and the program should be able to read this.
+	Here comes the \lstinline!input! function into play.
+
+	\begin{lstlisting}
+print("Add two numbers")
+a = input("Please enter the first number ")
+b = input("Please enter the second number ")
+
+print("The result of the two numbers is: ")
+print(a + b) # Something is wrong here
+\end{lstlisting}
+
+
+	\framebreak
+	Sometimes it is necessary to convert a variable from one data type to another (if possible). If you
+	read data from a file into python, at first all the data is interpreted as strings even if your file only
+	contains numbers.
+
+	In order to do mathematical analysis on these numbers, they need to be converted to the appropriate number type first.
+
+	\begin{itemize}
+		\item \lstinline!int("32")!: Converts a string that holds a number to an integer
+		\item \lstinline!int("Hello")!: This doesn't work and it will throw a ValueError exception
+		\item \lstinline!float("313.333")!: Converts a string that holds a number to a float
+		\item \lstinline!str(32)!: Converts a number to a string
+	\end{itemize}
+
+	Thanks to the f-string there is at least one less need to use explicit conversion functions:
+	\begin{examples}
+		\begin{lstlisting}
+a = 20
+b = 10
+res = a + b
+print(f"The sum of {a} and {b} is {res}")
+# used to look like this:
+print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
+\end{lstlisting}
+	\end{examples}
+\end{frame}
+
+\begin{frame}[c]\frametitle{Built-In Functions}
+	\url{https://docs.python.org/3/library/functions.html}
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{How to Print to Console in Python}
+	Printing is useful to provide feedback to the user or sometimes to debug your program. Printing different data types
+	in the same print statement can be cumbersome.
+	\begin{itemize}
+		\item \texttt{print()} is the function to print something to console in python
+	\end{itemize}
+
+	\begin{lstlisting}
+print("This prints just a string")
+answer = 42
+print(answer)  # Just print a number
+print("Combining a string and a number: " + str(answer)) # Need to convert to string
+print(f"Much cleaner way to print string and a number: {answer}")
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile]\frametitle{Functions, First Library}
+	\begin{onlyenv}<1>
+		\begin{block}{Library import}
+			\begin{lstlisting}
+import math
+log_res = math.log(17.0)
+sin_res = math.sin(45) # ??
+  \end{lstlisting}
+		\end{block}
+	\end{onlyenv}
+
+	\begin{onlyenv}<2>
+		\begin{block}{Library import}
+			\begin{lstlisting}
+import math
+log_res = math.log(17.0)
+sin_res = math.sin(45) # WRONG (well, not really, but not what we want)
+
+sin_res = math.sin(math.radians(45))  # cos/sin etc take radians as arguments -> conversion from degree to radians necessary
+  \end{lstlisting}
+		\end{block}
+	\end{onlyenv}
+
+	\begin{itemize}
+		\item \tiny \url{http://docs.python.org/library/math.html}
+	\end{itemize}
+\end{frame}
+
+
+
 % subsection naming_conventions_&_debugging (end)
 
 \subsection{Conditionals: if/else/elif} % (fold)
@@ -715,14 +720,10 @@ else:
 		\end{block}
 	\end{examples}
 	\begin{lstlisting}
-def print_parity(x):
   if x % 2 == 0:
     print("The number is even")
   else:
     print("The number is odd")
-
-print_parity(2)
-print_parity(3)
 \end{lstlisting}
 
 	\framebreak
@@ -757,6 +758,92 @@ else:
 \end{lstlisting}
 	\end{examples}
 \end{frame}
+
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Conditionals}
+	\begin{block}{Nested conditionals}
+		\begin{itemize}
+			\item Conditionals can be nested
+		\end{itemize}
+		\begin{lstlisting}
+if x > 0:
+  if x < 10:
+    print("x is a positive single digit")
+\end{lstlisting}
+	\end{block}
+	\begin{block}{\color{mLightBrown}and}
+		\begin{itemize}
+			\item Deep nesting can be difficult to read
+			\item Use \lb{and} to combine conditionals
+		\end{itemize}
+	\end{block}
+	\begin{lstlisting}
+if x > 0:
+  if x < 10:
+    print("x is a positive single digit")
+# is the same as
+if x > 0 and x < 10:
+  print("x is a positive single digit")
+\end{lstlisting}
+
+
+	\bblock{\lb{or}}{
+
+		\begin{itemize}
+			\item  At least one statement must be true for the condition to be true
+		\end{itemize}
+	}
+
+	\begin{lstlisting}
+if x > 0 or x < 0:
+  print("x is not zero")
+\end{lstlisting}
+
+	\bblock{\lb{not}}{
+		\begin{itemize}
+			\item Negation, inverts the boolean.
+			\item \lb{not} True -> becomes False
+			\item \lb{not} False -> becomes True
+		\end{itemize}
+	}
+
+	\begin{lstlisting}
+if not (y == 0):
+  print(x/y)
+else:
+  print("Cannot divide by zero")
+\end{lstlisting}
+
+	\begin{table}
+		\begin{tabular}{p{1cm}*{3}{p{2cm}}}
+			\textbf{X} & \textbf{Y} & \textbf{X and Y} & \textbf{X or Y} \\
+			\toprule
+			False      & False      & False            & False           \\
+			False      & True       & False            & True            \\
+			True       & False      & False            & True            \\
+			True       & True       & True             & True
+		\end{tabular}
+
+	\end{table}
+
+
+\end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=mLightBlue}
+\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\bfseries
+\begin{frame}[c]\frametitle{Exercise 1}
+	Solve exercise 1
+\end{frame}
+
+\begin{frame}[c, fragile]\frametitle{Exercise 3}
+	Solve exercise 3
+\end{frame}
+
+}
+
 
 \subsection{Lists: []} % (fold)
 \label{sub:lists}
@@ -886,7 +973,7 @@ print(names[-1])
 
 	\bblock{Length}{
 		\begin{itemize}
-			\item The number of elementsi n a list can be obtained using the \texttt{len()} function
+			\item The number of elements in a list can be obtained using the \texttt{len()} function
 		\end{itemize}
 	}
 
@@ -929,7 +1016,7 @@ names[0] = "Alice"
 	\bblock{Adding elements}
 	{
 		\begin{itemize}
-			\item The \texttt{append()} method can be used t o add an element at the end of the list
+			\item The \texttt{append()} method can be used to add an element at the end of the list
 		\end{itemize}
 	}
 
@@ -1078,13 +1165,10 @@ greeting[0] = "J"
 
 	\begin{example}
 		\begin{lstlisting}
-def countdown(n):
-  while n > 0:
-    print(n)
-    n = n - 1
-  print('Lift off!')
-
-countdown(10)
+while n > 0:
+  print(n)
+  n = n - 1
+print('Lift off!')
 \end{lstlisting}
 	\end{example}
 
@@ -1098,13 +1182,12 @@ countdown(10)
 	}
 
 	\begin{lstlisting}
-def sequence(n):
-  while n != 1:
-    print(n)
-    if n % 2 == 0:
-      n = n / 2
-    else:
-      n = n * 3 + 1
+while n != 1:
+  print(n)
+  if n % 2 == 0:
+    n = n / 2
+  else:
+    n = n * 3 + 1
 \end{lstlisting}
 
 	\framebreak
@@ -1178,7 +1261,8 @@ for element in element_list:
 \end{frame}
 }
 
-\begin{frame}[c, fragile, allowframebreaks]\frametitle{User Defined Functions}
+\subsection{User-Defined Functions (without and with return)} % (fold)
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{User-defined Functions}
 	\begin{block}{User-defined functions}
 		\begin{itemize}
 			\item A function encapsulates some functionality
@@ -1223,7 +1307,7 @@ def line_separator():
 
 	\begin{examples}
 		\begin{itemize}
-			\item If the line seperator should output two lines we can define a new function that calls the \lstinline!line_separator()! function twice
+			\item If the line separator should output two lines we can define a new function that calls the \lstinline!line_separator()! function twice
 		\end{itemize}
 		\begin{lstlisting}
 def two_lines():
@@ -1279,6 +1363,43 @@ print(concat) # NameError: name 'concat' is not defined
 			\item Functions can also call other functions
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\label{sub:functions_with_return_values}
+\begin{frame}[c, allowframebreaks, fragile]\frametitle{Functions with return value}
+	\begin{itemize}
+		\item Some functions will return a value
+	\end{itemize}
+
+	\begin{lstlisting}
+# Python 3
+answer = input("Do you like Python?")
+\end{lstlisting}
+
+	\begin{itemize}
+		\item Our previously defined functions have never returned anything, but only
+		      printed something out
+	\end{itemize}
+	\framebreak
+	\bblock{\lb{return}}{
+		\begin{itemize}
+			\item Functions that return a value use the \lb{return} keyword
+		\end{itemize}
+	}
+
+	\begin{lstlisting}
+import math
+def area(radius):
+  result = math.pi * radius ** 2
+  return result
+
+print(area(10))
+my_circle_area = area(8)
+\end{lstlisting}
+
+	\begin{itemize}
+		\item Functions can return any valid data type
+	\end{itemize}
 \end{frame}
 
 \subsection{Dictionaries: \{\}} % (fold)
@@ -1359,7 +1480,7 @@ print(inventory["bananas"])
 
 	\bblock{Deleting entries}{
 		\begin{itemize}
-			\item Key-Value pairs can be delted using the \texttt{del()} function
+			\item Key-Value pairs can be deleted using the \texttt{del()} function
 		\end{itemize}
 	}
 
@@ -1473,87 +1594,6 @@ else:
 
 \end{frame}
 
-
-{
-\setbeamercolor{background canvas}{bg=mLightBlue}
-\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
-\setbeamercolor{normal text}{fg=white}
-\usebeamercolor[fg]{normal text}
-\bfseries
-\begin{frame}[c]\frametitle{Exercise 1}
-	Solve exercise 1
-\end{frame}
-}
-
-\begin{frame}[c, fragile, allowframebreaks]\frametitle{Conditionals}
-	\begin{block}{Nested conditionals}
-		\begin{itemize}
-			\item Conditionals can be nested
-		\end{itemize}
-		\begin{lstlisting}
-if x > 0:
-  if x < 10:
-    print("x is a positive single digit")
-\end{lstlisting}
-	\end{block}
-	\begin{block}{\color{mLightBrown}and}
-		\begin{itemize}
-			\item Deep nesting can be difficult to read
-			\item Use \lb{and} to combine conditionals
-		\end{itemize}
-	\end{block}
-	\begin{lstlisting}
-if x > 0:
-  if x < 10:
-    print("x is a positive single digit")
-# is the same as
-if x > 0 and x < 10:
-  print("x is a positive single digit")
-\end{lstlisting}
-
-
-	\bblock{\lb{or}}{
-
-		\begin{itemize}
-			\item  At least one statement must be true for the condition to be true
-		\end{itemize}
-	}
-
-	\begin{lstlisting}
-if x > 0 or x < 0:
-  print("x is not zero")
-\end{lstlisting}
-
-	\bblock{\lb{not}}{
-		\begin{itemize}
-			\item Negation, inverts the boolean.
-			\item \lb{not} True -> becomes False
-			\item \lb{not} False -> becomes True
-		\end{itemize}
-	}
-
-	\begin{lstlisting}
-if not (y == 0):
-  print(x/y)
-else:
-  print("Cannot divide by zero")
-\end{lstlisting}
-
-	\begin{table}
-		\begin{tabular}{p{1cm}*{3}{p{2cm}}}
-			\textbf{X} & \textbf{Y} & \textbf{X and Y} & \textbf{X or Y} \\
-			\toprule
-			False      & False      & False            & False           \\
-			False      & True       & False            & True            \\
-			True       & False      & False            & True            \\
-			True       & True       & True             & True
-		\end{tabular}
-
-	\end{table}
-
-
-\end{frame}
-
 {
 \setbeamercolor{background canvas}{bg=mLightBlue}
 \setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
@@ -1564,11 +1604,6 @@ else:
 
 	Solve exercise 2
 \end{frame}
-
-\begin{frame}[c, fragile]\frametitle{Exercise 3}
-	Solve exercise 3
-\end{frame}
-
 }
 
 \section{Persistence} % (fold)
