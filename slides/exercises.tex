@@ -10,6 +10,8 @@
 \usepackage{graphicx}
 \usepackage{nameref}
 \usepackage{mathtools}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 
 \usepackage{booktabs}
 
@@ -166,6 +168,35 @@ print(str(result))
 	Each point consists of 3 components: x, y and z.
 	One of the points is the center of a sphere, the other is somewhere on the surface of the sphere.
 
+	\begin{center}
+	\begin{tikzpicture}[scale=0.8]
+		% 3D coordinate system
+		\draw[->] (0,0) -- (4,0) node[right] {$x$};
+		\draw[->] (0,0) -- (0,3) node[above] {$y$};
+		\draw[->] (0,0) -- (-1.5,-1.5) node[below left] {$z$};
+		
+		% Sphere center point
+		\coordinate (center) at (1.5,1.5);
+		\fill[red] (center) circle (2pt);
+		\node[above right] at (center) {Center $(x_1, y_1, z_1)$};
+		
+		% Point on surface
+		\coordinate (surface) at (3,2.2);
+		\fill[blue] (surface) circle (2pt);
+		\node[above right] at (surface) {Surface $(x_2, y_2, z_2)$};
+		
+		% Draw sphere (circle in 2D projection)
+		\draw[dashed, gray] (center) circle (1.73);
+		
+		% Distance line (radius)
+		\draw[thick, green] (center) -- (surface);
+		\node[midway, above, sloped] at ($(center)!0.5!(surface)$) {radius = distance};
+		
+		% Grid for reference
+		\draw[help lines, very thin] (0,0) grid (4,3);
+	\end{tikzpicture}
+	\end{center}
+
 	We will try to write code that calculates the volume of a sphere defined by two
 	such points
 \end{frame}
@@ -242,19 +273,21 @@ print(str(result))
 		\item Write a script that counts the number of words in a list that are at least as long
 		      as the specified word length.
 		\item Use a for loop to do this
-		      % \item Example:
+		\item Example:
 	\end{itemize}
 
-	% 	{
-	% 	\mdseries
-	% 	\setbeamercolor{normal text}{fg=black}
-	% 	\usebeamercolor[fg]{normal text}
-	% 	\begin{lstlisting}
-	% words = ['Emanuel', 'John', 'Ale']
-	% count_words(words, 4)
-	% # 2
-	% \end{lstlisting}
-	% 	}
+		{
+		\mdseries
+		\setbeamercolor{normal text}{fg=black}
+		\usebeamercolor[fg]{normal text}
+		\begin{lstlisting}
+words = ['apple', 'banana', 'cat', 'elephant', 'dog']
+min_length = 4
+count = 0
+# Use a for loop to count words with length >= min_length
+# Should print 3 (apple=5, banana=6, elephant=8)
+\end{lstlisting}
+		}
 
 \end{frame}
 
@@ -355,6 +388,44 @@ while True:
 
 
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 10}
+
+	\begin{itemize}
+		\item Write an application which repeatedly asks for a name and phone
+		      number until the user enters ``exit''
+		\item Each name/telephone number pair should be stored as an entry in a dictionary
+		      \begin{itemize}
+			      \item The names are the keys of the dictionary
+			      \item The telephone numbers are the values of the dictionary
+		      \end{itemize}
+		\item As soon as the user enters ``exit'', create a JSON string of the dictionary using the json.dumps() function and store the string in a file called address\_book.txt
+	\end{itemize}
+
+	\framebreak
+
+	\begin{itemize}
+		\item Extend your application so that it reads the address\_book.txt file when it starts
+		\item Convert the JSON text into a dictionary again
+	\end{itemize}
+
+	{
+	\mdseries
+	\setbeamercolor{normal text}{fg=black}
+	\usebeamercolor[fg]{normal text}
+	\begin{lstlisting}
+import json
+address_book_file = open('address_book.txt', 'r')
+address_book_dict = json.load(address_book_file)
+\end{lstlisting}
+	}
+
+	\begin{itemize}
+		\item Ask the user if he wants to add more names or not
+		\item Let the user search for names in the dictionary and print out the according phone number
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Exercise 11}
 
 	\begin{itemize}
 		\item Write an application which repeatedly asks for a name and phone
