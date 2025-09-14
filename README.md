@@ -1,14 +1,13 @@
-# Foundations of Programming with Python #
+# Foundations of Programming with Python
 
 ## General Tips
 
-1. Create a new file for EACH exercise (unless stated otherwise) or topic. 
-Keeping everything in the same files makes it much harder to spot mistakes since they could stem from previous code parts.
-2. Always check your editor for red squiggly lines -> There is something wrong with your code (don't forget to save after you changed something)
-3. Save often, run often: 
+1. Create a new file for EACH exercise (unless stated otherwise) or topic.
+   Keeping everything in the same files makes it much harder to spot mistakes since they could stem from previous code parts.
+1. Always check your editor for red squiggly lines -> There is something wrong with your code (don't forget to save after you changed something)
+1. Save often, run often:
    1. Save your file regularly so you don't accidentally lose progress if your computer crashes.
-   2. Run the code often. Try to split the code in the small completable steps which you can quickly check by running. Writing one big block in one go is especially hard in the beginning.
-
+   1. Run the code often. Try to split the code in the small completable steps which you can quickly check by running. Writing one big block in one go is especially hard in the beginning.
 
 ## Downloading the solutions
 
@@ -20,17 +19,17 @@ This is the repository for the programming course offered by the ITC of the Univ
 
 For some of the exercises there are slight variations available:
 
-#### Exercise 4 ####
+#### Exercise 4
 
 Instead of working with 6 arguments per function we create a class called Point3D. This encapsulates the 3 invidivual coordinates of a point inside a single object which can be used in our code.
 
-#### Excercise 9 ####
+#### Excercise 9
 
 Similarly exercise 9 also makes use of a class. This time the class is called `Student`.
 
 To read more about classes click [here](https://docs.python.org/3/tutorial/classes.html)
 
-### Custom Exercises ###
+### Custom Exercises
 
 The folder custom exercises contains (yet) undocumented python code. If you are interested in plotting data check out `Simple_Plot.py`. In order to run this example you have to install `numpy` and `matplotlib`. For this open a terminal and type the following:
 
