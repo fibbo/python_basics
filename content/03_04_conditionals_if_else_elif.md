@@ -5,13 +5,13 @@
 - A boolean expression is either true or false
 
 ```python
-5 == 5 # --> True
-5 == 6 # --> False
-6 > 4 # --> True
-5 >= 8 # --> False
+print(5 == 5) # --> True
+print(5 == 6) # --> False
+print(6 > 4) # --> True
+print(5 >= 8) # --> False
 ```
 
-## if
+## `if`
 
 - The expression if defines a condition
 - If the condition is true, subsequent statements will be executed
@@ -30,7 +30,7 @@ if False:
   print("No")
 ```
 
-## else
+## `else`
 
 - Expression else is executed if the if condition is false
 - Can only be used in combination with an if expression
@@ -115,10 +115,17 @@ if x > 0 or x < 0:
 - `not` False -> becomes True
 
 ```python
-if not (y == 0):
-  print(x/y)
+is_weekend = False
+if not is_weekend:
+  print("Time to go to work!")
 else:
-  print("Cannot divide by zero")
+  print("Enjoy your weekend!")
+
+# This is equivalent to:
+if is_weekend == False:
+  print("Time to go to work!")
+else:
+  print("Enjoy your weekend!")
 ```
 
 **Truth Table**
