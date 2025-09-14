@@ -1,14 +1,17 @@
-%! TEX program = pdflatex
+%! TEX program = lualatex
 \documentclass[10pt, a4paper]{beamer} %handout fuer eine gedruckte version der slides
 \usetheme{metropolis}
 
 \usepackage{url}
-\usepackage[english]{babel}
+\usepackage{polyglossia}
+\setmainlanguage{english}
 
 \usepackage{listings,xcolor}
 \usepackage{graphicx}
 \usepackage{nameref}
 \usepackage{mathtools}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
 
 \usepackage{booktabs}
 
@@ -16,11 +19,9 @@
 \newcommand*{\currentname}{\@currentlabelname}
 \makeatother
 
-% Font setup for pdflatex
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-% Use a monospace font that works with pdflatex
-\newcommand{\Bera}{\ttfamily}
+\usepackage{fontspec}
+% \setmainfont{UbuntuMono}
+\newfontfamily\Bera{PragmataPro Mono Liga}[Scale=0.85]
 
 \definecolor{mDarkTeal}{HTML}{23373b}
 \definecolor{mLightBrown}{HTML}{EB811B}
@@ -97,14 +98,17 @@
 \date{}
 \subject{Python}
 \titlegraphic{\includegraphics[width=0.3\textwidth]{pics/uzh_logo_e_pos}}
+
 \begin{document}
 \begin{frame}
 	\titlepage
 \end{frame}
 
 \begin{frame}{Table of Contents}
+	\small
 	\tableofcontents
 \end{frame}
+
 \section{General Introduction}
 \begin{frame}
 	\frametitle{About me}
@@ -137,30 +141,7 @@
 
 	\end{block}
 
-	% In this slide, some important text will be
-	% \alert{highlighted} beause it's important.
-	% Please, don't abuse it.
-
-	% \begin{block}{Remark}
-	% Sample text
-	% \end{block}
-
-	% \begin{alertblock}{Important theorem}
-	% Sample text in red box
-	% \end{alertblock}
-
-	% \begin{examples}
-	% Sample text in green box. "Examples" is fixed as block title.
-	% \end{examples}
 \end{frame}
-% \begin{frame}[c]\frametitle{Round of introduction}
-%   \begin{itemize}
-%     \item Name
-%     \item Occupation
-%     \item Programming experience? What language?
-%     \item Expectations
-%   \end{itemize}
-% \end{frame}
 
 \begin{frame}[c]\frametitle{Learning targets}
 
@@ -218,28 +199,24 @@
 \begin{frame}[fragile,c,allowframebreaks]\frametitle{Examples: Hello World}
 	High level languages but not trivial to learn:
 	\begin{block}{Java}
-		{
-			% \lstset
-			\begin{lstlisting}[language=Java]
+		\begin{lstlisting}[language=Java]
 public class HelloWorld {
   public static void main(String args[]) {
     System.out.println("Hello World");
   }
 }
-  \end{lstlisting}
-		}
+      \end{lstlisting}
 	\end{block}
 
 	\begin{block}{C++}
 		{
-			% \lstset
 			\begin{lstlisting}[language=C++, morekeywords=include]
-#include <iostream>
-int main() {
-  std::cout << "Hello World\n";
-  return 0;
-}
-  \end{lstlisting}
+	#include <iostream>
+	int main() {
+	  std::cout << "Hello World\n";
+	  return 0;
+	}
+	  \end{lstlisting}
 		}
 	\end{block}
 	\framebreak
@@ -259,7 +236,7 @@ main:
   mov eax, 0
   pop rbp
   ret
-\end{lstlisting}
+    \end{lstlisting}
 
 	\end{block}
 
@@ -340,7 +317,7 @@ print("Hello World")
 
 \end{frame}
 
-\begin{frame}[c, allowframebreaks]\frametitle{Data Types}
+\begin{frame}[c, fragile, allowframebreaks]\frametitle{Data Types}
 	\begin{block}{Strings}
 		\begin{itemize}
 			\item Strings (Text)
@@ -375,7 +352,6 @@ print("Hello World")
 			      \end{itemize}
 		\end{itemize}
 	\end{block}
-
 	\begin{examples}
 		\begin{lstlisting}
 middle_name = None  # Person has no middle name
@@ -384,12 +360,12 @@ print(middle_name)  # Prints: None
 # Functions that don't return anything give None
 result = print("Hello")  # print() returns None
 print(result)  # Prints: None
-\end{lstlisting}
+    \end{lstlisting}
 	\end{examples}
-
 \end{frame}
 
-\begin{frame}[c,fragile,allowframebreaks]\frametitle{Variables}
+\begin{frame}[c,fragile,allowframebreaks]
+	\frametitle{Variables}
 	\begin{examples}
 		Use meaningful names
 		\begin{itemize}
@@ -398,11 +374,11 @@ print(result)  # Prints: None
 salutation = "Hello"
 name = "Monty Python"
 pi = 3.14159
-    \end{lstlisting}
+            \end{lstlisting}
 			\item Usage
 			      \begin{lstlisting}
 print(name)
-    \end{lstlisting}
+            \end{lstlisting}
 		\end{itemize}
 
 	\end{examples}
@@ -425,28 +401,44 @@ print(salutation + " " + name) # String concatenation with +
 		You cannot name a variable with these names as they are protected by the language.
 
 		\begin{lstlisting}
-and, assert, break, class, continue, def, del, elif, else, except, exec,
-finally, for, from, global, if, import, in, is, lambda, not, or, pass,
-print, raise, return, try, while, yield
-\end{lstlisting}
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+    \end{lstlisting}
 
 	\end{block}
 \end{frame}
 
 \begin{frame}[t, fragile]\frametitle{Operators}
-	\begin{block}{Order of precedence (kind of like PEMDAS)}
-		\begin{itemize}
-			\item ()
-			\item **
-			\item unary + -
-			\item *  /  \% //
-			\item binary + -
-			\item \texttt{<}, \texttt{>}, \texttt{<=}, \texttt{>=}, \texttt{!=}, \texttt{==}
-			\item \textbf{\texttt{\color{mDarkBlue}not}}
-			\item \textbf{\texttt{\color{mDarkBlue}and}}
-			\item \textbf{\texttt{\color{mDarkBlue}or}}
-		\end{itemize}
-	\end{block}
+	\begin{columns}
+		\begin{column}{0.8\textwidth}
+			\begin{block}{Order of precedence (kind of like PEMDAS)}
+				\begin{itemize}
+					\item ()
+					\item **
+					\item unary + -
+					\item *  /  \% //
+					\item binary + -
+					\item \texttt{<}, \texttt{>}, \texttt{<=}, \texttt{>=}, \texttt{!=}, \texttt{==}
+					\item \textbf{\texttt{\color{mDarkBlue}not}}
+					\item \textbf{\texttt{\color{mDarkBlue}and}}
+					\item \textbf{\texttt{\color{mDarkBlue}or}}
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.2\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8]
+				\draw[fill=red, draw=red, rounded corners=3pt] 
+					(0,0) -- (1.5,0) -- (0.75,1.3) -- cycle;
+				\node[white, font=\Large\bfseries] at (0.75,0.4) {!};
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
 
 \end{frame}
 
