@@ -8,7 +8,7 @@ while True:
     guess = int(input("Please enter your guess: "))
     if guess == random_number:
         print("You found the number!: ")
-        print("It tooks you {} tries".format(counter))
+        print(f"It took you {counter} tries")
         break
     if guess > random_number:
         print("Too high")

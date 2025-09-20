@@ -10,7 +10,7 @@ except FileNotFoundError:
 
 
 def insert_person():
-    name = input("Pleas enter a name: ")
+    name = input("Please enter a name: ")
     phone_number = input("Please enter a phone number: ")
     address_book[name] = phone_number
 
@@ -42,11 +42,11 @@ while True:
     action = input(">>> ")
     if action == "add":
         insert_person()
-    if action == "search":
+    elif action == "search":
         search_person()
-    if action == "remove":
+    elif action == "remove":
         remove_person()
-    if action == "exit":
+    elif action == "exit":
         break
 
 print("Bye Bye")

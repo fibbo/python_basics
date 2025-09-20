@@ -14,6 +14,6 @@ while True:
     name = input("Enter the name: ")
     if name == "exit":
         break
-    points = input("Enter points: ")
+    points = int(input("Enter points: "))
 
     print(calculate_mark(points, max_points))

@@ -13,5 +13,5 @@ def fizz_buzz(numbers):
         index += 1
 
 
-numbers = list(range(101))
+numbers = list(range(1, 101))
 fizz_buzz(numbers)

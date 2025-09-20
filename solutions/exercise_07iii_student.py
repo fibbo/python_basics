@@ -34,3 +34,6 @@ def main():
 
     for student, grade in grade_dict.items():
         print("{} has grade: {}".format(student, grade))
+
+
+main()

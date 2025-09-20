@@ -8,7 +8,7 @@ def run_game():
 
     while True:
         counter += 1
-        guess = float(input("Enter your guess: "))
+        guess = int(input("Enter your guess: "))
         if guess > target:
             print("Your guess is too high.")
         elif guess < target:
