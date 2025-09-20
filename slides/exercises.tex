@@ -169,32 +169,32 @@ print(str(result))
 	One of the points is the center of a sphere, the other is somewhere on the surface of the sphere.
 
 	\begin{center}
-	\begin{tikzpicture}[scale=0.8]
-		% 3D coordinate system
-		\draw[->] (0,0) -- (4,0) node[right] {$x$};
-		\draw[->] (0,0) -- (0,3) node[above] {$y$};
-		\draw[->] (0,0) -- (-1.5,-1.5) node[below left] {$z$};
-		
-		% Sphere center point
-		\coordinate (center) at (1.5,1.5);
-		\fill[red] (center) circle (2pt);
-		\node[above right] at (center) {Center $(x_1, y_1, z_1)$};
-		
-		% Point on surface
-		\coordinate (surface) at (3,2.2);
-		\fill[blue] (surface) circle (2pt);
-		\node[above right] at (surface) {Surface $(x_2, y_2, z_2)$};
-		
-		% Draw sphere (circle in 2D projection)
-		\draw[dashed, gray] (center) circle (1.73);
-		
-		% Distance line (radius)
-		\draw[thick, green] (center) -- (surface);
-		\node[midway, above, sloped] at ($(center)!0.5!(surface)$) {radius = distance};
-		
-		% Grid for reference
-		\draw[help lines, very thin] (0,0) grid (4,3);
-	\end{tikzpicture}
+		\begin{tikzpicture}[scale=0.8]
+			% 3D coordinate system
+			\draw[->] (0,0) -- (4,0) node[right] {$x$};
+			\draw[->] (0,0) -- (0,3) node[above] {$y$};
+			\draw[->] (0,0) -- (-1.5,-1.5) node[below left] {$z$};
+
+			% Sphere center point
+			\coordinate (center) at (1.5,1.5);
+			\fill[red] (center) circle (2pt);
+			\node[above right] at (center) {Center $(x_1, y_1, z_1)$};
+
+			% Point on surface
+			\coordinate (surface) at (3,2.2);
+			\fill[blue] (surface) circle (2pt);
+			\node[above right] at (surface) {Surface $(x_2, y_2, z_2)$};
+
+			% Draw sphere (circle in 2D projection)
+			\draw[dashed, gray] (center) circle (1.73);
+
+			% Distance line (radius)
+			\draw[thick, green] (center) -- (surface);
+			\node[midway, above, sloped] at ($(center)!0.5!(surface)$) {radius = distance};
+
+			% Grid for reference
+			\draw[help lines, very thin] (0,0) grid (4,3);
+		\end{tikzpicture}
 	\end{center}
 
 	We will try to write code that calculates the volume of a sphere defined by two
@@ -232,7 +232,6 @@ print(str(result))
 	\begin{itemize}
 		\item Write a function \texttt{volume\_from\_points(x1, y1, z1, x2, y2, z2)}
 		\item This function calculates the volume of a sphere whose radius is the distance between the points $(x1, y1, z1)$ and $(x2, y2, z2)$
-		\item Tip: Use the implemented methods from the previous exercises (you might want to copy and paste them into a new file)
 	\end{itemize}
 
 \end{frame}
@@ -276,18 +275,18 @@ print(str(result))
 		\item Example:
 	\end{itemize}
 
-		{
-		\mdseries
-		\setbeamercolor{normal text}{fg=black}
-		\usebeamercolor[fg]{normal text}
-		\begin{lstlisting}
+	{
+	\mdseries
+	\setbeamercolor{normal text}{fg=black}
+	\usebeamercolor[fg]{normal text}
+	\begin{lstlisting}
 words = ['apple', 'banana', 'cat', 'elephant', 'dog']
 min_length = 4
 count = 0
 # Use a for loop to count words with length >= min_length
 # Should print 3 (apple=5, banana=6, elephant=8)
 \end{lstlisting}
-		}
+	}
 
 \end{frame}
 
