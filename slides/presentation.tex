@@ -1657,8 +1657,34 @@ else:
 	}
 
 	\begin{lstlisting}
-with open('my_file.txt', "mode") as file:
+from pathlib import Path
+
+file_path = Path('my_file.txt')
+with file_path.open("mode") as file:
   # do some stuff
+\end{lstlisting}
+
+	\framebreak
+
+	\bblock{Why pathlib?}{
+		\begin{itemize}
+			\item Modern, object-oriented approach to file handling (Python 3.4+)
+			\item Cross-platform path handling (works on Windows, Mac, Linux)
+			\item More intuitive methods for common file operations
+			\item Better path manipulation with / operator
+		\end{itemize}
+	}
+
+	\begin{lstlisting}
+from pathlib import Path
+
+# Create paths easily
+data_dir = Path('data')
+file_path = data_dir / 'my_file.txt'
+
+# Check if file exists
+if file_path.exists():
+  print(f"File exists: {file_path}")
 \end{lstlisting}
 
 	\framebreak
@@ -1675,8 +1701,11 @@ with open('my_file.txt', "mode") as file:
 	}
 
 	\begin{lstlisting}
-# open a file in read/write mode
-with open('my_file.txt', "r") as file:
+from pathlib import Path
+
+file_path = Path('my_file.txt')
+# open a file in read mode
+with file_path.open("r") as file:
   # do some stuff
 \end{lstlisting}
 
@@ -1684,29 +1713,47 @@ with open('my_file.txt', "r") as file:
 
 	\bblock{Write}{
 		\begin{itemize}
-			\item The write() function is used to write something into a file
+			\item The write\_text() method is a convenient way to write strings
+			\item The open() method with "a" mode can be used for appending
 			\item \lb{'\textbackslash n'} is used to insert a line break
 		\end{itemize}
 	}
 
 	\begin{lstlisting}
-with open('my_file.txt', "a") as file:
-  file.write('First line of the write operation')
+from pathlib import Path
+
+file_path = Path('my_file.txt')
+
+# Simple write (overwrites file)
+file_path.write_text('Hello World\n')
+
+# Append mode
+with file_path.open("a") as file:
+  file.write('First line of the write operation\n')
   file.write('This is a line with a new-line character at the end\n')
-  file.write('This is another line, on a new-line below the previous one.\n')
 \end{lstlisting}
 
 	\framebreak
 
 	\bblock{Read}{
 		\begin{itemize}
+			\item Path.read\_text() reads the entire file as a string
 			\item A \lb{for} loop can be used to read a file line by line
 			\item \texttt{line.strip()} removes the trailing \lb{'\textbackslash n'}
 		\end{itemize}
 	}
 
 	\begin{lstlisting}
-with open('my_file.txt', "r") as file:
+from pathlib import Path
+
+file_path = Path('my_file.txt')
+
+# Read entire file
+content = file_path.read_text()
+print(content)
+
+# Read line by line
+with file_path.open("r") as file:
   for line in file:
     line = line.strip()
     print(line)
@@ -1718,7 +1765,7 @@ with open('my_file.txt', "r") as file:
 	\bblock{Dictionaries/list in JSON}{
 		\begin{itemize}
 			\item file.write() only accepts strings as arguments
-			\item If complex structures such as dictionaries or lists should be stored in a file, it’s necessary the convert these structures into strings first
+			\item If complex structures such as dictionaries or lists should be stored in a file, it's necessary to convert these structures into strings first
 			\item An example of a standard used for this purpose is JSON (Javascript Object Notation)
 		\end{itemize}
 	}
@@ -1743,6 +1790,29 @@ import json
 my_dict_as_string = '{"two": "zwei", "one": "eins"}'
 my_dict = json.loads(my_dict_as_string)
 print(my_dict)
+\end{lstlisting}
+
+	\framebreak
+
+	\bblock{Combining pathlib with JSON}{
+		\begin{itemize}
+			\item Path makes it easy to save and load JSON files
+			\item write\_text() and read\_text() work perfectly with JSON
+		\end{itemize}
+	}
+
+	\begin{lstlisting}
+import json
+from pathlib import Path
+
+# Save dictionary to JSON file
+my_dict = {"one": "eins", "two": "zwei", "three": "drei"}
+file_path = Path('data.json')
+file_path.write_text(json.dumps(my_dict, indent=2))
+
+# Load dictionary from JSON file
+loaded_dict = json.loads(file_path.read_text())
+print(loaded_dict)
 \end{lstlisting}
 
 \end{frame}
