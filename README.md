@@ -31,7 +31,7 @@ To read more about classes click [here](https://docs.python.org/3/tutorial/class
 
 ### Custom Exercises
 
-The folder custom exercises contains (yet) undocumented python code. If you are interested in plotting data check out `Simple_Plot.py`. In order to run this example you have to install `numpy` and `matplotlib`. For this open a terminal and type the following:
+The folder custom exercises contains (yet) undocumented python code. If you are interested in plotting data check out `simple_plot.py`. In order to run this example you have to install `numpy` and `matplotlib`. For this open a terminal and type the following:
 
 `python -m pip install numpy`
 
@@ -39,4 +39,4 @@ The folder custom exercises contains (yet) undocumented python code. If you are 
 
 Afterwards you should be able to run this plotting example.
 
-Another example worth looking at is the `TryExcept.py`. This shows you how to avoid complete crashes with the try-except (also known try-catch) mechanism. This allows us to write code which can recover from hard errors (like division by 0, or file not found errors)
+Another example worth looking at is the `try_except.py`. This shows you how to avoid complete crashes with the try-except (also known try-catch) mechanism. This allows us to write code which can recover from hard errors (like division by 0, or file not found errors)
