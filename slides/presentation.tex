@@ -211,12 +211,12 @@ public class HelloWorld {
 	\begin{block}{C++}
 		{
 			\begin{lstlisting}[language=C++, morekeywords=include]
-	#include <iostream>
-	int main() {
-	  std::cout << "Hello World\n";
-	  return 0;
-	}
-	  \end{lstlisting}
+  #include <iostream>
+  int main() {
+    std::cout << "Hello World\n";
+    return 0;
+  }
+    \end{lstlisting}
 		}
 	\end{block}
 	\framebreak
@@ -464,21 +464,6 @@ print(name) # Prints Philipp
 \subsection{Input and Output} % (fold)
 \label{sub:input_output}
 
-\begin{frame}[c, fragile]\frametitle{How to Print to Console in Python}
-	Printing is useful to provide feedback to the user or sometimes to debug your program. Printing different data types
-	in the same print statement can be cumbersome.
-	\begin{itemize}
-		\item \texttt{print()} is the function to print something to console in python
-	\end{itemize}
-
-	\begin{lstlisting}
-print("This prints just a string")
-answer = 42
-print(answer)  # Just print a number
-print("Combining a string and a number: " + str(answer)) # Need to convert to string
-print(f"Much cleaner way to print string and a number: {answer}")
-\end{lstlisting}
-\end{frame}
 
 \begin{frame}[c, fragile,allowframebreaks]
 	\frametitle{Input and Type Conversions}
@@ -523,17 +508,6 @@ print("The sum of " + str(a) + " and " + str(b) + " is " + str(res))
 \end{lstlisting}
 	\end{examples}
 \end{frame}
-
-{
-\setbeamercolor{background canvas}{bg=mLightBlue}
-\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
-\setbeamercolor{normal text}{fg=white}
-\usebeamercolor[fg]{normal text}
-\bfseries
-\begin{frame}[c]\frametitle{Exercise 1}
-	Solve exercise 1
-\end{frame}
-}
 
 \subsection{Naming Conventions \& Debugging} % (fold)
 \label{sub:naming_conventions_&_debugging}
@@ -796,10 +770,22 @@ else:
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
+\begin{frame}[c]\frametitle{Exercise 1}
+	Solve exercise 1
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=mLightBlue}
+\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\bfseries
 \begin{frame}[c]\frametitle{Exercise 2}
 	Solve exercise 2
 \end{frame}
 }
+
 
 
 \subsection{Lists: []} % (fold)
@@ -1057,16 +1043,6 @@ del(list_b[1:5])
 
 \end{frame}
 
-{
-\setbeamercolor{background canvas}{bg=mLightBlue}
-\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
-\setbeamercolor{normal text}{fg=white}
-\usebeamercolor[fg]{normal text}
-\bfseries
-\begin{frame}[c]\frametitle{Exercise 3}
-	Solve exercise 3
-\end{frame}
-}
 
 \subsection{Immutables: Tuples () and Strings}
 \begin{frame}[c, fragile, allowframebreaks]\frametitle{Tuples}
@@ -1183,9 +1159,9 @@ while index < len(names):
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 4}
+\begin{frame}[c, fragile]\frametitle{Exercise 3}
 
-	Solve exercise 4
+	Solve exercise 3
 \end{frame}
 
 }
@@ -1196,9 +1172,9 @@ while index < len(names):
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 5}
+\begin{frame}[c, fragile]\frametitle{Exercise 4}
 
-	Solve exercise 5
+	Solve exercise 4
 \end{frame}
 
 }
@@ -1225,8 +1201,8 @@ for element in element_list:
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 6}
-	Solve exercise 6
+\begin{frame}[c, fragile]\frametitle{Exercise 5}
+	Solve exercise 5
 \end{frame}
 }
 
@@ -1427,6 +1403,17 @@ my_circle_area = area(8)
 	\end{itemize}
 \end{frame}
 
+{
+\setbeamercolor{background canvas}{bg=mLightBlue}
+\setbeamercolor{frametitle}{fg=white,bg=mLightBlue}
+\setbeamercolor{normal text}{fg=white}
+\usebeamercolor[fg]{normal text}
+\bfseries
+\begin{frame}[c]\frametitle{Exercise 6}
+	Solve exercise 6
+\end{frame}
+}
+
 \subsection{Dictionaries: \{\}} % (fold)
 \label{sub:dictionaries}
 
@@ -1434,7 +1421,7 @@ my_circle_area = area(8)
 
 	\bblock{Key-Value pair}{
 		\begin{itemize}
-			\item Dictionaries are very similar to lists but have a key and value for each entry
+			\item Dictionaries are similar to lists but have a key and value for each entry
 		\end{itemize}
 	}
 
@@ -1577,13 +1564,6 @@ for (my_key, my_value) in my_dict.items():
 	Solve exercise 7
 \end{frame}
 
-\begin{frame}[c]\frametitle{Exercise 8}
-	Solve exercise 8
-\end{frame}
-
-\begin{frame}[c, fragile]\frametitle{Exercise 9}
-	Solve exercise 9
-\end{frame}
 
 }
 
@@ -1624,9 +1604,9 @@ else:
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 10}
+\begin{frame}[c, fragile]\frametitle{Exercise 8}
 
-	Solve exercise 10
+	Solve exercise 8
 \end{frame}
 }
 
@@ -1823,8 +1803,8 @@ print(loaded_dict)
 \setbeamercolor{normal text}{fg=white}
 \usebeamercolor[fg]{normal text}
 \bfseries
-\begin{frame}[c, fragile]\frametitle{Exercise 11}
-	Solve exercise 11
+\begin{frame}[c, fragile]\frametitle{Exercise 9}
+	Solve exercise 9
 \end{frame}
 }
 % section persistence (end)
