@@ -1,6 +1,6 @@
 import random
 
-random_number = random.randrange(1, 100)
+random_number = random.randrange(1, 101)
 
 counter = 1
 

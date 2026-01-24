@@ -1,17 +1,9 @@
-def fizz_buzz(numbers):
-    index = 0
-    while index < len(numbers):
-        output = ""
-        if numbers[index] % 3 == 0:
-            output += "Fizz"
-        if numbers[index] % 5 == 0:
-            output += "Buzz"
-        if output != "":
-            print(output)
-        else:
-            print(numbers[index])
-        index += 1
+def count_words(words, min_word_length):
+    counter = 0
+    for word in words:
+        if len(word) >= min_word_length:
+            counter += 1
+    return counter
 
 
-numbers = list(range(1, 101))
-fizz_buzz(numbers)
+print(count_words(["Emanuel", "John", "Ale"], 4))
