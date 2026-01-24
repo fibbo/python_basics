@@ -1,3 +1,4 @@
+from pathlib import Path
 import json
 
 address_book_dict = {}
@@ -8,6 +9,6 @@ while True:
     phone = input("Phone: ")
     address_book_dict[name] = phone
 
-with open("address_book.txt", "w") as address_book_file:
-    address_book_json = json.dumps(address_book_dict)
-    address_book_file.write(address_book_json)
+address_book = Path("address_book.txt")
+with address_book.open("w") as address_book_file:
+    json.dump(address_book_dict, address_book_file)

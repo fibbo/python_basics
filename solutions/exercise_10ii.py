@@ -1,9 +1,11 @@
 import json
+from pathlib import Path
 
 address_book = {}
 
+path = Path("address_book.txt")
 try:
-    with open("address_book.txt", "r") as address_book_file:
+    with path.open("r") as address_book_file:
         address_book = json.load(address_book_file)
 except FileNotFoundError:
     print("address_book.txt does not exist")
@@ -51,5 +53,5 @@ while True:
 
 print("Bye Bye")
 
-with open("address_book.txt", "w") as address_book_file:
+with path.open("w") as address_book_file:
     address_book_file.write(json.dumps(address_book))
