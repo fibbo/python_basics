@@ -1,9 +1,8 @@
-def count_words(words, min_word_length):
-    counter = 0
-    for word in words:
-        if len(word) >= min_word_length:
-            counter += 1
-    return counter
+words = ["Emanuel", "John", "Ale"]
+min_word_length = 4
+counter = 0
+for word in words:
+    if len(word) >= min_word_length:
+        counter += 1
 
-
-print(count_words(["Emanuel", "John", "Ale"], 4))
+print(counter)
